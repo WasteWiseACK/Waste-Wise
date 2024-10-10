@@ -1,21 +1,7 @@
 # WasteWise
 
-This product will help concerned citizens by educating users on the importance of the impact food waste has on our world;
-Core features on our website will have resources explaining the importance of why food waste is an issue that needs to be tackled
+Our mission is to bridge the gap between food insecurity and food waste by redistributing food that is still perfectly edible but would otherwise be thrown away. Through our platform, we connect New Yorkers facing hunger with local food banks and meal programs, offering resource locators and nutritional guidance. We also promote sustainability by educating the public and showcasing volunteer opportunities, while providing restaurants and companies a simplified food donation network to ensure surplus food reaches people in need. All in all, we aim to build a more sustainable and fair food system for our city.
 
-This product will illustrate to users how much C02 footprint is within our areas 
-These two maps of New York will be shown together to illustrate how food waste impacts our C02 footprint; 
-Real-time map showing C02 footprint
-A map of food insecurity
-
-This product will provide users with opportunities on how to volunteer and offer support in the fight against food waste;
-
-Utilizing a forum to engage in starting meet-ups for the sake of organizing food raises or soup kitchens
-Implementing locations of food banks around the city for users to know of their existence
-
-This product will allow users to search for local food banks based on the borough of their choice.
-
-This product will allow users to post any new volunteer opportunities or share their experiences with any volunteer activities they have done.
 
 ## Team
 
@@ -40,9 +26,9 @@ This product will allow users to post any new volunteer opportunities or share t
 ## Requirements
 
 - Node 0.10.x
-- Redis 2.6.x
-- Postgresql 16.4.x
-
+- Postgresql 9.1.x
+- React 17.x
+- Express.js 4.x
 
 ## Development
 
@@ -51,12 +37,12 @@ This product will allow users to post any new volunteer opportunities or share t
 From within the root directory:
 
 ```sh
-<COMMANDS_HERE>
+cd frontend && npm i && npm run build && cd ../server && npm i && npm run migrate && npm run seed
 ```
 
 ### Roadmap
 
-View the project roadmap [here](LINK_TO_PROJECTS_TAB).
+View the project roadmap [here](https://github.com/orgs/WasteWiseACK/projects/1).
 
 
 ## Contributing
