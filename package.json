@@ -16,5 +16,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "framer-motion": "^11.11.8"
+  }
 }
