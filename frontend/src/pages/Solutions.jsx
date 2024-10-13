@@ -14,6 +14,14 @@ const Solutions = () => {
         Additionally, the compost that is produced can be applied to farms, gardens, and landscaping projects, which will support sustainable agricultural methods and create healthier plants.
       </p>
 
+      <h3>Solution Two</h3>
+      <p>
+        Campaigns for consumer education and awareness are essential to modifying consumer behavior around food waste.
+        These programs can take many different forms, such as seminars, social media campaigns, and educational materials that educate individuals on smart meal planning, safe food storage methods, and inventive ways to repurpose leftovers.
+        Providing people and families with the necessary knowledge to make educated decisions, these kinds of programs can aid in lowering family food waste.
+        Promoting habits like recycling food scraps, knowing expiration dates, and only purchasing what is necessary will cause a cultural change towards more sustainable consumption patterns, which will ultimately reduce food waste in communities.
+      </p>
+
 
     </>
   )
