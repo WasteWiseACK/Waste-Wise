@@ -12,7 +12,7 @@ exports.seed = async function (knex) {
 
   const results = [];
   return new Promise((resolve, reject) => {
-    fs.createReadStream('../../C02Database/CO2Converted.csv') // CSV file path
+    fs.createReadStream('../C02Database/CO2Converted.csv') // CSV file path
       .pipe(csv())
       .on('data', (data) => {
         // Convert data to float and ensure CensusTract is a string

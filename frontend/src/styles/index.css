@@ -1,9 +1,21 @@
-body {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  margin: 0;
+.title {
+  font-size: 5rem;
+  margin: auto;
+  margin-left: 2rem;
 }
 
-input, label {
+
+
+/* ^^DEFINING COMPONENTS FOR WEBSITE^^ */
+
+body {
+  font-family: Helvetica;
+  margin: 0;
+
+}
+
+input,
+label {
   display: block;
 }
 
@@ -16,7 +28,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: #000;
+  background: black;
 }
 
 #logo {
@@ -38,6 +50,24 @@ nav a {
   display: block;
   color: #FFF;
 }
+
+ul li ul.drop_down li {
+  display: block;
+}
+
+ul li ul.drop_down {
+  width: 100%;
+  background: gray;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+
+ul li:hover ul.drop_down {
+  display: block;
+}
+
+
 
 form {
   padding: 1rem;
