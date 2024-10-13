@@ -37,7 +37,14 @@ const Solutions = () => {
         <li><a href="https://www.boulderfoodrescue.org/food-rescue-alliance/">Food Rescue Alliance</a></li>
       </ul>
 
+      <h2>If you would like to learn more about food waste, here are a few websites that go into depth about it!</h2>
 
+      <ul>
+        <li><a href="https://www.foodwastealliance.org/">Food Waste Alliance</a></li>
+        <li><a href="https://www.feedingamerica.org/">Feeding America</a></li>
+        <li><a href="https://www.lovefoodhatewaste.com/">Love Food Hate Waste</a></li>
+        <li><a href="https://www.epa.gov/sustainable-management-food/food-too-good-waste-implementation-guide-and-toolkit">United States Environmental Protection Agency</a></li>
+      </ul>
 
 
     </>
