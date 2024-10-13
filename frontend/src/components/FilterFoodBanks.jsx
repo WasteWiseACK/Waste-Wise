@@ -12,6 +12,7 @@ function FilterFoodBanks() {
         event.preventDefault();
         const [data, error] = await fetchHandler(`https://data.cityofnewyork.us/resource/if26-z6xq.json?borough=${selectedBoro}`);
         if (data) {
+            console.log(data);
             setFilteredFoodBanks(data)
         } if (error) {
             setError(error);
@@ -23,9 +24,9 @@ function FilterFoodBanks() {
             <form onSubmit={handleSubmit}>
                 <label htmlFor="boroughs"></label>
                 <select name="boroughs" id="boroughs" onChange={handleSelectedBoro}>
-                    {boroughs.map((borough) => {
-                        <option value={borough}>{borough}</option>
-                    })}
+                    {boroughs.map((borough) => (
+                        <option value={borough} key={borough}>{borough}</option>
+                    ))}
                 </select>
                 <button>Filter by borough</button>
             </form>
