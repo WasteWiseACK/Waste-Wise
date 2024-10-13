@@ -1,11 +1,18 @@
+import DisplayFoodBanks from "../components/DisplayFoodBanks";
+import FilterFoodBanks from "../components/FilterFoodBanks";
+import SiteHeadingAndNav from "../components/SiteHeadingAndNav";
 
-const FoodBank = () => {
-  return (
-    <>
-      <h1>HELLO THIS IS FOOD_BANK PAGE</h1>
-      <h2>Stop looking, I'm not done</h2>
-    </>
-  )
-}
+function FoodBank() {
+    return (
+        <>
+            <SiteHeadingAndNav />
+            <div>
+                <FilterFoodBanks />
+                <DisplayFoodBanks />
+            </div>
+        </>
+    )
+};
 
-export default FoodBank
+export default FoodBank;
+
