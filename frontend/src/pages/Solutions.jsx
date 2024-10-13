@@ -30,6 +30,14 @@ const Solutions = () => {
         Coordination, planning, and occasionally legal protections for food donors are necessary for the implementation of these initiatives, although the social and environmental advantages can be significant.
       </p>
 
+      <h2>In addition to all these solutions, here are websites that provides volunteer opportunities based on your area! </h2>
+
+      <ul>
+        <li><a href="https://www.volunteermatch.org/">Volunteer Match</a></li>
+        <li><a href="https://www.boulderfoodrescue.org/food-rescue-alliance/">Food Rescue Alliance</a></li>
+      </ul>
+
+
 
 
     </>
