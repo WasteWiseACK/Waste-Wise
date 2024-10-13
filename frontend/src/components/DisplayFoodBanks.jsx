@@ -7,6 +7,7 @@ function DisplayFoodBanks() {
     const { setError, filteredFoodBanks } = useContext(FilteredFoodBanksContext);
     const fetchInitialBanks = async () => {
         const [data, error] = await fetchHandler('https://data.cityofnewyork.us/resource/if26-z6xq.json');
+        console.log(data);
         const banks = [];
         for (let i = 0; i < data.length && banks.length <= 25; i++) {
             let bank = data[Math.floor(Math.random() * (data.length))];
@@ -14,6 +15,7 @@ function DisplayFoodBanks() {
         }
         if (data) {
             setInitialFoodBanks(banks)
+            console.log(initialFoodBanks)
         } if (error) {
             setError(error)
         }
@@ -21,10 +23,11 @@ function DisplayFoodBanks() {
     useEffect(() => {
         fetchInitialBanks();
     }, [])
+    console.log(filteredFoodBanks)
     return (
         <div>
             <ul>
-                {(filteredFoodBanks ? filteredFoodBanks : initialFoodBanks).map((bank) => {
+                {(filteredFoodBanks.length > 0 ? filteredFoodBanks : initialFoodBanks).map((bank) => (
                     <li key={bank.ct2010}>
                         <div class="bank-container">
                             <h3>{bank.food_scrap_drop_off_site}</h3>
@@ -34,7 +37,7 @@ function DisplayFoodBanks() {
                             <p>{bank.website}</p>
                         </div>
                     </li>
-                })}
+                ))}
             </ul>
         </div>
     )
