@@ -1,15 +1,45 @@
-.title {
-  font-size: 5rem;
-  margin: auto;
-  margin-left: 2rem;
+@font-face {
+  font-family: light_hel;
+  src: url(../fonts/4215-font.otf);
 }
 
+/* .title, .header1 and .header2 use regular Helvetica font, all split in
+varying sizes*/
 
+.title {
+  /* this is for really big titles (look at solutions in mock up for a visual)*/
+  font-size: 8rem;
+}
+
+.header1 {
+  /* for h1 tag */
+  font-size: 4.5rem;
+}
+
+.header2 {
+  /* for h2 tag */
+  font-size: 2.5rem;
+}
+
+.body {
+  /* footers, body texts, sub-headlines */
+  font-family: light_hel;
+}
+
+.special_home_problem {
+  font-family: light_hel;
+  font-size: 2.5rem;
+}
 
 /* ^^DEFINING COMPONENTS FOR WEBSITE^^ */
 
+html {
+  background-color: #fefae0;
+}
+
 body {
   font-family: Helvetica;
+  color: #432542;
   margin: 0;
 
 }
@@ -28,7 +58,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
-  background: black;
+  background: transparent;
 }
 
 #logo {
@@ -38,7 +68,7 @@ header {
   color: #FFF;
 }
 
-nav ul {
+.nav-container ul {
   display: flex;
   gap: 1rem;
   padding: 0;
@@ -46,9 +76,14 @@ nav ul {
   list-style: none;
 }
 
-nav a {
+.nav-container a {
   display: block;
-  color: #FFF;
+  color: #432542;
+  text-decoration: none;
+}
+
+.nav-container a:hover {
+  color: #842f81;
 }
 
 ul li ul.drop_down li {
@@ -67,7 +102,13 @@ ul li:hover ul.drop_down {
   display: block;
 }
 
+.sign_up img {
+  width: 2rem;
+}
 
+.logged_in img {
+  width: 2rem;
+}
 
 form {
   padding: 1rem;
@@ -78,7 +119,63 @@ form {
 
 /* automatically added by NavLink component */
 .active {
-  color: #EEBC32;
   font-weight: bold;
   font-style: italic;
+}
+
+.home_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* .prompt_container p {
+  width: rem;
+} */
+
+/* desktop -> mobile resizing */
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+}
+
+
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1236px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+
+  .home_container {
+    flex-direction: column;
+  }
+
 }

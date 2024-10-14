@@ -1,35 +1,37 @@
 import { NavLink } from "react-router-dom";
 import { useContext } from "react";
 import CurrentUserContext from "../contexts/current-user-context";
+import userIcon from '../imgs/user_icon.png'
 
 export default function SiteHeadingAndNav() {
   const { currentUser } = useContext(CurrentUserContext);
 
   return <header>
-    <nav>
+    <nav className="nav-container">
       <ul>
-        <li><NavLink className='nav_link' to='/'>HOME</NavLink></li>
-        <li>
+        <li className="home"><NavLink className='nav_link' to='/'>HOME</NavLink></li>
+        <li className='nav_link'>
           <a href="#">WHY WE CARE</a>
           <ul className="drop_down">
-            <li><NavLink className='nav_link' to='/IMPACT'>IMPACT</NavLink></li>
-            <li><NavLink className='nav_link' to='/SOLUTIONS'>SOLUTIONS</NavLink></li>
-            <li><NavLink className='nav_link' to='/FOOD_BANK'>FOOD BANKS</NavLink></li>
+            <li><NavLink to='/IMPACT'>IMPACT</NavLink></li>
+            <li><NavLink to='/SOLUTIONS'>SOLUTIONS</NavLink></li>
+            <li><NavLink to='/FOOD_BANK'>FOOD BANKS</NavLink></li>
           </ul>
         </li>
-        <li><NavLink className='nav_link' to='/FORUM'>FORUM</NavLink></li>
-        {
-          currentUser
-            ? <>
-              <li><NavLink to='/users' end={true}>Users</NavLink></li>
-              <li><NavLink to={`/users/${currentUser.id}`}>{currentUser.username}</NavLink></li>
-            </>
-            : <>
-              <li><NavLink to='/login'>Login</NavLink></li>
-              <li><NavLink to='/sign-up'>Sign Up</NavLink></li>
-            </>
-        }
+        <li className='nav_link'><NavLink to='/FORUM'>FORUM</NavLink></li>
       </ul>
     </nav>
+    <div className="nav-container">
+      {
+        currentUser
+          ? <ul>
+            {/* <li><NavLink to='/users' end={true}>Users</NavLink></li> */}
+            <li className="logged_in"><NavLink to={`/users/${currentUser.id}`}><img src={userIcon} alt="user-icon" /></NavLink></li>
+          </ul>
+          : <ul>
+            <li className="sign_up"><NavLink to='/sign-up'><img src={userIcon} alt="user-icon" /></NavLink></li>
+          </ul>
+      }
+    </div>
   </header>;
 }
