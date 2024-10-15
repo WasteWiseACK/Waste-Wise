@@ -51,11 +51,11 @@ app.patch('/api/users/:id', checkAuthentication, userControllers.updateUser);
 // Post Routes
 ///////////////////////////////
 
-app.post('/api/posts', checkAuthentication, postControllers.createPost);
-
 app.get('/api/posts', postControllers.listPosts);
-app.get('/api/posts/:id', postControllers.showPost)
-app.patch('/api/posts/:id', checkAuthentication, postControllers.updatePost)
+
+app.get('/api/posts/:postId', postControllers.showPost)
+app.post('/api/posts/', checkAuthentication, postControllers.createPost);
+app.patch('/api/posts/:postId', checkAuthentication, postControllers.updatePost)
 
 
 ///////////////////////////////
