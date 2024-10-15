@@ -45,7 +45,7 @@ app.post('/api/users', userControllers.createUser);
 // Express lets us pass a piece of middleware to run for a specific endpoint
 app.get('/api/users', checkAuthentication, userControllers.listUsers);
 app.get('/api/users/:id', checkAuthentication, userControllers.showUser);
-app.patch('/api/users/:id', checkAuthentication, userControllers.updateUser);
+app.patch('/api/users/:id/edit', checkAuthentication, userControllers.updateUser);
 
 ///////////////////////////////
 // Post Routes
@@ -56,6 +56,7 @@ app.get('/api/posts', postControllers.listPosts);
 app.get('/api/posts/:postId', postControllers.showPost)
 app.post('/api/posts/', checkAuthentication, postControllers.createPost);
 app.patch('/api/posts/:postId', checkAuthentication, postControllers.updatePost)
+// app.delete('/api/posts/:postId', checkAuthentication, postControllers.deletePost)
 
 
 ///////////////////////////////

@@ -52,3 +52,21 @@ exports.updatePost = async (req, res) => {
 
 }
 
+// exports.deletePost = async (req, res) => {
+//   const postId = req.params.id;
+//   const userId = req.session.userId; // Use userId
+
+
+//   const post = await Post.find(postId);
+//   if (!post) {
+//     return res.status(404).json({ message: 'Post not found' });
+//   }
+
+//   // Check if the current user is the author of the post
+//   if (post.user_id.toString() !== userId) {
+//     return res.status(403).json({ message: 'You are not authorized to delete this post' });
+//   }
+
+//   // Delete the post
+//   await Post.deleteById(postId);
+// }

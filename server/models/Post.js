@@ -40,9 +40,9 @@ class Post {
 
   // Similar to the one above , it will return post or posts from posts table
   // Based on user_id;
-  static async findByUserId(user_id) {
-    const query = `SELECT * FROM posts WHERE user_id = ?`;
-    const result = await knex.raw(query, [user_id]);
+  static async findByPostId(post_id) {
+    const query = `SELECT * FROM posts WHERE post_id = ?`;
+    const result = await knex.raw(query, [post_id]);
     const rawUserData = result.rows[0];
     return rawUserData ? new Post(rawUserData) : null;
   }
@@ -76,7 +76,7 @@ class Post {
     return rawUpdatedPost ? new Post(rawUpdatedPost) : null;
   }
 
-  static async delete(id) {
+  static async deleteById(id) {
     const query = `
       DELETE FROM posts 
       WHERE id = ? 

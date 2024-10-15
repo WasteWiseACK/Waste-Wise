@@ -2,7 +2,7 @@ const { isAuthorized } = require('../utils/auth-utils');
 const User = require('../models/User');
 
 exports.createUser = async (req, res) => {
-  const { username, password } = req.body;
+  const { username, borough, bio, other_form_of_contact, password } = req.body;
 
   // TODO: check if username is taken, and if it is what should you return?
   const user = await User.create(username, password);
@@ -26,7 +26,7 @@ exports.showUser = async (req, res) => {
 };
 
 exports.updateUser = async (req, res) => {
-  const { username } = req.body;
+  const { username, borough, bio, other_form_of_contact } = req.body;
   const { id } = req.params;
 
   // Not only do users need to be logged in to update a user, they
@@ -34,7 +34,7 @@ exports.updateUser = async (req, res) => {
   // user (users should only be able to change their own profiles)
   if (!isAuthorized(id, req.session)) return res.sendStatus(403);
 
-  const updatedUser = await User.update(id, username);
+  const updatedUser = await User.update(id, { username, borough, bio, other_form_of_contact });
   if (!updatedUser) return res.sendStatus(404)
   res.send(updatedUser);
 };
