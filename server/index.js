@@ -44,7 +44,7 @@ app.post('/api/users', userControllers.createUser);
 // Express lets us pass a piece of middleware to run for a specific endpoint
 app.get('/api/users', checkAuthentication, userControllers.listUsers);
 app.get('/api/users/:id', checkAuthentication, userControllers.showUser);
-app.patch('/api/users/:id', checkAuthentication, userControllers.updateUser);
+app.patch('/api/users/:id/edit', checkAuthentication, userControllers.updateUser);
 
 
 

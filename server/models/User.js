@@ -9,10 +9,13 @@ class User {
   // static methods to hide the hashed password of users before sending user data 
   // to the client. Since we want to keep the #passwordHash property private, we 
   // provide the isValidPassword instance method as a way to indirectly access it.
-  constructor({ id, username, password_hash }) {
+  constructor({ id, username, password_hash, borough, bio, other_form_of_contact }) {
     this.id = id;
     this.username = username;
     this.#passwordHash = password_hash;
+    this.bio = bio;
+    this.borough = borough;
+    this.other_form_of_contact = other_form_of_contact;
   }
 
   // This instance method takes in a plain-text password and returns true if it matches
@@ -66,14 +69,20 @@ class User {
 
   // Updates the user that matches the given id with a new username.
   // Returns the modified user, using the constructor to hide the passwordHash. 
-  static async update(id, username) {
+  static async update(id, updates) {
+    const { username, borough, bio, other_form_of_contact } = updates;
+    console.log('Updating user with ID:', id, 'Username:', username, 'Bio:', bio, 'Borough:', borough);
     const query = `
       UPDATE users
-      SET username=?
+      SET 
+      username = COALESCE (?, username),
+      borough = COALESCE (?, borough),
+      bio = COALESCE (?, bio),
+      other_form_of_contact = COALESCE (?, other_form_of_contact)
       WHERE id=?
       RETURNING *
     `
-    const result = await knex.raw(query, [username, id])
+    const result = await knex.raw(query, [username || null, borough || null, bio || null, other_form_of_contact || null, id])
     const rawUpdatedUser = result.rows[0];
     return rawUpdatedUser ? new User(rawUpdatedUser) : null;
   };
