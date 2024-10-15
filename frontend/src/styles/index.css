@@ -61,6 +61,7 @@ header {
   background: transparent;
 }
 
+
 #logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -130,8 +131,51 @@ form {
   align-items: center;
 }
 
-/* .prompt_container p {
-  width: rem;
+#join_link {
+  font-style: italic;
+}
+
+.forum_container {
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* gap: 6rem; */
+}
+
+.form_container {
+  flex: 1;
+  padding-right: 7rem;
+}
+
+.post_container {
+  flex: 2;
+}
+
+#input {
+  padding-top: 0.56rem;
+}
+
+#label {
+  padding-left: 0.8rem;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.button_post,
+.button_filter {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* .form_popup {
+  display: none;
 } */
 
 /* desktop -> mobile resizing */
@@ -176,6 +220,10 @@ form {
 
   .home_container {
     flex-direction: column;
+  }
+
+  .problem_container {
+    padding-bottom: 4rem;
   }
 
 }

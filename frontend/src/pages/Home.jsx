@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="problem_container">
             <DELAY>
               <p className="special_home_problem">something!!!</p>
-              <NavLink className="body" to='/sign-up'> Join the cause</NavLink>
+              <NavLink id="join_link" className="body" to='/sign-up'> Join the cause</NavLink>
             </DELAY>
           </div>
         </div>

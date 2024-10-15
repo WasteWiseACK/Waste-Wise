@@ -13,6 +13,7 @@ import Solutions from './pages/Solutions'
 import FoodBank from './pages/FoodBanks';
 import Impact from './pages/Impact';
 import UserEditPage from './pages/UserEditPage';
+import Forum from './pages/Forum';
 
 export default function App() {
   const { setCurrentUser } = useContext(UserContext);
@@ -33,6 +34,7 @@ export default function App() {
         <Route path='/SOLUTIONS' element={<Solutions />} />
         <Route path='/IMPACT' element={<Impact />} />
         <Route path='/FOOD_BANK' element={<FoodBank />} />
+        <Route path='/FORUM' element={<Forum />} />
         <Route path='*' element={<NotFoundPage />} />
       </Routes>
     </main>
