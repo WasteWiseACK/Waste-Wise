@@ -1,3 +1,5 @@
+const knex = require('../db/knex');
+
 class Post {
   constructor({ id, title, body, user_id }) {
     this.id = id;
@@ -50,8 +52,11 @@ class Post {
     const post = new Post({ title, body, user_id });
     post.validate(); // Validate the post before saving
 
-    const query = `INSERT INTO posts (title, body, user_id)
-                   VALUES (?, ?, ?) RETURNING *`;
+    const query = `
+      INSERT INTO posts (title, body, user_id)
+      VALUES (?, ?, ?) 
+      RETURNING *
+    `;
     const result = await knex.raw(query, [post.title, post.body, post.user_id]);
     const rawPostData = result.rows[0]; // the newly created post
     return new Post(rawPostData);
@@ -69,6 +74,17 @@ class Post {
     const result = await knex.raw(query, [title, body, id])
     const rawUpdatedPost = result.rows[0];
     return rawUpdatedPost ? new Post(rawUpdatedPost) : null;
+  }
+
+  static async delete(id) {
+    const query = `
+      DELETE FROM posts 
+      WHERE id = ? 
+      RETURNING *
+      `
+      ;
+    const result = await knex.raw(query, [id]);
+    return result.rows[0] ? new Post(result.rows[0]) : null;
   }
 
   static async deleteAll() {
