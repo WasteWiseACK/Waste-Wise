@@ -53,11 +53,13 @@ app.patch('/api/users/:id/edit', checkAuthentication, userControllers.updateUser
 
 app.get('/api/posts', postControllers.listPosts);
 
-app.get('/api/posts/:postId', postControllers.showPost)
+
+app.get('/api/posts/:id', postControllers.showPost)
 app.get('/api/posts/user/:userId', postControllers.findByUserId)
-app.post('/api/posts/', checkAuthentication, postControllers.createPost);
-app.patch('/api/posts/:postId', checkAuthentication, postControllers.updatePost)
-// app.delete('/api/posts/:postId', checkAuthentication, postControllers.deletePost)
+app.post('/api/posts', checkAuthentication, postControllers.createPost);
+app.patch('/api/posts/:id', checkAuthentication, postControllers.updatePost)
+app.delete('/api/posts/:id', checkAuthentication, postControllers.deletePost)
+
 
 
 ///////////////////////////////
