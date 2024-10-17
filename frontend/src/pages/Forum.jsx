@@ -1,4 +1,5 @@
 import FilterPost from "../components/FilterForm"
+import ForumPost from "../components/Forum"
 import Post from "../components/Post"
 
 
@@ -10,9 +11,10 @@ const Forum = () => {
       <div className="forum_container">
         <FilterPost />
         <Post />
+        <ForumPost />
       </div>
     </section>
   )
 }
 
-export default Forum
+export default Forum;

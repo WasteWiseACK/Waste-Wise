@@ -28,6 +28,15 @@ exports.showPost = async (req, res) => {
   res.send(post)
 }
 
+exports.findByUserId = async (req, res) => {
+  const { userId } = req.params;
+
+  const post = await Post.findByUserId(userId);
+  if (!post) return res.sendStatus(404);
+
+  res.send(post)
+}
+
 exports.updatePost = async (req, res) => {
   const { id } = req.params; // Get post ID from URL parameters
   const { title, body } = req.body; // Get new title and body from request body
