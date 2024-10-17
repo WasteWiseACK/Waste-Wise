@@ -14,7 +14,10 @@ const checkAuthentication = require('./middleware/checkAuthentication');
 // controller imports
 const authControllers = require('./controllers/authControllers');
 const userControllers = require('./controllers/userControllers');
-const postControllers = require('./controllers/postControllers')
+const postControllers = require('./controllers/postControllers');
+const commentControllers = require('./controllers/commentsControllers');
+
+
 const app = express();
 
 // middleware
@@ -54,11 +57,22 @@ app.patch('/api/users/:id/edit', checkAuthentication, userControllers.updateUser
 app.get('/api/posts', postControllers.listPosts);
 
 
-app.get('/api/posts/:id', postControllers.showPost)
-app.get('/api/posts/user/:userId', postControllers.findByUserId)
+app.get('/api/posts/:id', postControllers.showPost);
+app.get('/api/posts/user/:userId', postControllers.findByUserId);
 app.post('/api/posts', checkAuthentication, postControllers.createPost);
-app.patch('/api/posts/:id', checkAuthentication, postControllers.updatePost)
-app.delete('/api/posts/:id', checkAuthentication, postControllers.deletePost)
+app.patch('/api/posts/:id', checkAuthentication, postControllers.updatePost);
+app.delete('/api/posts/:id', checkAuthentication, postControllers.deletePost);
+
+
+///////////////////////////////
+// Comment Route
+///////////////////////////////
+
+app.get('/api/comments', commentControllers.listComments);
+app.post('/api/comments', commentControllers.createComment);
+app.patch('/api/comments/:id', commentControllers.editComment);
+app.delete('/api/comments/:id', commentControllers.deleteComment);
+
 
 
 
