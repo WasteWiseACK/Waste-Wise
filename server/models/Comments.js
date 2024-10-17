@@ -1,35 +1,47 @@
 const knex = require('../db/knex');
 
 class Comment {
-  constructor({ id, post_id, content, user_id }) {
+  constructor(id, post_id, content, user_id) {
     this.id = id;
     this.post_id = post_id;
     this.content = content;
     this.user_id = user_id;
   };
   static async list() {
-    const query = `
-        SELECT *
-        FROM comments`;
-    const result = await knex.raw(query);
-    return result.row.map((rawCommentsData) => new Comment(rawCommentsData));
+    const result = await knex('comments');
+    return result.map((rawCommentsData) => new Comment(rawCommentsData));
   };
+
+  static async listByPostId(post_id) {
+    // Ensure postId is defined
+    if (!post_id) {
+      throw new Error('postId must be provided');
+    }
+
+    const result = await knex('comments').where('post_id', post_id); // Fetch comments directly using Knex
+
+    return result.map((rawCommentsData) => new Comment(rawCommentsData)); //maps the result
+  }
+
   static async find(id) {
-    const query = `
-        SELECT *
-        FROM comments
-        WHERE id = ?`;
+    const query = `SELECT * FROM comments WHERE id = ?`;
     const result = await knex.raw(query, [id]);
     const rawCommentData = result.rows[0];
-    return rawCommentData ? new Comment((rawCommentData)) : null;
+    return rawCommentData ? new Comment(rawCommentData) : null;
+  }
 
-  };
+
   static async create(post_id, content, user_id) {
+
     const query = `
-        INSERT INTO comments (post_id, content, user_id)
-        VALUES (?,?,?) RETURNING *`;
+    INSERT INTO comments (post_id, content, user_id)
+    VALUES (?, ?, ?) RETURNING *`;
+
     const result = await knex.raw(query, [post_id, content, user_id]);
-    const rawCommentData = result.rows[0];
+
+
+    // Access the returned comment data
+    const rawCommentData = result[0];
     return new Comment(rawCommentData);
 
   };
