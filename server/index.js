@@ -14,7 +14,10 @@ const checkAuthentication = require('./middleware/checkAuthentication');
 // controller imports
 const authControllers = require('./controllers/authControllers');
 const userControllers = require('./controllers/userControllers');
-const postControllers = require('./controllers/postControllers')
+const postControllers = require('./controllers/postControllers');
+const commentControllers = require('./controllers/commentsControllers');
+
+
 const app = express();
 
 // middleware
@@ -58,6 +61,15 @@ app.get('/api/posts/:id', postControllers.showPost)
 app.post('/api/posts', checkAuthentication, postControllers.createPost);
 app.patch('/api/posts/:id', checkAuthentication, postControllers.updatePost)
 app.delete('/api/posts/:id', checkAuthentication, postControllers.deletePost)
+
+
+///////////////////////////////
+// Comment Route
+///////////////////////////////
+
+app.get('/api/posts/:id/comments', commentControllers.listComments);
+app.post('/api/posts/:id/comments', commentControllers.createComment);
+
 
 
 

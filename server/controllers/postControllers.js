@@ -62,6 +62,7 @@ exports.deletePost = async (req, res) => {
     return res.status(404).json({ message: 'Post not found' });
   }
 
+  // checks if the post user is the same as the current user in session.
   if (post.user_id !== userId) return res.status(403).send('You are not authorized to delete this post');
 
   // Delete the post
