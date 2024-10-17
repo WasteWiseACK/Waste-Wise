@@ -28,13 +28,13 @@ function DisplayFoodBanks() {
         <div>
             <ul>
                 {(filteredFoodBanks.length > 0 ? filteredFoodBanks : initialFoodBanks).map((bank) => (
-                    <li key={bank.ct2010}>
-                        <div class="bank-container">
+                    <li key={bank.object_id}>
+                        <div className="bank-container">
                             <h3>{bank.food_scrap_drop_off_site}</h3>
-                            <p>{bank.location}</p>
+                            <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
                             <p>{bank.open_months}</p>
-                            <p>{bank.operation_day_hours}</p>
-                            <p>{bank.website}</p>
+                            <p>Hours of operation: {bank.operation_day_hours}</p>
+                            <p>Website: {bank.website}</p>
                         </div>
                     </li>
                 ))}

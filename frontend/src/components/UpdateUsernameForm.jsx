@@ -49,6 +49,7 @@ export default function UpdateUsernameForm({ currentUser, setCurrentUser }) {
 
     setCurrentUser(user);
     event.target.reset();
+    return navigate(`/users/${currentUser.id}`)
   };
 
   return <form onSubmit={handleSubmit} aria-labelledby="update-heading">
