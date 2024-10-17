@@ -33,6 +33,18 @@ function ForumPost() {
         }
     }
 
+    const handleDelete = async (postId) => {
+        const [data, error] = await fetchHandler(`/api/posts/${postId}`, {
+            method: 'DELETE',
+        });
+        if (data) {
+            setPosts((prevPosts) => prevPosts.filter(post => post.id !== postId)); // Remove the deleted post from the state
+        }
+        if (error) {
+            setError(error);
+        }
+    };
+
     useEffect(() => {
         fetchPosts();
     }, [posts]);
