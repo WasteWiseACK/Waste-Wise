@@ -73,7 +73,12 @@ app.post('/api/comments', commentControllers.createComment);
 app.patch('/api/comments/:id', commentControllers.editComment);
 app.delete('/api/comments/:id', commentControllers.deleteComment);
 
+///////////////////////////////
+// Like Route
+///////////////////////////////
 
+app.post('/api/posts/:post_id/like', checkAuthentication, likeControllers.createLike);
+app.delete('/api/posts/:post_id/like', checkAuthentication, likeControllers.removeLike);
 
 
 ///////////////////////////////
