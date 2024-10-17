@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { fetchHandler } from "../utils/fetchingUtils";
+import { fetchHandler, deleteOptions } from "../utils/fetchingUtils";
 import CurrentUserContext from "../contexts/current-user-context";
 
 
@@ -7,6 +7,21 @@ function ForumPost() {
     const [posts, setPosts] = useState([]);
     const [error, setError] = useState('');
     const { currentUser } = useContext(CurrentUserContext);
+
+    const handleDelete = async (postId) => {
+
+        const deleteUrl = `/api/posts/${postId}`
+
+        const [erase, error] = await fetchHandler(deleteUrl, deleteOptions)
+        if (erase) {
+            console.log('Has been deleted')
+            fetchPosts()
+        }
+        if (error) {
+            console.log('Error', error)
+            setError(error)
+        }
+    }
 
     const fetchPosts = async () => {
         const [data, error] = await fetchHandler('/api/posts');
@@ -40,7 +55,7 @@ function ForumPost() {
             <ul>
                 {posts.map((post) => (
                     <li key={post.id}>
-                        <div><h3>{post.username}</h3> {post.user_id === currentUser.id && (
+                        <div><h3>{post.username}</h3>{post.user_id === currentUser.id && (
                             <button onClick={() => handleDelete(post.id)}>Delete Post</button>
                         )}</div>
                         <div className="postInfo">

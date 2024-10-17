@@ -1,12 +1,12 @@
-import { useContext, useEffect, useState } from "react";
-import CurrentUserContext from "../contexts/current-user-context";
-import { fetchHandler } from "../utils/fetchingUtils";
+// import { useContext, useEffect, useState } from "react";
+// import CurrentUserContext from "../contexts/current-user-context";
+// import { fetchHandler } from "../utils/fetchingUtils";
 
-function UserPosts() {
-    const [posts, setPosts] = useState([]);
-    const [error, setError] = useState('');
-    const { currentUser } = useContext(CurrentUserContext);
-    console.log(currentUser)
+// function UserPosts() {
+//     const [posts, setPosts] = useState([]);
+//     const [error, setError] = useState('');
+//     const { currentUser } = useContext(CurrentUserContext);
+//     console.log(currentUser)
 
     const getAllUserPost = async (id) => {
         const [posts, error] = await fetchHandler(`/api/posts/user/${id}`);
@@ -50,4 +50,5 @@ function UserPosts() {
 }
 
 
-export default UserPosts;
+
+// export default UserPosts;
