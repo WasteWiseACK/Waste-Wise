@@ -18,9 +18,21 @@ function ForumPost() {
         }
     }
 
+    const handleDelete = async (postId) => {
+        const [data, error] = await fetchHandler(`/api/posts/${postId}`, {
+            method: 'DELETE',
+        });
+        if (data) {
+            setPosts((prevPosts) => prevPosts.filter(post => post.id !== postId)); // Remove the deleted post from the state
+        }
+        if (error) {
+            setError(error);
+        }
+    };
+
     useEffect(() => {
         fetchPosts();
-    }, []);
+    }, [posts]);
 
 
     return (
@@ -28,8 +40,8 @@ function ForumPost() {
             <ul>
                 {posts.map((post) => (
                     <li key={post.id}>
-                        <div><h3>{post.username}</h3>{post.user_id === currentUser.id && (
-                            <button>Delete Post</button>
+                        <div><h3>{post.username}</h3> {post.user_id === currentUser.id && (
+                            <button onClick={() => handleDelete(post.id)}>Delete Post</button>
                         )}</div>
                         <div className="postInfo">
                             <p>{post.title}</p>
