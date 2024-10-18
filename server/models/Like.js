@@ -12,7 +12,7 @@ class Like {
   static async addLike(post_id, user_id) {
     try {
       const query = `
-     INSERT INTO likes
+     INSERT INTO liked_posts
      (post_id, user_id) VALUES(?, ?)
      RETURNING *
      `;
@@ -29,7 +29,7 @@ class Like {
   static async deleteLike(post_id, user_id) {
     try {
       const query = `
-     DELETE FROM likes
+     DELETE FROM liked_posts
      WHERE post_id = ?
      AND user_id = ?
      RETURNING *
@@ -47,7 +47,7 @@ class Like {
   static async findLike(post_id, user_id) {
     try {
       const query = `
-     SELECT * FROM likes
+     SELECT * FROM liked_posts
      WHERE post_id = ?
      AND user_id = ?
      `;

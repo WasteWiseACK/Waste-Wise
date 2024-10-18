@@ -16,7 +16,7 @@ const authControllers = require('./controllers/authControllers');
 const userControllers = require('./controllers/userControllers');
 const postControllers = require('./controllers/postControllers');
 const commentControllers = require('./controllers/commentsControllers');
-
+const likeControllers = require('./controllers/likeControllers');
 
 const app = express();
 
