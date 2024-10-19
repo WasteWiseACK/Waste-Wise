@@ -20,7 +20,14 @@ class Comment {
 
     const result = await knex('comments').where('post_id', post_id); // Fetch comments directly using Knex
 
-    return result.map((rawCommentsData) => new Comment(rawCommentsData)); //maps the result
+    return result.map((rawCommentsData) => {
+      return {
+        id: rawCommentsData.id,
+        post_id: rawCommentsData.post_id,
+        content: rawCommentsData.content,
+        user_id: rawCommentsData.user_id
+      };
+    });; //maps the result
   }
 
   static async find(id) {
