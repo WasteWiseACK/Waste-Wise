@@ -68,7 +68,8 @@ app.delete('/api/posts/:id', checkAuthentication, postControllers.deletePost);
 // Comment Route
 ///////////////////////////////
 
-app.get('/api/comments', commentControllers.listComments);
+app.get('/api/comments', commentControllers.listAllComments);
+app.get('/api/comments/posts/:id', commentControllers.listComments);
 app.post('/api/comments', commentControllers.createComment);
 app.patch('/api/comments/:id', commentControllers.editComment);
 app.delete('/api/comments/:id', commentControllers.deleteComment);
