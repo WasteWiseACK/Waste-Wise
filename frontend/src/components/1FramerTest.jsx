@@ -13,7 +13,7 @@ const TEST = ({ children }) => {
       // alignItems: "center",
       position: "relative",
       overflow: "hidden",
-      width: "fit-content" || "100%"
+      width: "100%"
     }}>
       <motion.div
         variants={{

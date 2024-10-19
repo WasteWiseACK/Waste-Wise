@@ -23,20 +23,18 @@ export default function App() {
 
   return <>
     <SiteHeadingAndNav />
-    <main>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/login' element={<LoginPage />} />
-        <Route path='/sign-up' element={<SignUpPage />} />
-        <Route path='/users' element={<UsersPage />} />
-        <Route path='/users/:id' element={<UserPage />} />
-        <Route path='/users/:id/edit' element={<UserEditPage />} />
-        <Route path='/SOLUTIONS' element={<Solutions />} />
-        <Route path='/IMPACT' element={<Impact />} />
-        <Route path='/FOOD_BANK' element={<FoodBank />} />
-        <Route path='/FORUM' element={<Forum />} />
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
-    </main>
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/login' element={<LoginPage />} />
+      <Route path='/sign-up' element={<SignUpPage />} />
+      <Route path='/users' element={<UsersPage />} />
+      <Route path='/users/:id' element={<UserPage />} />
+      <Route path='/users/:id/edit' element={<UserEditPage />} />
+      <Route path='/SOLUTIONS' element={<Solutions />} />
+      <Route path='/IMPACT' element={<Impact />} />
+      <Route path='/FOOD_BANK' element={<FoodBank />} />
+      <Route path='/FORUM' element={<Forum />} />
+      <Route path='*' element={<NotFoundPage />} />
+    </Routes>
   </>;
 }
