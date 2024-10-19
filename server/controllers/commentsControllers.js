@@ -16,7 +16,7 @@ exports.listAllComments = async (req, res) => {
 }
 
 exports.listComments = async (req, res) => {
-  const { postId } = req.body;
+  const postId = req.params.id;
   const comments = await Comment.listByPostId(postId);
   res.send(comments)
 }

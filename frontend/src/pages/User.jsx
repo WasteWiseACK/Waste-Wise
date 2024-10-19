@@ -5,7 +5,7 @@ import { getUser } from "../adapters/user-adapter";
 import { logUserOut } from "../adapters/auth-adapter";
 import UpdateUsernameForm from "../components/UpdateUsernameForm";
 import DisplayUser from "../components/DisplayUserInfo";
-// import UserPosts from "../components/UserPosts";
+import UserPosts from "../components/UserPosts";
 
 export default function UserPage() {
   // const navigate = useNavigate();
@@ -45,7 +45,7 @@ export default function UserPage() {
     <p>If the user had any data, here it would be</p>
     <p>Fake Bio or something</p> */}
     <DisplayUser />
-    {/* <UserPosts /> */}
+    <UserPosts />
     {/* {
       !!isCurrentUserProfile
       && <UpdateUsernameForm currentUser={currentUser} setCurrentUser={setCurrentUser} />
