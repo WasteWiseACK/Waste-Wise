@@ -9,27 +9,23 @@ function UserPosts() {
     console.log(currentUser)
 
     const getAllUserPost = async (id) => {
-        const [posts, error] = await fetchHandler(`/api/posts/user/${id}`);
+        const [posts, error] = await fetchHandler(`api/posts/user/${id}`);
         if (error) console.log(error);
-        return posts || error;
+        return posts || [];
     }
     const fetchUserPost = async () => {
-        if (!currentUser || !currentUser.id) {
-            console.log("No current user available");
-            return;
-        }
-        const data = await getAllUserPost(currentUser.id);
+        const [data, error] = await getAllUserPost(currentUser.id);
         if (data) {
             setPosts(data)
-        } else {
-            setError('error')
+        } if (error) {
+            setError(error)
         }
     }
     useEffect(() => {
-        if (currentUser) {
-            fetchUserPost();
-        }
-    }, [currentUser]);
+        fetchUserPost();
+    }, []);
+    console.log(posts);
+
     return (
         <div>
             <ul>
@@ -47,7 +43,5 @@ function UserPosts() {
         </div >
     )
 }
-
-
 
 export default UserPosts;

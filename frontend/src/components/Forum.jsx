@@ -15,6 +15,7 @@ function ForumPost() {
         if (error) console.error(error);
     };
 
+
     // Delete post
     const handleDelete = async (postId) => {
         const deleteUrl = `/api/posts/${postId}`;
