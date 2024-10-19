@@ -8,25 +8,7 @@ function ForumPost() {
     const [currentActivePost, setCurrentActivePost] = useState(null);
     const { currentUser } = useContext(CurrentUserContext);
 
-<<<<<<< HEAD
-    // const handleDelete = async (postId) => {
-
-    //     const deleteUrl = `/api/posts/${postId}`
-
-    //     const [erase, error] = await fetchHandler(deleteUrl, deleteOptions)
-    //     if (erase) {
-    //         console.log('Has been deleted')
-    //         fetchPosts()
-    //     }
-    //     if (error) {
-    //         console.log('Error', error)
-    //         setError(error)
-    //     }
-    // }
-
-=======
     // Fetch posts
->>>>>>> c6893173aa4d49392c095892e9228dda218b02f1
     const fetchPosts = async () => {
         const [data, error] = await fetchHandler('/api/posts');
         if (data) setPosts(data);
