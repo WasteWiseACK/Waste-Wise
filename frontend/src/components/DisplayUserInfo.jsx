@@ -1,6 +1,7 @@
 import { useEffect, useContext, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import CurrentUserContext from "../contexts/current-user-context";
+import { logUserOut } from "../adapters/auth-adapter";
 import { getUser } from "../adapters/user-adapter";
 
 function DisplayUser() {

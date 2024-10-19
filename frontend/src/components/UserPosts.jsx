@@ -31,11 +31,10 @@ function UserPosts() {
             <ul>
                 {posts.map((post) => (
                     <li key={post.id}>
-                        <div><h3>{post.username}</h3>{post.user_id === currentUser.id && (
+                        <div><h3>{post.title}</h3>{post.user_id === currentUser.id && (
                             <button>Delete Post</button>
                         )}</div>
                         <div className="postInfo">
-                            <p>{post.title}</p>
                             <p>{post.body}</p>
                         </div>
                     </li>
@@ -44,6 +43,5 @@ function UserPosts() {
         </div >
     )
 }
-
 
 export default UserPosts;
