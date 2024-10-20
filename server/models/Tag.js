@@ -30,7 +30,7 @@ class Tag {
   }
 
   // creates post_tags
-  static async create(id, post_id, tag_id) {
+  static async addTag(id, post_id, tag_id) {
     const query = `
       INSERT INTO post_tags (id, post_id, tag_id) 
       VALUES (?, ?, ?)
@@ -43,7 +43,7 @@ class Tag {
   }
 
   //deleted post_tags 
-  static async delete(id) {
+  static async deleteTag(id) {
     const query = `
     DELETE FROM post_tags
     WHERE id = ?
