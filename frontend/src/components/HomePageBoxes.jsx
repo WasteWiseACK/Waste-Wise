@@ -24,7 +24,7 @@ const Boxes = ({ children }) => {
         }}
         transition={{
           duration: 1,
-          ease: "easeIn",
+          ease: "easeOut",
           times: [0, 1]
         }}
         style={{
