@@ -7,27 +7,32 @@ function UserPosts() {
     const [error, setError] = useState('');
     const { currentUser } = useContext(CurrentUserContext);
     console.log(currentUser)
-
-    const getAllUserPost = async (id) => {
-        const [posts, error] = await fetchHandler(`api/posts/user/${id}`);
-        if (error) console.log(error);
-        return posts || [];
+    if (currentUser) {
+        console.log(currentUser.id)
     }
+    const getAllUserPost = async (id) => {
+        const [posts, error] = await fetchHandler(`/api/posts/user/${id}`);
+        if (error) console.log(error);
+        return posts;
+    }
+
     const fetchUserPost = async () => {
-        const [data, error] = await getAllUserPost(currentUser.id);
+        const data = await getAllUserPost(currentUser.id);
         if (data) {
+            console.log("Updated Posts:", data)
             setPosts(data)
-        } if (error) {
-            setError(error)
         }
     }
     useEffect(() => {
-        fetchUserPost();
-    }, []);
-    console.log(posts);
+        if (currentUser) {
+            fetchUserPost(currentUser.id);
+        }
+    }, [currentUser]);
+    console.log("Posts Type:", typeof posts);
 
     return (
         <div>
+            {error && <p>{error}</p>}
             <ul>
                 {posts.map((post) => (
                     <li key={post.id}>
