@@ -17,7 +17,7 @@ const userControllers = require('./controllers/userControllers');
 const postControllers = require('./controllers/postControllers');
 const commentControllers = require('./controllers/commentsControllers');
 const likeControllers = require('./controllers/likeControllers');
-
+const tagControllers = require('./controllers/tagControllers');
 const app = express();
 
 // middleware
@@ -81,6 +81,12 @@ app.delete('/api/comments/:id', commentControllers.deleteComment);
 app.post('/api/posts/:post_id/like', checkAuthentication, likeControllers.createLike);
 app.delete('/api/posts/:post_id/like', checkAuthentication, likeControllers.removeLike);
 
+///////////////////////////////
+// Tag Route
+///////////////////////////////
+
+app.post('/api/posts/:post_id/tag', checkAuthentication, tagControllers.addTag);
+app.delete('/api/tag/:id', checkAuthentication, tagControllers.removeTag);
 
 ///////////////////////////////
 // Fallback Route
