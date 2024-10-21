@@ -47,23 +47,16 @@ class Like {
   static async findLike(post_id, user_id) {
     try {
       const query = `
-     SELECT * FROM liked_posts
-     WHERE post_id = ?
-     AND user_id = ?
-     `;
+      SELECT * FROM liked_posts
+      WHERE post_id = ?
+      AND user_id = ?
+      `;
       const result = await knex.raw(query, [post_id, user_id]);
-      return result.rows.map((findLikeData) => new Like(findLikeData))
-
-
+      return result.rows.length ? new Like(result.rows[0]) : null; // Return single instance or null
     } catch (error) {
-      throw new Error(`Unable to find like: ${error.message}`)
+      throw new Error(`Unable to find like: ${error.message}`);
     }
-
-
   }
-
-
 }
-
 
 module.exports = Like;
