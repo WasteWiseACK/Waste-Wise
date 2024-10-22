@@ -13,6 +13,19 @@
   }
 }
 
+
+.C02Map {
+  padding-top: 5rem;
+}
+
+
+.leaflet-container {
+  height: 70vh;
+  width: 100vh;
+
+}
+
+
 /* .title, .header1 and .header2 use regular Helvetica font, all split in
 varying sizes*/
 
