@@ -1,4 +1,4 @@
-
+import LinkPreview from "../components/LinkPreview"
 
 const Solutions = () => {
   return (
@@ -14,45 +14,56 @@ const Solutions = () => {
           </div>
 
           <p className="body">
-            <span className="header2">Composting </span>is a useful method for handling food-waste because it produces nutrient-rich compost that can improve soil from food scraps, yard trash, and other biodegradable items.
-            Establishing community composting programs in residences, workplaces, and educational institutions might motivate people to contribute to the reduction of food waste.
-            In addition to reducing the amount of trash dumped in landfills, composting also reduces greenhouse gas emissions from food decay.
-            Additionally, the compost that is produced can be applied to farms, gardens, and landscaping projects, which will support sustainable agricultural methods and create healthier plants.
-            <div id="solution_underline" className="underline" />
-            <span className="header2">Campaigns</span>  for consumer education and awareness are essential to modifying consumer behavior around food waste.
-            These programs can take many different forms, such as seminars, social media campaigns, and educational materials that educate individuals on smart meal planning, safe food storage methods, and inventive ways to repurpose leftovers.
-            Providing people and families with the necessary knowledge to make educated decisions, these kinds of programs can aid in lowering family food waste.
-            Promoting habits like recycling food scraps, knowing expiration dates, and only purchasing what is necessary will cause a cultural change towards more sustainable consumption patterns, which will ultimately reduce food waste in communities.
+            <span className="header2">Composting</span> converts food scraps, yard waste, and other biodegradable materials into nutrient-rich compost that enriches soil. It reduces landfill waste and greenhouse gas emissions, and can be implemented in communities, workplaces, and schools.
+            The resulting compost supports sustainable agriculture and healthier plants.
+            <span id="solution_underline" className="underline" />
+            <span className="header2">Campaigns</span> education campaigns are crucial for changing behaviors around food waste. These initiatives, including seminars, social media campaigns, and educational materials, teach meal planning, food storage, and creative leftover use.
+            By encouraging recycling, understanding expiration dates, and mindful purchasing, these programs promote sustainable consumption and help reduce food waste in communities.
           </p>
           <div className="solution_items">
             <p className="body">
-              <span className="header2">Food recovery</span>  initiatives are essential in combating food waste because they save excess food from grocery shops, restaurants, farms, and other establishments before it ends up in a landfill.
-              Food banks, shelters, community kitchens, and other nonprofits in the area that can provide the food collected to those in need are often partners in these programs, which connect food donors with food donors.
-              Through this redistribution, food recovery projects help communities deal with hunger and food insecurity while simultaneously diverting a substantial amount of food from trash.
-              Coordination, planning, and occasionally legal protections for food donors are necessary for the implementation of these initiatives, although the social and environmental advantages can be significant.
+              <span className="header2">Food recovery</span> initiatives prevent excess food from grocery stores, restaurants, and farms from going to landfills by redirecting it to food banks, shelters, and nonprofits.
+              This approach addresses hunger, reduces food waste, and requires coordination, planning, and legal protections for donors, offering significant social and environmental benefits.
             </p>
           </div>
-
-
         </div>
 
 
+        <div className="opportunities_container">
+          <div className="heading_oppor">
+            <h1 className="header1">OPPORTUNITIES</h1>
+            <caption className="body">ways to join the cause</caption>
+          </div>
 
-        <h1 className="header1">OPPORTUNITIES</h1>
 
-        <ul>
-          <li><a href="https://www.volunteermatch.org/">Volunteer Match</a></li>
-          <li><a href="https://www.boulderfoodrescue.org/food-rescue-alliance/">Food Rescue Alliance</a></li>
-        </ul>
+
+          <div className="preview_links_container">
+            <LinkPreview>
+              https://www.volunteermatch.org/
+            </LinkPreview>
+            <LinkPreview>
+              https://www.boulderfoodrescue.org/food-rescue-alliance/
+            </LinkPreview>
+          </div>
+        </div>
+
 
         <h2 className="header2">More Info.</h2>
 
-        <ul>
-          <li><a href="https://www.foodwastealliance.org/">Food Waste Alliance</a></li>
-          <li><a href="https://www.feedingamerica.org/">Feeding America</a></li>
-          <li><a href="https://www.lovefoodhatewaste.com/">Love Food Hate Waste</a></li>
-          <li><a href="https://www.epa.gov/sustainable-management-food/food-too-good-waste-implementation-guide-and-toolkit">United States Environmental Protection Agency</a></li>
-        </ul>
+
+        <LinkPreview>
+          https://www.foodwastealliance.org/
+        </LinkPreview>
+        <LinkPreview>
+          https://www.feedingamerica.org/
+        </LinkPreview>
+        <LinkPreview>
+          https://www.lovefoodhatewaste.com/
+        </LinkPreview>
+        <LinkPreview>
+          https://www.epa.gov/sustainable-management-food/food-too-good-waste-implementation-guide-and-toolkit
+        </LinkPreview>
+
       </main>
 
 
@@ -62,3 +73,5 @@ const Solutions = () => {
 }
 
 export default Solutions
+
+
