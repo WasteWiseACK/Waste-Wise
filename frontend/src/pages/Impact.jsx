@@ -2,6 +2,8 @@ import { div } from 'framer-motion/client';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, TileLayer } from "react-leaflet";
 
+// Heat map function missing
+
 const Impact = () => {
   return (
     <div className='C02Map'>
