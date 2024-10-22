@@ -1,13 +1,8 @@
-import { useContext, useEffect, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
-import CurrentUserContext from "../contexts/current-user-context";
-import { getUser } from "../adapters/user-adapter";
-import { logUserOut } from "../adapters/auth-adapter";
-import UpdateUsernameForm from "../components/UpdateUsernameForm";
 import DisplayUser from "../components/DisplayUserInfo";
 import UserPosts from "../components/UserPosts";
+import LikedPosts from "../components/UsersLikedPosts";
 
-export default function UserPage() {
+function UserPage() {
   // const navigate = useNavigate();
   // const { currentUser, setCurrentUser } = useContext(CurrentUserContext);
   // const [userProfile, setUserProfile] = useState(null);
@@ -40,15 +35,12 @@ export default function UserPage() {
   // const profileUsername = isCurrentUserProfile ? currentUser.username : userProfile.username;
 
   return <>
-    {/* <h1>{profileUsername}</h1>
-    {!!isCurrentUserProfile && <button onClick={handleLogout}>Log Out</button>}
-    <p>If the user had any data, here it would be</p>
-    <p>Fake Bio or something</p> */}
     <DisplayUser />
+    {/* <button>Your Posts</button>
+    <button>Liked Posts</button> */}
+    {/* <LikedPosts /> */}
     <UserPosts />
-    {/* {
-      !!isCurrentUserProfile
-      && <UpdateUsernameForm currentUser={currentUser} setCurrentUser={setCurrentUser} />
-    } */}
   </>;
 }
+
+export default UserPage;

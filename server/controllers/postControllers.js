@@ -81,4 +81,23 @@ exports.deletePost = async (req, res) => {
 
 }
 
+exports.getLikedPosts = async (req, res) => {
+  const { userId } = req.session;
+
+  try {
+    // Fetch liked posts for the current user
+    const likedPosts = await Post.findLikedByUserId(userId);
+
+    // If no liked posts, send an empty array
+    if (likedPosts.length === 0) {
+      return res.status(200).send([]);
+    }
+
+    // Send the liked posts as the response
+    return res.status(200).send(likedPosts);
+  } catch (error) {
+
+    return res.status(500).send({ error: error.message });
+  }
+};
 

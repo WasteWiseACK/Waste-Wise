@@ -5,6 +5,7 @@ import { fetchHandler, deleteOptions } from "../utils/fetchingUtils";
 function UserPosts() {
     const [posts, setPosts] = useState([]);
     const [error, setError] = useState('');
+    const [showLikedPosts, setShowLikedPosts] = useState(false);
     const { currentUser } = useContext(CurrentUserContext);
     console.log(currentUser)
     if (currentUser) {
@@ -29,6 +30,15 @@ function UserPosts() {
             return [];
         }
     };
+    const fetchLikedPosts = async () => {
+        const [data, error] = await fetchHandler('/api/liked-posts');
+        if (data) {
+            setPosts(data);
+        }
+        if (error) {
+            console.error(error);
+        }
+    };
     // Delete post
     const handleDelete = async (postId) => {
         const deleteUrl = `/api/posts/${postId}`;
@@ -39,31 +49,60 @@ function UserPosts() {
 
     useEffect(() => {
         if (currentUser) {
-            fetchUserPost(currentUser.id);
+            if (showLikedPosts) {
+                fetchLikedPosts();
+            } else {
+                fetchUserPost();
+            }
         }
-    }, [currentUser]);
+    }, [currentUser, showLikedPosts]);
     console.log("Posts Type:", typeof posts);
 
     return (
         <div>
             {error && <p>{error}</p>}
-            {posts.length === 0 ? (
-                <p>No posts to display.</p>
-            ) : (
-                <ul>
-                    {posts.map((post) => (
+            <button onClick={() => setShowLikedPosts(false)}>My Posts</button>
+            <button onClick={() => setShowLikedPosts(true)}>Liked Posts</button>
+            <ul>
+                {posts.length === 0 ? (
+                    <p>{showLikedPosts ? "You haven't liked any posts yet." : "You haven't created any posts yet."}</p>
+                ) : (
+                    posts.map((post) => (
                         <li key={post.id}>
-                            <div><h3>{post.title}</h3>{post.user_id === currentUser.id && (
-                                <button onClick={() => handleDelete(post.id)}>Delete Post</button>
-                            )}</div>
+                            <div>
+                                <h3>{post.title}</h3>
+                                {post.user_id === currentUser.id && (
+                                    <button onClick={() => handleDelete(post.id)}>Delete Post</button>
+                                )}
+                            </div>
                             <div className="postInfo">
                                 <p>{post.body}</p>
                             </div>
                         </li>
-                    ))}
-                </ul>
-            )}
-        </div >
+                    ))
+                )}
+            </ul>
+        </div>
+
+        // <div>
+        //     {error && <p>{error}</p>}
+        //     {posts.length === 0 ? (
+        //         <p>No posts to display.</p>
+        //     ) : (
+        //         <ul>
+        //             {posts.map((post) => (
+        //                 <li key={post.id}>
+        //                     <div><h3>{post.title}</h3>{post.user_id === currentUser.id && (
+        //                         <button onClick={() => handleDelete(post.id)}>Delete Post</button>
+        //                     )}</div>
+        //                     <div className="postInfo">
+        //                         <p>{post.body}</p>
+        //                     </div>
+        //                 </li>
+        //             ))}
+        //         </ul>
+        //     )}
+        // </div >
     )
 }
 
