@@ -335,6 +335,11 @@ form {
   margin-bottom: 0;
 }
 
+.scroll_for_more {
+  display: flex;
+  align-items: center;
+}
+
 .opportunities_container {
   margin: 10rem 0 15rem 0;
 }
