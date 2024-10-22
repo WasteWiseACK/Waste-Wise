@@ -44,7 +44,7 @@ function ForumPost() {
     useEffect(() => {
         fetchPosts();
     }, [posts]);
-
+    console.log(posts)
     console.log(`currentactivepostid: ${currentActivePost}`)
 
     return (
@@ -53,13 +53,14 @@ function ForumPost() {
                 {posts.map((post) => (
                     <li key={post.id}>
                         <div>
-                            <h3>{post.username}</h3>
+                            <h3>{post.title}</h3>
                             {currentUser && post.user_id === currentUser.id && (
                                 <button onClick={() => handleDelete(post.id)}>Delete Post</button>
                             )}
                         </div>
                         <div className="postInfo">
-                            <p>{post.title}</p>
+                            <p>Posted by: {post.username}</p>
+                            <p>Posted on: {post.created_at}</p>
                             <p>{post.body}</p>
                         </div>
                         <div>
