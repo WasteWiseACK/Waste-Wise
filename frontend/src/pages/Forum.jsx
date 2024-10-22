@@ -1,6 +1,6 @@
 import FilterPost from "../components/FilterForm"
 import ForumPost from "../components/Forum"
-import Post from "../components/Post"
+// import Post from "../components/Post"
 
 
 const Forum = () => {
@@ -10,7 +10,7 @@ const Forum = () => {
     <section className="container">
       <div className="forum_container">
         <FilterPost />
-        <Post />
+        {/* <Post /> */}
         <ForumPost />
       </div>
     </section>

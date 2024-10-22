@@ -1,12 +1,13 @@
 const knex = require('../db/knex');
 
 class Post {
-  constructor({ id, title, body, user_id, username }) {
+  constructor({ id, title, body, user_id, username, likedByCurrentUser }) {
     this.id = id;
     this.title = title;
     this.body = body;
     this.user_id = user_id;
     this.username = username;
+    this.likedByCurrentUser = likedByCurrentUser;
 
   }
 
@@ -23,19 +24,21 @@ class Post {
 
 
   //Fetches ALL posts from the post table
-  static async list() {
+  static async list(user_id = null) {
     const query = `
     SELECT DISTINCT 
-  posts.id AS id, 
-  posts.title, 
-  posts.body, 
-  posts.user_id, 
-  users.username
+    posts.id AS id, 
+    posts.title, 
+    posts.body, 
+    posts.user_id, 
+    users.username,
+    COALESCE(liked_posts.user_id IS NOT NULL, false) AS likedByCurrentUser
 FROM posts 
 JOIN users ON posts.user_id = users.id
+LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id = ?
   `;
 
-    const result = await knex.raw(query);
+    const result = await knex.raw(query, [user_id]);
     return result.rows.map((rawPostData) => new Post(rawPostData));
   }
 
