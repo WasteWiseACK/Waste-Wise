@@ -62,7 +62,7 @@ app.get('/api/posts/user/:userId', postControllers.findByUserId);
 app.post('/api/posts', checkAuthentication, postControllers.createPost);
 app.patch('/api/posts/:id', checkAuthentication, postControllers.updatePost);
 app.delete('/api/posts/:id', checkAuthentication, postControllers.deletePost);
-
+app.get('/api/liked-posts', checkAuthentication, postControllers.getLikedPosts)
 
 ///////////////////////////////
 // Comment Route

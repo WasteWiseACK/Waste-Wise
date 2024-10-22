@@ -106,7 +106,19 @@ LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id 
     return knex('posts').del()
   }
 
+  static async findLikedByUserId(user_id) {
+    const query = `
+      SELECT posts.id AS id, posts.title, posts.body, posts.user_id, users.username
+      FROM liked_posts
+      JOIN posts ON liked_posts.post_id = posts.id
+      JOIN users ON posts.user_id = users.id
+      WHERE liked_posts.user_id = ?
+    `;
+
+    const result = await knex.raw(query, [user_id]);
+    return result.rows.map((rawPostData) => new Post(rawPostData));
+  }
+
+
 }
-
-
 module.exports = Post;
