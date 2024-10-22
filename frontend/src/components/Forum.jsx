@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import { fetchHandler, deleteOptions } from "../utils/fetchingUtils";
+import { fetchHandler, deleteOptions, getPostOptions } from "../utils/fetchingUtils";
 import CurrentUserContext from "../contexts/current-user-context";
 import MakeAComment from "./MakeAComment";
 import Comments from "./Comment";
@@ -11,7 +11,7 @@ function ForumPost() {
     // Fetch posts
     const fetchPosts = async () => {
         const [data, error] = await fetchHandler('/api/posts');
-        if (data) setPosts(data);
+        if (data) { setPosts(data) };
         if (error) console.error(error);
     };
 
@@ -24,6 +24,18 @@ function ForumPost() {
         if (error) console.error(error);
     };
 
+    const handleLike = async (postId, likedByCurrentUser) => {
+        const postUrl = `/api/posts/${postId}/likes/toggle`
+        const [data, error] = await fetchHandler(postUrl, getPostOptions({}));
+        if (data) {
+            console.log(data);
+            setPosts(posts.map(post =>
+                post.id === postId ? { ...post, likedByCurrentUser: !likedByCurrentUser } : post
+            ));
+        }
+        if (error) console.error(error);
+    }
+
     // Toggle current post for comment visibility
     const toggleCurrentPost = (postId) => {
         setCurrentActivePost(currentActivePost === postId ? null : postId);
@@ -31,7 +43,7 @@ function ForumPost() {
 
     useEffect(() => {
         fetchPosts();
-    }, []);
+    }, [posts]);
 
     console.log(`currentactivepostid: ${currentActivePost}`)
 
@@ -52,7 +64,9 @@ function ForumPost() {
                         </div>
                         <div>
                             <button onClick={() => toggleCurrentPost(post.id)}>Comment</button>
-                            <button>Like</button>
+                            <button onClick={() => handleLike(post.id, post.likedByCurrentUser)}>
+                                {post.likedByCurrentUser ? "Unlike" : "Like"}
+                            </button>
                         </div>
                         {currentActivePost === post.id && (
                             <>

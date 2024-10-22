@@ -80,6 +80,7 @@ app.delete('/api/comments/:id', commentControllers.deleteComment);
 
 app.post('/api/posts/:post_id/like', checkAuthentication, likeControllers.createLike);
 app.delete('/api/posts/:post_id/like', checkAuthentication, likeControllers.removeLike);
+app.post('/api/posts/:post_id/likes/toggle', checkAuthentication, likeControllers.toggleLike)
 
 
 ///////////////////////////////
