@@ -231,7 +231,7 @@ form {
 
 .prompt_container {
   position: relative;
-  flex: 2
+  flex: 2;
 }
 
 .problem_container {
@@ -486,16 +486,22 @@ form {
   margin-bottom: 0;
 }
 
-.fade-out-gradient {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100px;
-  /* Adjust to control the height of the gradient */
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
-  pointer-events: none;
-  /* Ensure it doesn't interfere with scrolling */
+.signup_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.title_description_about {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  gap: 8rem;
+  padding-bottom: 10rem;
 }
 
 /* desktop -> mobile resizing */

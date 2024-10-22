@@ -27,8 +27,8 @@ export default function HomePage() {
                 </Boxes>
                 <TEST>
                   <p className="header1">
-                    133 billion lbs of food yearly
-                    14.1% of methane emissions
+                    133 billion pounds
+                    14.1% methane emissions
 
                   </p>
                 </TEST>
