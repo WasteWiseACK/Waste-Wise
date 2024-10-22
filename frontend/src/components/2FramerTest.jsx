@@ -13,7 +13,7 @@ const DELAY = ({ children }) => {
       // alignItems: "center",
       position: "relative",
       overflow: "hidden",
-      width: "fit-content" || "100%"
+      // width: "fit-content" || "100%"
     }}>
       <motion.div
         variants={{
@@ -22,7 +22,7 @@ const DELAY = ({ children }) => {
         }}
         initial="hidden"
         animate="visible"
-        transition={{ duration: 1, delay: 1 }}
+        transition={{ duration: 0.8, delay: 1 }}
       >
         {children}
       </motion.div>

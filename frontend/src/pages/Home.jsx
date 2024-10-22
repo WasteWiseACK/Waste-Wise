@@ -26,7 +26,11 @@ export default function HomePage() {
                   <p>Waste Wise</p>
                 </Boxes>
                 <TEST>
-                  <p className="header1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis fugiat deleniti culpa</p>
+                  <p className="header1">
+                    133 billion lbs of food yearly
+                    14.1% of methane emissions
+
+                  </p>
                 </TEST>
 
               </div>

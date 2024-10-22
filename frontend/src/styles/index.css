@@ -3,6 +3,16 @@
   src: url(../fonts/4215-font.otf);
 }
 
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 /* .title, .header1 and .header2 use regular Helvetica font, all split in
 varying sizes*/
 
@@ -196,6 +206,7 @@ form {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  gap: 15rem;
 }
 
 .our_mission_container {
@@ -220,6 +231,11 @@ form {
 
 .prompt_container {
   position: relative;
+  flex: 2
+}
+
+.problem_container {
+  flex: 1;
 }
 
 #join_link {
@@ -390,7 +406,7 @@ form {
 }
 
 .food_bank_title_container {
-  position: sticky;
+  position: relative;
   flex: 1;
   padding-right: 7rem;
 }
@@ -447,15 +463,39 @@ form {
 .bank_container {
   margin: 0 2rem 3rem 0;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   background-color: #f5f0d4;
   border-radius: 0.6rem;
-  width: 43rem;
+  /* width: 46rem; */
 }
 
 .display_list li {
   list-style: none;
+}
+
+.custom_container_sticky {
+  position: sticky;
+  display: flex;
+  top: 0;
+  flex-direction: column;
+}
+
+.custom_container_sticky h1 {
+  margin-bottom: 0;
+}
+
+.fade-out-gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  /* Adjust to control the height of the gradient */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  pointer-events: none;
+  /* Ensure it doesn't interfere with scrolling */
 }
 
 /* desktop -> mobile resizing */
