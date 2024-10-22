@@ -5,10 +5,11 @@ import { MotionConfig, motion } from "framer-motion";
 
 function FilterFoodBanks() {
     const boroughs = ['Bronx', 'Brooklyn', 'Manhattan', 'Queens', 'Staten Island'];
-    const [selectedBoro, setSelectedBoro] = useState('');
-    const { setFilteredFoodBanks, setError } = useContext(FilteredFoodBanksContext);
+    const [selectedBoro, setSelectedBoro] = useState(boroughs[0]);
+    const { setFilteredFoodBanks, setError, setCurrentPage } = useContext(FilteredFoodBanksContext);
     const handleSelectedBoro = (event) => {
         setSelectedBoro(event.target.value)
+        setCurrentPage(1);
     };
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -21,6 +22,8 @@ function FilterFoodBanks() {
         }
 
     };
+
+
     return (
         <div>
             <form onSubmit={handleSubmit}>

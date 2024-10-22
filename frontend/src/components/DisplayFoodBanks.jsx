@@ -5,7 +5,8 @@ import { MotionConfig, motion } from "framer-motion";
 
 function DisplayFoodBanks() {
     const [initialFoodBanks, setInitialFoodBanks] = useState([]);
-    const { setError, filteredFoodBanks } = useContext(FilteredFoodBanksContext);
+    const { setError, filteredFoodBanks, currentPage, setCurrentPage } = useContext(FilteredFoodBanksContext);
+    const itemLimit = 5;
     const fetchInitialBanks = async () => {
         const [data, error] = await fetchHandler('https://data.cityofnewyork.us/resource/if26-z6xq.json');
         console.log(data);
@@ -21,6 +22,20 @@ function DisplayFoodBanks() {
             setError(error)
         }
     }
+    const foodBanksToDisplay = filteredFoodBanks.length > 0 ? filteredFoodBanks : initialFoodBanks;
+    const totalPages = Math.ceil(foodBanksToDisplay.length / itemLimit);
+    const startIndex = (currentPage - 1) * itemLimit;
+    const endIndex = startIndex + itemLimit;
+    const currentBanks = foodBanksToDisplay.slice(startIndex, endIndex);
+
+    const handleNextPage = () => {
+        setCurrentPage((prev) => prev + 1);
+    }
+
+    const handlePrevPage = () => {
+        setCurrentPage((prev) => Math.max(prevPage - 1, 1));
+    }
+
     useEffect(() => {
         fetchInitialBanks();
     }, [])
@@ -28,7 +43,7 @@ function DisplayFoodBanks() {
     return (
         <div className="display_list">
             <ul>
-                {(filteredFoodBanks.length > 0 ? filteredFoodBanks : initialFoodBanks).map((bank) => (
+                {(currentBanks).map((bank) => (
                     <li key={bank.object_id}>
                         <MotionConfig
                             transition={{
@@ -51,6 +66,15 @@ function DisplayFoodBanks() {
                     </li>
                 ))}
             </ul>
+            <div className="pagination">
+                <button onClick={handlePrevPage} disabled={currentPage === 1}>
+                    Previous
+                </button>
+                <span>Page {currentPage} of {totalPages}</span>
+                <button onClick={handleNextPage} disabled={currentPage === totalPages}>
+                    Next
+                </button>
+            </div>
         </div>
     )
 }
