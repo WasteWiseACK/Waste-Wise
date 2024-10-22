@@ -1,11 +1,12 @@
 const knex = require('../db/knex');
 
 class Post {
-  constructor({ id, title, body, user_id, username, likedByCurrentUser }) {
+  constructor({ id, title, body, user_id, created_at, username, likedByCurrentUser }) {
     this.id = id;
     this.title = title;
     this.body = body;
     this.user_id = user_id;
+    this.created_at = created_at;
     this.username = username;
     this.likedByCurrentUser = likedByCurrentUser;
 
@@ -30,6 +31,7 @@ class Post {
     posts.id AS id, 
     posts.title, 
     posts.body, 
+    posts.created_at,
     posts.user_id, 
     users.username,
     COALESCE(liked_posts.user_id IS NOT NULL, false) AS likedByCurrentUser
