@@ -26,7 +26,12 @@ const Solutions = () => {
               This approach addresses hunger, reduces food waste, and requires coordination, planning, and legal protections for donors, offering significant social and environmental benefits.
             </p>
           </div>
+
         </div>
+        <div className="scroll_for_more">
+          <p>scroll</p>
+        </div>
+
 
 
         <div className="opportunities_container">
