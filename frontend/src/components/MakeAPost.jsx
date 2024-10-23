@@ -24,29 +24,6 @@ const MakePost = () => {
     const [post, error] = await fetchHandler(baseUrl, getPostOptions(postData));
     return post;
 
-
-    // try {
-    //   const response = await fetch("/api/posts", {
-    //     method: "POST",
-    //     headers: {
-    //       "Content-Type": "application/json",
-    //     },
-    //     body: JSON.stringify(postData),
-    //   });
-
-    // if (response.ok) {
-    //   const data = await response.json();
-    //   console.log("Post created successfully:", data);
-
-    //   setCreateTitle("");
-    //   setCreateBody("");
-
-    // } else {
-    //   console.error("Failed to create post");
-    // }
-    // } catch (error) {
-    //   console.error("Error:", error);
-    // }
   }
 
 
@@ -78,12 +55,12 @@ const MakePost = () => {
           <label className="body">Tags</label>
           <div className="tag_selections">
             <select name="tags" id="" multiple={true} value={selectedTags} onChange={handleSelectTags}>
-              <option value="Food Waste">Food Waste</option>
-              <option value="Sustainability">Sustainability</option>
-              <option value="Community">Community</option>
-              <option value="Recycling">Recycling</option>
-              <option value="Charity">Charity</option>
-              <option value="Questions">Questions</option>
+              <option value="1">Food Waste</option>
+              <option value="2">Sustainability</option>
+              <option value="3">Community</option>
+              <option value="4">Recycling</option>
+              <option value="5">Charity</option>
+              <option value="6">Questions</option>
             </select>
           </div>
 
