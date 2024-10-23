@@ -28,11 +28,11 @@ function MakeAComment({ postId }) {
             <div className="form_popup">
                 <form className="comment" onSubmit={handleSubmit} >
                     <div id="input">
-                        <textarea value={createContent} onChange={(e) => setCreateContent(e.target.value)} placeholder="Comment.."></textarea>
+                        <textarea className="text_area" value={createContent} onChange={(e) => setCreateContent(e.target.value)} placeholder="Comment.."></textarea>
                         {/* <input type="text" placeholder="Comment.." value={createContent} onChange={(e) => setCreateContent(e.target.value)} /> */}
                     </div>
-                    <div>
-                        <button>Comment</button>
+                    <div className="create_comment_button">
+                        <button>Reply</button>
                     </div>
 
                 </form>
