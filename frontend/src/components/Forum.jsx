@@ -49,6 +49,7 @@ function ForumPost() {
 
     return (
         <div>
+            <h2>Community Forum</h2>
             <ul>
                 {posts.map((post) => (
                     <li key={post.id}>
@@ -59,9 +60,9 @@ function ForumPost() {
                             )}
                         </div>
                         <div className="postInfo">
-                            <p>Posted by: {post.username}</p>
-                            <p>Posted on: {post.created_at}</p>
+                            <p> {post.created_at.substring(0, 10)}</p>
                             <p>{post.body}</p>
+                            <p>Posted by: {post.username}</p>
                         </div>
                         <div>
                             <button onClick={() => toggleCurrentPost(post.id)}>Comment</button>

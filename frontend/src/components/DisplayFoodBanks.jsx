@@ -11,7 +11,7 @@ function DisplayFoodBanks() {
         const [data, error] = await fetchHandler('https://data.cityofnewyork.us/resource/if26-z6xq.json');
         console.log(data);
         const banks = [];
-        for (let i = 0; i < data.length && banks.length <= 5; i++) {
+        for (let i = 0; i < data.length && banks.length <= 4; i++) {
             let bank = data[Math.floor(Math.random() * (data.length))];
             banks.push(bank);
         }
@@ -33,7 +33,7 @@ function DisplayFoodBanks() {
     }
 
     const handlePrevPage = () => {
-        setCurrentPage((prev) => Math.max(prevPage - 1, 1));
+        setCurrentPage((prev) => Math.max(prev - 1, 1));
     }
 
     useEffect(() => {

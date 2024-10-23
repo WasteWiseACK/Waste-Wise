@@ -58,7 +58,12 @@ LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id 
   // Similar to the one above , it will return post or posts from posts table
   // Based on user_id;
   static async findByUserId(user_id) {
-    const query = `SELECT * FROM posts WHERE user_id = ? `;
+    const query = `
+    SELECT posts.*, users.username
+    FROM posts
+    JOIN users ON posts.user_id = users.id
+    WHERE posts.user_id = ?;
+  `;
     const result = await knex.raw(query, [user_id]);
     const rawUserData = result.rows; // Get all rows
     return rawUserData.length > 0 ? rawUserData : null;
@@ -110,7 +115,7 @@ LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id 
 
   static async findLikedByUserId(user_id) {
     const query = `
-      SELECT posts.id AS id, posts.title, posts.body, posts.user_id, users.username
+      SELECT posts.id AS id, posts.title, posts.body, posts.user_id, users.username, posts.created_at
       FROM liked_posts
       JOIN posts ON liked_posts.post_id = posts.id
       JOIN users ON posts.user_id = users.id

@@ -71,12 +71,14 @@ function UserPosts() {
                         <li key={post.id}>
                             <div>
                                 <h3>{post.title}</h3>
+                                <p>{post.created_at.substring(0, 10)}</p>
                                 {post.user_id === currentUser.id && (
                                     <button onClick={() => handleDelete(post.id)}>Delete Post</button>
                                 )}
                             </div>
                             <div className="postInfo">
                                 <p>{post.body}</p>
+                                <p>Posted by: {post.username}</p>
                             </div>
                         </li>
                     ))

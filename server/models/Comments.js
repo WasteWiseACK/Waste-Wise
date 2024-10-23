@@ -1,11 +1,13 @@
 const knex = require('../db/knex');
 
 class Comment {
-  constructor(id, post_id, content, user_id) {
+  constructor(id, post_id, content, user_id, created_at, username) {
     this.id = id;
     this.post_id = post_id;
     this.content = content;
     this.user_id = user_id;
+    this.created_at = created_at;
+    this.username = username;
   };
   static async list() {
     const result = await knex('comments');
@@ -18,16 +20,20 @@ class Comment {
       throw new Error('postId must be provided');
     }
 
-    const result = await knex('comments').where('post_id', post_id); // Fetch comments directly using Knex
-
+    const result = await knex('comments')
+      .join('users', 'comments.user_id', 'users.id')
+      .where('comments.post_id', post_id)
+      .select('comments.*', 'users.username');
     return result.map((rawCommentsData) => {
-      return {
-        id: rawCommentsData.id,
-        post_id: rawCommentsData.post_id,
-        content: rawCommentsData.content,
-        user_id: rawCommentsData.user_id
-      };
-    });; //maps the result
+      return new Comment(
+        rawCommentsData.id,
+        rawCommentsData.post_id,
+        rawCommentsData.content,
+        rawCommentsData.user_id,
+        rawCommentsData.created_at,
+        rawCommentsData.username
+      );
+    });
   }
 
   static async find(id) {

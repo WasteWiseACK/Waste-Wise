@@ -29,7 +29,9 @@ function Comments({ postId }) {
                 comments.map((comment) => (
                     <li key={comment.id}>
                         <div className="commentInfo">
+                            <h3 className='body'>{comment.username}</h3>
                             <p>{comment.content}</p>
+                            <p>{comment.created_at.substring(0, 10)}</p>
                         </div>
                     </li>
                 ))
