@@ -43,6 +43,10 @@ varying sizes*/
   font-size: 4.5rem;
 }
 
+.mission-statement {
+  font-size: 1.5rem;
+}
+
 .header2 {
   /* for h2 tag */
   font-size: 2.5rem;
@@ -55,7 +59,7 @@ varying sizes*/
 
 .special_home_problem {
   font-family: light_hel;
-  font-size: 2.5rem;
+  font-size: 1rem;
 }
 
 /* ^^DEFINING COMPONENTS FOR WEBSITE^^ */
