@@ -130,13 +130,13 @@ function ForumPost({ selectedTags }) {
                                 {post.likedByCurrentUser ? "Unlike" : "Like"}
                             </button>
                         </div>
-                        {currentActivePost === post.id && (
+                        { currentActivePost === post.id && (
                             <>
                                 <MakeAComment postId={post.id} />
                                 <Comments postId={post.id} />
                             </>
                         )}
-                    </li>
+                </li>
                 ))}
             </ul>
         </div >
