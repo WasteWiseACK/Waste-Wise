@@ -44,6 +44,11 @@ varying sizes*/
   font-size: 2.5rem;
 }
 
+.body_post {
+  font-family: light_hel;
+  font-size: 1.5rem;
+}
+
 .body {
   /* footers, body texts, sub-headlines */
   font-family: light_hel;
@@ -269,6 +274,10 @@ form {
   padding-right: 6rem;
 }
 
+.forum_posts {
+  flex: 2;
+}
+
 .community_forum {
   width: 85%;
   display: flex;
@@ -300,8 +309,17 @@ form {
 
 .like_delete_buttons {
   display: flex;
-  justify-content: space-between;
+  gap: 3rem;
+  /* justify-content: space-between; */
   padding-bottom: 1rem;
+}
+
+.title_delete_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .user_date {
@@ -310,8 +328,14 @@ form {
   justify-content: space-between;
 }
 
+.username_post {
+  /* width: 100%; */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
 .username_post caption {
-  padding-left: 1rem;
+  /* padding-left: 1rem; */
   width: 100%;
 }
 
@@ -319,8 +343,34 @@ form {
   margin: 0;
 }
 
-.comment_button {
-  padding-bottom: 1.5rem;
+.tag_container {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  /* margin-left: 2rem; */
+  display: flex;
+
+}
+
+.tag_container p {
+  color: #fefae0;
+  background-color: #254336;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.text_body p {
+  padding-top: 1rem;
+  margin: 0;
+}
+
+.comment_button button,
+.delete_button button,
+.like_button button {
+  background-color: transparent;
+  border: 0;
+  magrin-bottom: 1rem;
+  cursor: pointer;
 }
 
 .form_popup {
@@ -351,10 +401,38 @@ form {
 }
 
 .comments_list {
+  border: #254336 1px solid;
+  border-radius: 0.3rem;
   padding: 0.5rem;
-  list-style-type: none;
   background-color: #fefae0;
 }
+
+.comments_list ul {
+  list-style: none;
+}
+
+.comments_list h3 {
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.comments_list p {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.commentInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date_comment {
+  padding-right: 1.5rem;
+}
+
+
 
 .comment {
   width: 90%;

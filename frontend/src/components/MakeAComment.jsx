@@ -34,7 +34,7 @@ function MakeAComment({ postId }) {
 
                 <form className="comment" onSubmit={handleSubmit} >
                     <div id="input">
-                        <textarea className="text_area" value={createContent} onChange={(e) => setCreateContent(e.target.value)} placeholder="Comment.."></textarea>
+                        <textarea className="text_area" value={createContent} onChange={(e) => setCreateContent(e.target.value)} placeholder="Comment.." required></textarea>
                         {/* <input type="text" placeholder="Comment.." value={createContent} onChange={(e) => setCreateContent(e.target.value)} /> */}
                     </div>
                     <div className="create_comment_button">
