@@ -43,28 +43,57 @@ function DisplayFoodBanks() {
     return (
         <div className="display_list">
             <ul>
-                {(currentBanks).map((bank) => (
-                    <li key={bank.object_id}>
-                        <MotionConfig
-                            transition={{
-                                duration: "0.25",
-                                ease: "easeInOut"
-                            }}
-                        >
-                            <motion.div
-                                className="bank_container"
-                                whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336" }}
-                            >
-                                <h3>{bank.food_scrap_drop_off_site}</h3>
-                                <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
-                                <p>{bank.open_months}</p>
-                                <p>Hours of operation: {bank.operation_day_hours}</p>
-                                <p>Website: {bank.website}</p>
-                            </motion.div>
-                        </MotionConfig>
+                {(currentBanks).map((bank) => {
+                    const websiteUrl = bank.website && (bank.website.startsWith('http://') || bank.website.startsWith('https://'))
+                        ? bank.website
+                        : bank.website
+                            ? `http://${bank.website}` // Prepend http if necessary
+                            : null; // Set to null if no website
 
-                    </li>
-                ))}
+                    return (
+                        <li key={bank.object_id}>
+                            {websiteUrl ? (
+                                <a href={websiteUrl} target='_blank'>
+                                    <MotionConfig
+                                        transition={{
+                                            duration: "0.25",
+                                            ease: "easeInOut"
+                                        }}
+                                    >
+                                        <motion.div
+                                            className="bank_container"
+                                            whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336" }}
+                                        >
+                                            <h3>{bank.food_scrap_drop_off_site}</h3>
+                                            <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
+                                            <p>{bank.open_months}</p>
+                                            <p>Hours of operation: {bank.operation_day_hours}</p>
+                                            <p> {bank.website ? `Website: ${bank.website}` : 'No website available'}</p>
+                                        </motion.div>
+                                    </MotionConfig>
+                                </a>
+                            ) : (
+                                <MotionConfig
+                                    transition={{
+                                        duration: "0.25",
+                                        ease: "easeInOut"
+                                    }}
+                                >
+                                    <motion.div
+                                        className="bank_container"
+                                        whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336" }}
+                                    >
+                                        <h3>{bank.food_scrap_drop_off_site}</h3>
+                                        <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
+                                        <p>{bank.open_months}</p>
+                                        <p>Hours of operation: {bank.operation_day_hours}</p>
+                                        <p>No website available</p> {/* Alternative message */}
+                                    </motion.div>
+                                </MotionConfig>
+                            )}
+                        </li>
+                    );
+                })};
             </ul>
             <div className="pagination">
                 <button onClick={handlePrevPage} disabled={currentPage === 1}>
@@ -75,7 +104,7 @@ function DisplayFoodBanks() {
                     Next
                 </button>
             </div>
-        </div>
+        </div >
     )
 }
 
