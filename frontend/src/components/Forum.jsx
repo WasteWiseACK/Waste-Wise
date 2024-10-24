@@ -3,7 +3,8 @@ import { fetchHandler, deleteOptions, getPostOptions } from "../utils/fetchingUt
 import CurrentUserContext from "../contexts/current-user-context";
 import MakeAComment from "./MakeAComment";
 import Comments from "./Comment";
-import { Trash } from "lucide-react";
+import { Trash, MessageSquare, Heart, HeartOff } from "lucide-react";
+
 
 function ForumPost({ selectedTags }) {
     const [posts, setPosts] = useState([]);
@@ -65,7 +66,7 @@ function ForumPost({ selectedTags }) {
     console.log(`currentactivepostid: ${currentActivePost}`)
 
     return (
-        <div>
+        <div className="forum_posts">
             <div className="community_forum">
                 <h1 className="header2" id="community_forum">Community Forum</h1>
                 <span className="underline"></span>
@@ -76,7 +77,18 @@ function ForumPost({ selectedTags }) {
                     {posts.map((post) => (
                         <li key={post.id} className="post">
                             <div className="title_user">
-                                <h3 className="special_home_problem" id="post_title">{post.title}</h3>
+                                <div className="title_delete_button">
+                                    <div className="post_title">
+                                        <h3 className="special_home_problem" id="post_title">{post.title}</h3>
+                                    </div>
+
+                                    <div className="delete_button">
+                                        {currentUser && post.user_id === currentUser.id && (
+                                            <button onClick={() => handleDelete(post.id)}><Trash /></button>
+                                        )}
+                                    </div>
+                                </div>
+
                                 <div className="underline"></div>
                                 <div className="user_date">
                                     <div className="username_post">
@@ -91,25 +103,28 @@ function ForumPost({ selectedTags }) {
                             </div>
                             <div className="postInfo">
 
-                                <p>{post.body}</p>
-                                {post.tags.length > 0 ? (<p>Tags: {post.tags.map(tag => tag.name).join(', ')}</p>) : (<p>No tags</p>)}
+
+                                <div className="text_body">
+                                    <p className="body_post">{post.body}</p>
+                                </div>
+
+                                <div className="tag_container">
+                                    {post.tags.length > 0 ? (<p>{post.tags.map(tag => tag.name).join(' || ')}</p>) : (<p>No tags</p>)}
+                                </div>
+
                             </div>
                             <div className="like_delete_buttons">
                                 <div className="like_button">
                                     <button onClick={() => handleLike(post.id, post.likedByCurrentUser)}>
-                                        {post.likedByCurrentUser ? "Unlike" : "Like"}
+                                        {post.likedByCurrentUser ? <HeartOff /> : <Heart />}
                                     </button>
                                 </div>
-                                <div className="delete_button">
-                                    {currentUser && post.user_id === currentUser.id && (
-                                        <button onClick={() => handleDelete(post.id)}><Trash /></button>
-                                    )}
+                                <div className="comment_button">
+                                    <button onClick={() => toggleCurrentPost(post.id)}><MessageSquare /></button>
                                 </div>
                             </div>
 
-                            <div className="comment_button">
-                                <button onClick={() => toggleCurrentPost(post.id)}>Comment</button>
-                            </div>
+
                             {currentActivePost === post.id && (
                                 <>
 
