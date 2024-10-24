@@ -328,7 +328,36 @@ form {
 }
 
 .form_popup {
-  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+#button {
+  cursor: pointer;
+}
+
+#close_button {
+  position: absolute;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  top: 10px;
+  right: 10px;
+}
+
+.comments_list {
+  padding: 0.5rem;
+  list-style-type: none;
+  background-color: #fefae0;
 }
 
 .comment {

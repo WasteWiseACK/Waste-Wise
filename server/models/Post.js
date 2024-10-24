@@ -1,7 +1,7 @@
 const knex = require('../db/knex');
 
 class Post {
-  constructor({ id, title, body, user_id, created_at, username, likedByCurrentUser }) {
+  constructor({ id, title, body, user_id, created_at, username, likedByCurrentUser, tags }) {
     this.id = id;
     this.title = title;
     this.body = body;
@@ -9,6 +9,7 @@ class Post {
     this.created_at = created_at;
     this.username = username;
     this.likedByCurrentUser = likedByCurrentUser;
+    this.tags = tags;
 
   }
 
@@ -27,18 +28,35 @@ class Post {
   //Fetches ALL posts from the post table
   static async list(user_id = null) {
     const query = `
-    SELECT DISTINCT 
-    posts.id AS id, 
-    posts.title, 
-    posts.body, 
-    posts.created_at,
-    posts.user_id, 
-    users.username,
-    COALESCE(liked_posts.user_id IS NOT NULL, false) AS likedByCurrentUser
-FROM posts 
-JOIN users ON posts.user_id = users.id
-LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id = ?
+    SELECT
+      posts.id AS id, 
+      posts.title, 
+      posts.body, 
+      posts.created_at,
+      posts.user_id, 
+      users.username,
+      COALESCE(liked_posts.user_id IS NOT NULL, false) AS likedByCurrentUser,
+      json_agg(json_build_object('id', tags.id, 'name', tags.name)) AS tags
+    FROM posts
+    JOIN users ON posts.user_id = users.id
+    LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id = ?
+    LEFT JOIN post_tags ON post_tags.post_id = posts.id
+    LEFT JOIN tags ON post_tags.tag_id = tags.id
+    GROUP BY posts.id, users.username, liked_posts.user_id
   `;
+    //     const query = `
+    //     SELECT DISTINCT 
+    //     posts.id AS id, 
+    //     posts.title, 
+    //     posts.body, 
+    //     posts.created_at,
+    //     posts.user_id, 
+    //     users.username,
+    //     COALESCE(liked_posts.user_id IS NOT NULL, false) AS likedByCurrentUser,
+    // FROM posts 
+    // JOIN users ON posts.user_id = users.id
+    // LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id = ?
+    //   `;
 
     const result = await knex.raw(query, [user_id]);
     return result.rows.map((rawPostData) => new Post(rawPostData));
@@ -125,6 +143,37 @@ LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id 
     const result = await knex.raw(query, [user_id]);
     return result.rows.map((rawPostData) => new Post(rawPostData));
   }
+  static async findByTags(tagArray) {
+    const tagPlaceholders = tagArray.map(() => '?').join(', '); // Creates placeholders for the tag array
+
+    // Raw SQL query to fetch posts based on tags
+    // const query = `
+    //   SELECT DISTINCT posts.*
+    //   FROM posts
+    //   JOIN post_tags ON posts.id = post_tags.post_id
+    //   JOIN tags ON post_tags.tag_id = tags.id
+    //   WHERE tags.id IN (${tagPlaceholders});
+    // `;
+    const query = `
+      SELECT 
+          posts.*, 
+          users.username,
+      json_agg(json_build_object('id', tags.id, 'name', tags.name)) AS tags
+      FROM posts
+      JOIN post_tags ON posts.id = post_tags.post_id
+      JOIN tags ON post_tags.tag_id = tags.id
+      JOIN users ON posts.user_id = users.id
+      WHERE tags.id IN (${tagPlaceholders})
+      GROUP BY posts.id, users.username; -- Group by post ID and username
+    `;
+
+    const posts = await knex.raw(query, tagArray); // Passing the tag array as values for the placeholders
+
+    return posts.rows.map(post => ({
+      ...post,
+      tags: post.tags ? post.tags.map(tag => ({ id: tag.id, name: tag.name })) : []
+    }));
+  };
 
 
 }

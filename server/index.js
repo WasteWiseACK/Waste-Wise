@@ -21,6 +21,7 @@ const tagControllers = require('./controllers/tagControllers');
 const foodInsecurityControllers = require('./controllers/foodDataControllers')
 const app = express();
 
+console.log(postControllers)
 // middleware
 app.use(handleCookieSessions); // adds a session property to each request representing the cookie
 app.use(logRoutes); // print information about each incoming request
@@ -56,8 +57,7 @@ app.patch('/api/users/:id/edit', checkAuthentication, userControllers.updateUser
 ///////////////////////////////
 
 app.get('/api/posts', postControllers.listPosts);
-
-
+app.get('/api/posts/tags', postControllers.getPostsByTags);
 app.get('/api/posts/:id', postControllers.showPost);
 app.get('/api/posts/user/:userId', postControllers.findByUserId);
 app.post('/api/posts', checkAuthentication, postControllers.createPost);

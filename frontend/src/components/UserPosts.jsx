@@ -50,13 +50,14 @@ function UserPosts() {
     useEffect(() => {
         if (currentUser) {
             if (showLikedPosts) {
+                console.log('these are the liked posts')
                 fetchLikedPosts();
             } else {
                 fetchUserPost();
             }
         }
     }, [currentUser, showLikedPosts]);
-    console.log("Posts Type:", typeof posts);
+    // console.log("Posts Type:", typeof posts);
 
     return (
         <div>

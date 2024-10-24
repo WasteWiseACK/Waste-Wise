@@ -1,9 +1,9 @@
 import { useState } from "react"
 import { fetchHandler, getPostOptions } from "../utils/fetchingUtils"
+import { X } from "lucide-react";
 
 
 const baseUrl = '/api/posts';
-
 const MakePost = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [selectedTags, setSelectedTags] = useState([])
@@ -22,10 +22,21 @@ const MakePost = () => {
     }
 
     const [post, error] = await fetchHandler(baseUrl, getPostOptions(postData));
-    return post;
+    if (post) {
+      const tagData = {
+        tags: selectedTags
+      }
+      const tagUrl = `/api/posts/${post.id}/tag`
+      const [response, error] = fetchHandler(tagUrl, getPostOptions(tagData));
+      if (tagError) {
+        console.error('Error adding tags to post:', tagError);
+      }
+    }
 
-  }
-
+    if (error) {
+      console.error('Error creating post:', error);
+    }
+  };
 
   const handleSelectTags = (event) => {
     const selectedOptions = Array.from(event.target.selectedOptions, option => option.value);
@@ -39,10 +50,11 @@ const MakePost = () => {
   return (
     <section>
       <div className="button_post">
-        <button onClick={toggleVisible}>Make a post!</button>
+        <button className='body' id="button" onClick={toggleVisible}>Make a post!</button>
       </div>
 
       {isVisible && (<div className="form_popup">
+        <button id="close_button" onClick={toggleVisible}><X /></button>
         <form className="post" action="" onSubmit={handleSubmit}>
           <legend className="body">Create Your Post</legend>
           <div id="input">
@@ -54,7 +66,7 @@ const MakePost = () => {
 
           <label className="body">Tags</label>
           <div className="tag_selections">
-            <select name="tags" id="" multiple={true} value={selectedTags} onChange={handleSelectTags}>
+            <select name="tags" id="" multiple={true} value={selectedTags} onChange={handleSelectTags} required>
               <option value="1">Food Waste</option>
               <option value="2">Sustainability</option>
               <option value="3">Community</option>
@@ -65,7 +77,7 @@ const MakePost = () => {
           </div>
 
           <div>
-            <button type="submit">Post</button>
+            <button type="submit" >Post</button>
           </div>
 
         </form>

@@ -3,17 +3,34 @@ import { fetchHandler, deleteOptions, getPostOptions } from "../utils/fetchingUt
 import CurrentUserContext from "../contexts/current-user-context";
 import MakeAComment from "./MakeAComment";
 import Comments from "./Comment";
-function ForumPost() {
+import { Trash } from "lucide-react";
+
+function ForumPost({ selectedTags }) {
     const [posts, setPosts] = useState([]);
     const [currentActivePost, setCurrentActivePost] = useState(null);
     const { currentUser } = useContext(CurrentUserContext);
-
+    console.log(`selectedTags: ${selectedTags}`)
     // Fetch posts
+    // const fetchPosts = async () => {
+    //     const [data, error] = await fetchHandler('/api/posts');
+    //     if (data) { setPosts(data) };
+    //     if (error) console.error(error);
+    // };
     const fetchPosts = async () => {
-        const [data, error] = await fetchHandler('/api/posts');
-        if (data) { setPosts(data) };
-        if (error) console.error(error);
+        let query = '/api/posts';
+        if (selectedTags.length > 0) {
+            query += `/tags?tags=${selectedTags.join(',')}`;
+        }
+
+        const [data, error] = await fetchHandler(query);
+        if (data) {
+            setPosts(data);
+        }
+        if (error) {
+            console.error(error);
+        }
     };
+
 
 
     // Delete post
@@ -43,7 +60,7 @@ function ForumPost() {
 
     useEffect(() => {
         fetchPosts();
-    }, [posts]);
+    }, [selectedTags]);
     console.log(posts)
     console.log(`currentactivepostid: ${currentActivePost}`)
 
@@ -65,7 +82,7 @@ function ForumPost() {
                                     <div className="username_post">
                                         <caption className="body">{post.username}</caption>
                                     </div>
-                                    <div className="date_post">
+                                    <div className="body">
                                         <p> {post.created_at.substring(0, 10)}</p>
                                     </div>
                                 </div>
@@ -75,7 +92,7 @@ function ForumPost() {
                             <div className="postInfo">
 
                                 <p>{post.body}</p>
-
+                                {post.tags.length > 0 ? (<p>Tags: {post.tags.map(tag => tag.name).join(', ')}</p>) : (<p>No tags</p>)}
                             </div>
                             <div className="like_delete_buttons">
                                 <div className="like_button">
@@ -85,7 +102,7 @@ function ForumPost() {
                                 </div>
                                 <div className="delete_button">
                                     {currentUser && post.user_id === currentUser.id && (
-                                        <button onClick={() => handleDelete(post.id)}>Delete Post</button>
+                                        <button onClick={() => handleDelete(post.id)}><Trash /></button>
                                     )}
                                 </div>
                             </div>
@@ -103,8 +120,7 @@ function ForumPost() {
                         </li>
                     ))}
                 </ul>
-            </div>
-
+            </div >
         </div>
     );
 }
