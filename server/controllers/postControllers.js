@@ -107,3 +107,29 @@ exports.getLikedPosts = async (req, res) => {
   }
 };
 
+exports.getPostsByTags = async (req, res) => {
+  const tags = req.query.tags; // Get tags from the query parameters
+
+  if (!tags) {
+    return res.status(400).send({ message: 'Tags are required' });
+  }
+
+  // Split the tags into an array
+  const tagArray = tags.split(',');
+
+  try {
+    // Fetch posts that have any of the specified tags
+    const posts = await Post.findByTags(tagArray); // Assuming you have this method in your Post model
+
+    // If no posts found, send an empty array
+    if (posts.length === 0) {
+      return res.status(200).send([]);
+    }
+
+    // Send the found posts as the response
+    return res.status(200).send(posts);
+  } catch (error) {
+    return res.status(500).send({ error: error.message });
+  }
+};
+

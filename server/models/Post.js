@@ -143,6 +143,37 @@ class Post {
     const result = await knex.raw(query, [user_id]);
     return result.rows.map((rawPostData) => new Post(rawPostData));
   }
+  static async findByTags(tagArray) {
+    const tagPlaceholders = tagArray.map(() => '?').join(', '); // Creates placeholders for the tag array
+
+    // Raw SQL query to fetch posts based on tags
+    // const query = `
+    //   SELECT DISTINCT posts.*
+    //   FROM posts
+    //   JOIN post_tags ON posts.id = post_tags.post_id
+    //   JOIN tags ON post_tags.tag_id = tags.id
+    //   WHERE tags.id IN (${tagPlaceholders});
+    // `;
+    const query = `
+      SELECT 
+          posts.*, 
+          users.username,
+      json_agg(json_build_object('id', tags.id, 'name', tags.name)) AS tags
+      FROM posts
+      JOIN post_tags ON posts.id = post_tags.post_id
+      JOIN tags ON post_tags.tag_id = tags.id
+      JOIN users ON posts.user_id = users.id
+      WHERE tags.id IN (${tagPlaceholders})
+      GROUP BY posts.id, users.username; -- Group by post ID and username
+    `;
+
+    const posts = await knex.raw(query, tagArray); // Passing the tag array as values for the placeholders
+
+    return posts.rows.map(post => ({
+      ...post,
+      tags: post.tags ? post.tags.map(tag => ({ id: tag.id, name: tag.name })) : []
+    }));
+  };
 
 
 }
