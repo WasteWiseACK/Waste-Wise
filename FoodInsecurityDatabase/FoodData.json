@@ -3,2303 +3,2624 @@
     "BORO": "BRONX",
     "ZIP CODE": "10454",
     "count": 1,
-    "coords": "-73.920989,40.811169",
+    "coords": -73.920989,
+    "latitude": 40.811169,
     "bbl": "2022860006"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10469",
     "count": 1,
-    "coords": "-73.843972,40.871321",
+    "coords": -73.843972,
+    "latitude": 40.871321,
     "bbl": "2047610050"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10468",
     "count": 1,
-    "coords": "-73.897457,40.862995",
+    "coords": -73.897457,
+    "latitude": 40.862995,
     "bbl": "2031670001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11224",
     "count": 2,
-    "coords": "-73.988416,40.576037",
+    "coords": -73.988416,
+    "latitude": 40.576037,
     "bbl": "3070580007"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11210",
     "count": 1,
-    "coords": "-73.937734,40.623107",
+    "coords": -73.937734,
+    "latitude": 40.623107,
     "bbl": "3078100037"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 2,
-    "coords": "-73.9727,40.792697",
+    "coords": -73.9727,
+    "latitude": 40.792697,
     "bbl": "1012410020"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.954443,40.813433",
+    "coords": -73.954443,
+    "latitude": 40.813433,
     "bbl": "1019670060"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11385",
     "count": 1,
-    "coords": "-73.897699,40.699211",
+    "coords": -73.897699,
+    "latitude": 40.699211,
     "bbl": "4035890001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.798069,40.704556",
+    "coords": -73.798069,
+    "latitude": 40.704556,
     "bbl": "4097607501"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11377",
     "count": 1,
-    "coords": "-73.902225,40.744729",
+    "coords": -73.902225,
+    "latitude": 40.744729,
     "bbl": "4012940020"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 1,
-    "coords": "-73.752316,40.605347",
+    "coords": -73.752316,
+    "latitude": 40.605347,
     "bbl": "4155370147"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11421",
     "count": 1,
-    "coords": "-73.862315,40.691522",
+    "coords": -73.862315,
+    "latitude": 40.691522,
     "bbl": "4089140022"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11206",
     "count": 1,
-    "coords": "-73.946127,40.692891",
+    "coords": -73.946127,
+    "latitude": 40.692891,
     "bbl": "3017710044"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11433",
     "count": 2,
-    "coords": "-73.780746,40.693042",
+    "coords": -73.780746,
+    "latitude": 40.693042,
     "bbl": "4102080001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11210",
     "count": 1,
-    "coords": "-73.940389,40.626345",
+    "coords": -73.940389,
+    "latitude": 40.626345,
     "bbl": "3076180028"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10029",
     "count": 1,
-    "coords": "-73.944726,40.799697",
+    "coords": -73.944726,
+    "latitude": 40.799697,
     "bbl": "1016210050"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10029",
     "count": 1,
-    "coords": "-73.944726,40.799697",
+    "coords": -73.944726,
+    "latitude": 40.799697,
     "bbl": "1016210050"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.944193,40.806581",
+    "coords": -73.944193,
+    "latitude": 40.806581,
     "bbl": "1017220019"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10011",
     "count": 1,
-    "coords": "-73.995773,40.734109",
+    "coords": -73.995773,
+    "latitude": 40.734109,
     "bbl": "1005740038"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10467",
     "count": 1,
-    "coords": "-73.862772,40.876693",
+    "coords": -73.862772,
+    "latitude": 40.876693,
     "bbl": "2046580015"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11369",
     "count": 1,
-    "coords": "-73.88116,40.759958",
+    "coords": -73.88116,
+    "latitude": 40.759958,
     "bbl": "4013850040"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10035",
     "count": 1,
-    "coords": "-73.940407,40.802577",
+    "coords": -73.940407,
+    "latitude": 40.802577,
     "bbl": "1017700072"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11220",
     "count": 1,
-    "coords": "-74.014313,40.639058",
+    "coords": -74.014313,
+    "latitude": 40.639058,
     "bbl": "3008640001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11236",
     "count": 1,
-    "coords": "-73.886758,40.633094",
+    "coords": -73.886758,
+    "latitude": 40.633094,
     "bbl": "3083290225"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.949564,40.676556",
+    "coords": -73.949564,
+    "latitude": 40.676556,
     "bbl": "3012130005"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11214",
     "count": 1,
-    "coords": "-73.996598,40.60238",
+    "coords": -73.996598,
+    "latitude": 40.60238,
     "bbl": "3063780019"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11423",
     "count": 1,
-    "coords": "-73.767972,40.712058",
+    "coords": -73.767972,
+    "latitude": 40.712058,
     "bbl": "4108200023"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10035",
     "count": 1,
-    "coords": "-73.943801,40.802483",
+    "coords": -73.943801,
+    "latitude": 40.802483,
     "bbl": "1017460002"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10035",
     "count": 1,
-    "coords": "-73.943801,40.802483",
+    "coords": -73.943801,
+    "latitude": 40.802483,
     "bbl": "1017460002"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.955831,40.654492",
+    "coords": -73.955831,
+    "latitude": 40.654492,
     "bbl": "3050650011"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11433",
     "count": 2,
-    "coords": "-73.791697,40.690354",
+    "coords": -73.791697,
+    "latitude": 40.690354,
     "bbl": "4121610042"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11373",
     "count": 1,
-    "coords": "-73.873126,40.741453",
+    "coords": -73.873126,
+    "latitude": 40.741453,
     "bbl": "4018500010"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
     "count": 1,
-    "coords": "-73.938269,40.670631",
+    "coords": -73.938269,
+    "latitude": 40.670631,
     "bbl": "3013820020"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11692",
     "count": 1,
-    "coords": "-73.804624,40.588813",
+    "coords": -73.804624,
+    "latitude": 40.588813,
     "bbl": "4161110025"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11433",
     "count": 2,
-    "coords": "-73.788122,40.69275",
+    "coords": -73.788122,
+    "latitude": 40.69275,
     "bbl": "4101900025"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.908151,40.830831",
+    "coords": -73.908151,
+    "latitude": 40.830831,
     "bbl": "2023890011"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11238",
     "count": 1,
-    "coords": "-73.961156,40.681696",
+    "coords": -73.961156,
+    "latitude": 40.681696,
     "bbl": "3020150001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.781944,40.708491",
+    "coords": -73.781944,
+    "latitude": 40.708491,
     "bbl": "4098950001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.946632,40.680617",
+    "coords": -73.946632,
+    "latitude": 40.680617,
     "bbl": "3018500032"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10475",
     "count": 1,
-    "coords": "-73.829099,40.87624",
+    "coords": -73.829099,
+    "latitude": 40.87624,
     "bbl": "2051410500"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11206",
     "count": 1,
-    "coords": "-73.942602,40.694898",
+    "coords": -73.942602,
+    "latitude": 40.694898,
     "bbl": "3017610066"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11435",
     "count": 1,
-    "coords": "-73.797113,40.690001",
+    "coords": -73.797113,
+    "latitude": 40.690001,
     "bbl": "4119500396"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.90932,40.678422",
+    "coords": -73.90932,
+    "latitude": 40.678422,
     "bbl": "3015420053"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 1,
-    "coords": "-73.874721,40.683703",
+    "coords": -73.874721,
+    "latitude": 40.683703,
     "bbl": "3041280044"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11234",
     "count": 1,
-    "coords": "-73.937501,40.619554",
+    "coords": -73.937501,
+    "latitude": 40.619554,
     "bbl": "3078580047"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10451",
     "count": 1,
-    "coords": "-73.910556,40.822121",
+    "coords": -73.910556,
+    "latitude": 40.822121,
     "bbl": "2023600089"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10474",
     "count": 1,
-    "coords": "-73.886869,40.817236",
+    "coords": -73.886869,
+    "latitude": 40.817236,
     "bbl": "2027620072"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 2,
-    "coords": "-73.965197,40.807085",
+    "coords": -73.965197,
+    "latitude": 40.807085,
     "bbl": "1018960020"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10466",
     "count": 1,
-    "coords": "-73.851237,40.886801",
+    "coords": -73.851237,
+    "latitude": 40.886801,
     "bbl": "2048630006"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10457",
     "count": 1,
-    "coords": "-73.901115,40.842205",
+    "coords": -73.901115,
+    "latitude": 40.842205,
     "bbl": "2029060089"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10455",
     "count": 1,
-    "coords": "-73.918961,40.81505",
+    "coords": -73.918961,
+    "latitude": 40.81505,
     "bbl": "2023070054"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "num": null,
-    "street": null,
-    "coords": "-73.918767,40.832577",
+    "coords": -73.918767,
+    "latitude": 40.832577,
     "bbl": "2024620042"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 1,
-    "coords": "-73.929032,40.688874",
+    "coords": -73.929032,
+    "latitude": 40.688874,
     "bbl": "3016320065"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11201",
     "count": 1,
-    "coords": "-73.991762,40.692816",
+    "coords": -73.991762,
+    "latitude": 40.692816,
     "bbl": "3002550008"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11238",
     "count": 1,
-    "coords": "-73.965569,40.684241",
+    "coords": -73.965569,
+    "latitude": 40.684241,
     "bbl": "3019780017"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.922276,40.660042",
+    "coords": -73.922276,
+    "latitude": 40.660042,
     "bbl": "3046300043"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11377",
     "count": 1,
-    "coords": "-73.892859,40.738517",
+    "coords": -73.892859,
+    "latitude": 40.738517,
     "bbl": "4024450001"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10002",
     "count": 1,
-    "coords": "-73.990758,40.713479",
+    "coords": -73.990758,
+    "latitude": 40.713479,
     "bbl": "1002830016"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10312",
     "count": 1,
-    "coords": "-74.160423,40.539713",
+    "coords": -74.160423,
+    "latitude": 40.539713,
     "bbl": "5052680066"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11433",
     "count": 1,
-    "coords": "-73.788003,40.691407",
+    "coords": -73.788003,
+    "latitude": 40.691407,
     "bbl": "4121810030"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.961145,40.654561",
+    "coords": -73.961145,
+    "latitude": 40.654561,
     "bbl": "3050540062"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11418",
     "count": 1,
-    "coords": "-73.843439,40.693079",
+    "coords": -73.843439,
+    "latitude": 40.693079,
     "bbl": "4092930003"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 1,
-    "coords": "-73.961787,40.803767",
+    "coords": -73.961787,
+    "latitude": 40.803767,
     "bbl": "1018650001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11224",
     "count": 1,
-    "coords": "-73.985122,40.57722",
+    "coords": -73.985122,
+    "latitude": 40.57722,
     "bbl": "3070200039"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10032",
     "count": 1,
-    "coords": "-73.939217,40.837927",
+    "coords": -73.939217,
+    "latitude": 40.837927,
     "bbl": "1021210029"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11232",
     "count": 1,
-    "coords": "-74.00477,40.652075",
+    "coords": -74.00477,
+    "latitude": 40.652075,
     "bbl": "3007050059"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11101",
     "count": 1,
-    "coords": "-73.941831,40.756894",
+    "coords": -73.941831,
+    "latitude": 40.756894,
     "bbl": "4004720640"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10022",
     "count": 1,
-    "coords": "-73.970536,40.760092",
+    "coords": -73.970536,
+    "latitude": 40.760092,
     "bbl": "1013100010"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11225",
     "count": 1,
-    "coords": "-73.9581,40.66506",
+    "coords": -73.9581,
+    "latitude": 40.66506,
     "bbl": "3013020001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11238",
     "count": 1,
-    "coords": "-73.960218,40.688464",
+    "coords": -73.960218,
+    "latitude": 40.688464,
     "bbl": "3019480035"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11236",
     "count": 1,
-    "coords": "-73.901785,40.642253",
+    "coords": -73.901785,
+    "latitude": 40.642253,
     "bbl": "3082030033"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10023",
     "count": 1,
-    "coords": "-73.981068,40.775649",
+    "coords": -73.981068,
+    "latitude": 40.775649,
     "bbl": "1011400040"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10303",
     "count": 1,
-    "coords": "-74.164776,40.636448",
+    "coords": -74.164776,
+    "latitude": 40.636448,
     "bbl": "5012550045"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11218",
     "count": 1,
-    "coords": "-73.972146,40.63838",
+    "coords": -73.972146,
+    "latitude": 40.63838,
     "bbl": "3053900010"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11435",
     "count": 1,
-    "coords": "-73.799505,40.692814",
+    "coords": -73.799505,
+    "latitude": 40.692814,
     "bbl": "4119460119"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11434",
     "count": 1,
-    "coords": "-73.770158,40.682771",
+    "coords": -73.770158,
+    "latitude": 40.682771,
     "bbl": "4125140032"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10065",
     "count": 1,
-    "coords": "-73.96966,40.763888",
+    "coords": -73.96966,
+    "latitude": 40.763888,
     "bbl": "1013750036"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10467",
     "count": 1,
-    "coords": "-73.879499,40.869911",
+    "coords": -73.879499,
+    "latitude": 40.869911,
     "bbl": "2033310080"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10462",
     "count": 1,
-    "coords": "-73.865935,40.845742",
+    "coords": -73.865935,
+    "latitude": 40.845742,
     "bbl": "2040500011"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.908318,40.654144",
+    "coords": -73.908318,
+    "latitude": 40.654144,
     "bbl": "3036420022"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 2,
-    "coords": "-73.933257,40.654258",
+    "coords": -73.933257,
+    "latitude": 40.654258,
     "bbl": "3046530040"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 1,
-    "coords": "-74.09201,40.604843",
+    "coords": -74.09201,
+    "latitude": 40.604843,
     "bbl": "5031680039"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.957728,40.649046",
+    "coords": -73.957728,
+    "latitude": 40.649046,
     "bbl": "3051030008"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11236",
     "count": 1,
-    "coords": "-73.918365,40.651702",
+    "coords": -73.918365,
+    "latitude": 40.651702,
     "bbl": "3047110012"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11238",
     "count": 1,
-    "coords": "-73.961192,40.67242",
+    "coords": -73.961192,
+    "latitude": 40.67242,
     "bbl": "3011770038"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.948885,40.646662",
+    "coords": -73.948885,
+    "latitude": 40.646662,
     "bbl": "3049150063"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
-    "APPLI APPROVAL": null,
     "count": 1,
-    "coords": "-73.941555,40.674495",
+    "coords": -73.941555,
+    "latitude": 40.674495,
     "bbl": "3012300009"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.926142,40.660275",
+    "coords": -73.926142,
+    "latitude": 40.660275,
     "bbl": "3046100045"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 1,
-    "coords": "-73.960717,40.805208",
+    "coords": -73.960717,
+    "latitude": 40.805208,
     "bbl": "1018670014"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.922554,40.671419",
+    "coords": -73.922554,
+    "latitude": 40.671419,
     "bbl": "3013750046"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10466",
     "count": 1,
-    "coords": "-73.853548,40.895626",
+    "coords": -73.853548,
+    "latitude": 40.895626,
     "bbl": "2050450008"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.953289,40.816269",
+    "coords": -73.953289,
+    "latitude": 40.81626,
     "bbl": "1019700042"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10472",
     "count": 1,
-    "coords": "-73.866203,40.833397",
+    "coords": -73.866203,
+    "latitude": 40.833397,
     "bbl": "2038770030"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10031",
     "count": 1,
-    "coords": "-73.944577,40.827521",
+    "coords": -73.944577,
+    "latitude": 40.827521,
     "bbl": "1020640009"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10011",
     "count": 2,
-    "coords": "-74.00039,40.738158",
+    "coords": -74.00039,
+    "latitude": 40.738158,
     "bbl": "1006180040"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11102",
     "count": 1,
-    "coords": "-73.932878,40.77307",
+    "coords": -73.932878,
+    "latitude": 40.77307,
     "bbl": "4004900101"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11206",
     "count": 1,
-    "coords": "-73.945954,40.697553",
+    "coords": -73.945954,
+    "latitude": 40.697553,
     "bbl": "3017400001"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10303",
     "count": 1,
-    "coords": "-74.162751,40.632904",
+    "coords": -74.162751,
+    "latitude": 40.632904,
     "bbl": "5012450001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10451",
     "count": 1,
-    "coords": "-73.920295,40.821713",
+    "coords": -73.920295,
+    "latitude": 40.821713,
     "bbl": "2024130001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10455",
     "count": 1,
-    "coords": "-73.909813,40.81521",
+    "coords": -73.909813,
+    "latitude": 40.81521,
     "bbl": "2026230135"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 1,
-    "coords": "-74.080643,40.622275",
+    "coords": -74.080643,
+    "latitude": 40.622275,
     "bbl": "5005450100"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10034",
     "count": 1,
-    "coords": "-73.924123,40.861169",
+    "coords": -73.924123,
+    "latitude": 40.861169,
     "bbl": "1022160001"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10032",
     "count": 1,
-    "coords": "-73.941933,40.830826",
+    "coords": -73.941933,
+    "latitude": 40.830826,
     "bbl": "1020680071"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11101",
     "count": 1,
-    "coords": "-73.944514,40.755604",
+    "coords": -73.944514,
+    "latitude": 40.755604,
     "bbl": "4004700100"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10467",
     "count": 1,
-    "coords": "-73.867434,40.876662",
+    "coords": -73.867434,
+    "latitude": 40.876662,
     "bbl": "2046280047"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10022",
     "count": 3,
-    "coords": "-73.973002,40.757214",
+    "coords": -73.973002,
+    "latitude": 40.757214,
     "bbl": "1013050001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 2,
-    "coords": "-73.899304,40.824552",
+    "coords": -73.899304,
+    "latitude": 40.824552,
     "bbl": "2026910010"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11385",
     "count": 1,
-    "coords": "-73.895277,40.70094",
+    "coords": -73.895277,
+    "latitude": 40.70094,
     "bbl": "4035380051"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10302",
     "count": 2,
-    "coords": "-74.134343,40.640055",
+    "coords": -74.134343,
+    "latitude": 40.640055,
     "bbl": "5010740053"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 1,
-    "coords": "-73.965885,40.806947",
+    "coords": -73.965885,
+    "latitude": 40.806947,
     "bbl": "1018950067"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10032",
     "count": 1,
-    "coords": "-73.941863,40.834276",
+    "coords": -73.941863,
+    "latitude": 40.834276,
     "bbl": "1021170031"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.919681,40.669003",
+    "coords": -73.919681,
+    "latitude": 40.669003,
     "bbl": "3014760009"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11206",
     "count": 2,
-    "coords": "-73.931918,40.701207",
+    "coords": -73.931918,
+    "latitude": 40.701207,
     "bbl": "3031530031"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10024",
     "count": 1,
-    "coords": "-73.976168,40.790108",
+    "coords": -73.976168,
+    "latitude": 40.790108,
     "bbl": "1012360005"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10031",
     "count": 1,
-    "coords": "-73.946077,40.823925",
+    "coords": -73.946077,
+    "latitude": 40.823925,
     "bbl": "1020500037"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10475",
     "count": 1,
-    "coords": "-73.830958,40.880315",
+    "coords": -73.830958,
+    "latitude": 40.880315,
     "bbl": "2051410298"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11230",
     "count": 1,
-    "coords": "-73.966217,40.631332",
+    "coords": -73.966217,
+    "latitude": 40.631332,
     "bbl": "3066860079"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 1,
-    "coords": "-73.935352,40.686234",
+    "coords": -73.935352,
+    "latitude": 40.686234,
     "bbl": "3016450001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11207",
     "count": 2,
-    "coords": "-73.896943,40.67449",
+    "coords": -73.896943,
+    "latitude": 40.67449,
     "bbl": "3036860034"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11368",
     "count": 2,
-    "coords": "-73.865001,40.753795",
+    "coords": -73.865001,
+    "latitude": 40.753795,
     "bbl": "4017430020"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11377",
     "count": 1,
-    "coords": "-73.90192,40.756475",
+    "coords": -73.90192,
+    "latitude": 40.756475,
     "bbl": "4011360048"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10468",
     "count": 2,
-    "coords": "-73.899154,40.861696",
+    "coords": -73.899154,
+    "latitude": 40.861696,
     "bbl": "2031730036"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11416",
     "count": 1,
-    "coords": "-73.853924,40.681789",
+    "coords": -73.853924,
+    "latitude": 40.681789,
     "bbl": "4090840027"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
     "count": 1,
-    "coords": "-73.934987,40.664761",
+    "coords": -73.934987,
+    "latitude": 40.664761,
     "bbl": "3014180049"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11217",
     "count": 1,
-    "coords": "-73.977239,40.682115",
+    "coords": -73.977239,
+    "latitude": 40.682115,
     "bbl": "3009300032"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10453",
     "count": 1,
-    "coords": "-73.908464,40.853539",
+    "coords": -73.908464,
+    "latitude": 40.853539,
     "bbl": "2028630028"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11420",
     "count": 1,
-    "coords": "-73.804094,40.674376",
+    "coords": -73.804094,
+    "latitude": 40.674376,
     "bbl": "4117580046"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10451",
     "count": 1,
-    "coords": "-73.9211,40.825809",
+    "coords": -73.9211,
+    "latitude": 40.825809,
     "bbl": "2024430094"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11201",
     "count": 1,
-    "coords": "-73.988424,40.692721",
+    "coords": -73.988424,
+    "latitude": 40.692721,
     "bbl": "3001407503"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.946077,40.809939",
+    "coords": -73.946077,
+    "latitude": 40.809939,
     "bbl": "1019120012"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.797028,40.70427",
+    "coords": -73.797028,
+    "latitude": 40.70427,
     "bbl": "4101020010"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10301",
     "count": 1,
-    "coords": "-74.075544,40.633761",
+    "coords": -74.075544,
+    "latitude": 40.633761,
     "bbl": "5005030032"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10002",
     "count": 1,
-    "coords": "-73.979446,40.71759",
+    "coords": -73.979446,
+    "latitude": 40.71759,
     "bbl": "1003230073"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11429",
     "count": 1,
-    "coords": "-73.74297,40.714875",
+    "coords": -73.74297,
+    "latitude": 40.714875,
     "bbl": "4110830117"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11101",
     "count": 1,
-    "coords": "-73.937888,40.744263",
+    "coords": -73.937888,
+    "latitude": 40.744263,
     "bbl": "4002730001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11207",
     "count": 1,
-    "coords": "-73.886331,40.666151",
+    "coords": -73.886331,
+    "latitude": 40.666151,
     "bbl": "3040760001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10469",
     "count": 1,
-    "coords": "-73.847048,40.871296",
+    "coords": -73.847048,
+    "latitude": 40.871296,
     "bbl": "2047590048"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 2,
-    "coords": "-73.921341,40.667478",
+    "coords": -73.921341,
+    "latitude": 40.667478,
     "bbl": "3035100033"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.952491,40.675957",
+    "coords": -73.952491,
+    "latitude": 40.675957,
     "bbl": "3012190104"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.953234,40.650841",
+    "coords": -73.953234,
+    "latitude": 40.650841,
     "bbl": "3050900061"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11368",
     "count": 1,
-    "coords": "-73.86137,40.757268",
+    "coords": -73.86137,
+    "latitude": 40.757268,
     "bbl": "4017220012"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11418",
     "count": 1,
-    "coords": "-73.836162,40.69564",
+    "coords": -73.836162,
+    "latitude": 40.69564,
     "bbl": "4093010024"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10472",
     "count": 1,
-    "coords": "-73.8796,40.831616",
+    "coords": -73.8796,
+    "latitude": 40.831616,
     "bbl": "2038630010"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.950014,40.805294",
+    "coords": -73.950014,
+    "latitude": 40.805294,
     "bbl": "1019040057"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.957907,40.64238",
+    "coords": -73.957907,
+    "latitude": 40.64238,
     "bbl": "3051640034"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11375",
     "count": 1,
-    "coords": "-73.847085,40.728711",
+    "coords": -73.847085,
+    "latitude": 40.728711,
     "bbl": "4021760001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11101",
     "count": 1,
-    "coords": "-73.936973,40.754192",
+    "coords": -73.936973,
+    "latitude": 40.754192,
     "bbl": "4003960010"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11373",
     "count": 1,
-    "coords": "-73.874859,40.741073",
+    "coords": -73.874859,
+    "latitude": 40.741073,
     "bbl": "4018340031"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10468",
     "count": 1,
-    "coords": "-73.900363,40.861321",
+    "coords": -73.900363,
+    "latitude": 40.861321,
     "bbl": "2031840059"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 2,
-    "coords": "-73.92281,40.689178",
+    "coords": -73.92281,
+    "latitude": 40.689178,
     "bbl": "3014800019"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10031",
     "count": 1,
-    "coords": "-73.943859,40.829989",
+    "coords": -73.943859,
+    "latitude": 40.829989,
     "bbl": "1020670063"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.954581,40.672947",
+    "coords": -73.954581,
+    "latitude": 40.672947,
     "bbl": "3012380044"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11207",
     "count": 1,
-    "coords": "-73.909047,40.683993",
+    "coords": -73.909047,
+    "latitude": 40.683993,
     "bbl": "3034440022"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10039",
     "count": 1,
-    "coords": "-73.937799,40.825859",
+    "coords": -73.937799,
+    "latitude": 40.825859,
     "bbl": "1020360047"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 2,
-    "coords": "-74.081149,40.630245",
+    "coords": -74.081149,
+    "latitude": 40.630245,
     "bbl": "5005170030"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10473",
     "count": 1,
-    "coords": "-73.848291,40.821674",
+    "coords": -73.848291,
+    "latitude": 40.821674,
     "bbl": "2036130032"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.958052,40.643106",
+    "coords": -73.958052,
+    "latitude": 40.643106,
     "bbl": "3051640022"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11369",
     "count": 1,
-    "coords": "-73.868911,40.76148",
+    "coords": -73.868911,
+    "latitude": 40.76148,
     "bbl": "4016880002"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 1,
-    "coords": "-73.753962,40.606943",
+    "coords": -73.753962,
+    "latitude": 40.606943,
     "bbl": "4155270015"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11412",
     "count": 2,
-    "coords": "-73.762923,40.690205",
+    "coords": -73.762923,
+    "latitude": 40.690205,
     "bbl": "4124480025"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 2,
-    "coords": "-73.796654,40.705783",
+    "coords": -73.796654,
+    "latitude": 40.705783,
     "bbl": "4097930086"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11413",
     "count": 1,
-    "coords": "-73.754913,40.676216",
+    "coords": -73.754913,
+    "latitude": 40.676216,
     "bbl": "4130300030"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 1,
-    "coords": "-73.747337,40.609651",
+    "coords": -73.747337,
+    "latitude": 40.609651,
     "bbl": "4155060001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.800196,40.709781",
+    "coords": -73.800196,
+    "latitude": 40.709781,
     "bbl": "4097720046"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.959078,40.648065",
+    "coords": -73.959078,
+    "latitude": 40.648065,
     "bbl": "3051020073"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10026",
     "count": 2,
-    "coords": "-73.95498,40.803958",
+    "coords": -73.95498,
+    "latitude": 40.803958,
     "bbl": "1018310060"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11231",
     "count": 1,
-    "coords": "-74.013613,40.678266",
+    "coords": -74.013613,
+    "latitude": 40.678266,
     "bbl": "3005650001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11375",
     "count": 1,
-    "coords": "-73.85009,40.736296",
+    "coords": -73.85009,
+    "latitude": 40.736296,
     "bbl": "4021590002"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10035",
     "count": 2,
-    "coords": "-73.934345,40.797018",
+    "coords": -73.934345,
+    "latitude": 40.797018,
     "bbl": "1017110048"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10018",
     "count": 2,
-    "coords": "-73.992213,40.755252",
+    "coords": -73.992213,
+    "latitude": 40.755252,
     "bbl": "1007620025"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11412",
     "count": 1,
-    "coords": "-73.762385,40.706478",
+    "coords": -73.762385,
+    "latitude": 40.706478,
     "bbl": "4108880049"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10460",
     "count": 1,
-    "coords": "-73.889476,40.84308",
+    "coords": -73.889476,
+    "latitude": 40.84308,
     "bbl": "2029550001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11225",
     "count": 1,
-    "coords": "-73.950035,40.664236",
+    "coords": -73.950035,
+    "latitude": 40.664236,
     "bbl": "3013090138"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11413",
     "count": 1,
-    "coords": "-73.7519,40.66089",
+    "coords": -73.7519,
+    "latitude": 40.66089,
     "bbl": "4134850015"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10455",
     "count": 2,
-    "coords": "-73.904441,40.81745",
+    "coords": -73.904441,
+    "latitude": 40.81745,
     "bbl": "2026650056"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.91703,40.674909",
+    "coords": -73.91703,
+    "latitude": 40.674909,
     "bbl": "3014460036"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.933919,40.65389",
+    "coords": -73.933919,
+    "latitude": 40.65389,
     "bbl": "3048670025"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.92235,40.674179",
+    "coords": -73.92235,
+    "latitude": 40.674179,
     "bbl": "3013570051"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 1,
-    "coords": "-73.88448,40.673896",
+    "coords": -73.88448,
+    "latitude": 40.673896,
     "bbl": "3040000128"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10034",
     "count": 1,
-    "coords": "-73.921019,40.869047",
+    "coords": -73.921019,
+    "latitude": 40.869047,
     "bbl": "1022420019"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11412",
     "count": 1,
-    "coords": "-73.766943,40.703563",
+    "coords": -73.766943,
+    "latitude": 40.703563,
     "bbl": "4103790056"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10460",
     "count": 1,
-    "coords": "-73.883647,40.840584",
+    "coords": -73.883647,
+    "latitude": 40.840584,
     "bbl": "2029920065"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10460",
     "count": 1,
-    "coords": "-73.883647,40.840584",
+    "coords": -73.883647,
+    "latitude": 40.840584,
     "bbl": "2029920065"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10016",
     "count": 1,
-    "coords": "-73.981468,40.745206",
+    "coords": -73.981468,
+    "latitude": 40.745206,
     "bbl": "1008870087"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10452",
     "count": 1,
-    "num": null,
-    "street": null,
-    "coords": "-73.916549,40.836463",
+    "coords": -73.916549,
+    "latitude": 40.836463,
     "bbl": "2024660026"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11222",
     "count": 1,
-    "coords": "-73.954973,40.729186",
+    "coords": -73.954973,
+    "latitude": 40.729186,
     "bbl": "3025660032"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10018",
     "count": 1,
-    "coords": "-73.984114,40.752901",
+    "coords": -73.984114,
+    "latitude": 40.752901,
     "bbl": "1008410075"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11217",
     "count": 1,
-    "coords": "-73.974376,40.684903",
+    "coords": -73.974376,
+    "latitude": 40.684903,
     "bbl": "3020030037"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.947406,40.808112",
+    "coords": -73.947406,
+    "latitude": 40.808112,
     "bbl": "1019090012"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.947127,40.809908",
+    "coords": -73.947127,
+    "latitude": 40.809908,
     "bbl": "1019110061"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10035",
     "count": 2,
-    "coords": "-73.941574,40.806424",
+    "coords": -73.941574,
+    "latitude": 40.806424,
     "bbl": "1017500005"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11214",
     "count": 1,
-    "coords": "-73.990846,40.59978",
+    "coords": -73.990846,
+    "latitude": 40.59978,
     "bbl": "3068620038"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11229",
     "count": 1,
-    "coords": "-73.955217,40.598713",
+    "coords": -73.955217,
+    "latitude": 40.598713,
     "bbl": "3073490001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10468",
     "count": 1,
-    "coords": "-73.892187,40.871477",
+    "coords": -73.892187,
+    "latitude": 40.871477,
     "bbl": "2033190037"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 2,
-    "coords": "-73.94749,40.676509",
+    "coords": -73.94749,
+    "latitude": 40.676509,
     "bbl": "3012130037"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11220",
     "count": 1,
-    "coords": "-74.014097,40.634934",
+    "coords": -74.014097,
+    "latitude": 40.634934,
     "bbl": "3058020057"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11429",
     "count": 1,
-    "coords": "-73.746259,40.708809",
+    "coords": -73.746259,
+    "latitude": 40.708809,
     "bbl": "4111130023"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11423",
     "count": 1,
-    "coords": "-73.767868,40.712661",
+    "coords": -73.767868,
+    "latitude": 40.712661,
     "bbl": "4108200040"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11423",
     "count": 1,
-    "coords": "-73.762709,40.708064",
+    "coords": -73.762709,
+    "latitude": 40.708064,
     "bbl": "4108620049"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10001",
     "count": 1,
-    "coords": "-73.998787,40.749203",
+    "coords": -73.998787,
+    "latitude": 40.749203,
     "bbl": "1007510076"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.953523,40.65036",
+    "coords": -73.953523,
+    "latitude": 40.65036,
     "bbl": "3051040053"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10036",
     "count": 1,
-    "coords": "-73.99099,40.758035",
+    "coords": -73.99099,
+    "latitude": 40.758035,
     "bbl": "1010330017"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11436",
     "count": 1,
-    "coords": "-73.791991,40.66883",
+    "coords": -73.791991,
+    "latitude": 40.66883,
     "bbl": "4121090001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.96267,40.64409",
+    "coords": -73.96267,
+    "latitude": 40.64409,
     "bbl": "3051480062"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 1,
-    "coords": "-73.970989,40.794567",
+    "coords": -73.970989,
+    "latitude": 40.794567,
     "bbl": "1018680124"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11204",
     "count": 1,
-    "coords": "-73.980522,40.631406",
+    "coords": -73.980522,
+    "latitude": 40.631406,
     "bbl": "3054350011"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 2,
-    "coords": "-73.902008,40.836632",
+    "coords": -73.902008,
+    "latitude": 40.836632,
     "bbl": "2029270013"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11413",
     "count": 1,
-    "coords": "-73.742313,40.698652",
+    "coords": -73.742313,
+    "latitude": 40.698652,
     "bbl": "4112980008"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.918381,40.657237",
+    "coords": -73.918381,
+    "latitude": 40.657237,
     "bbl": "3046700015"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.918711,40.656974",
+    "coords": -73.918711,
+    "latitude": 40.656974,
     "bbl": "3046690068"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11238",
     "count": 1,
-    "coords": "-73.964254,40.678868",
+    "coords": -73.964254,
+    "latitude": 40.678868,
     "bbl": "3011390023"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11225",
     "count": 1,
-    "coords": "-73.943014,40.661034",
+    "coords": -73.943014,
+    "latitude": 40.661034,
     "bbl": "3047980039"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11106",
     "count": 1,
-    "coords": "-73.940405,40.759884",
+    "coords": -73.940405,
+    "latitude": 40.759884,
     "bbl": "4003520001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11355",
     "count": 1,
-    "coords": "-73.821625,40.754353",
+    "coords": -73.821625,
+    "latitude": 40.754353,
     "bbl": "4051927504"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11235",
     "count": 1,
-    "coords": "-73.963561,40.581388",
+    "coords": -73.963561,
+    "latitude": 40.581388,
     "bbl": "3072620005"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11101",
     "count": 1,
-    "coords": "-73.927217,40.745652",
+    "coords": -73.927217,
+    "latitude": 40.745652,
     "bbl": "4002200023"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.90934,40.831466",
+    "coords": -73.90934,
+    "latitude": 40.831466,
     "bbl": "2023940030"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10033",
     "count": 1,
-    "coords": "-73.93535,40.848465",
+    "coords": -73.93535,
+    "latitude": 40.848465,
     "bbl": "1021620048"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11236",
     "count": 1,
-    "coords": "-73.917946,40.65376",
+    "coords": -73.917946,
+    "latitude": 40.65376,
     "bbl": "3047130036"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10030",
     "count": 2,
-    "coords": "-73.942839,40.81712",
+    "coords": -73.942839,
+    "latitude": 40.81712,
     "bbl": "1020230033"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 2,
-    "coords": "-73.878158,40.675607",
+    "coords": -73.878158,
+    "latitude": 40.675607,
     "bbl": "3040080013"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 1,
-    "coords": "-73.761427,40.595588",
+    "coords": -73.761427,
+    "latitude": 40.595588,
     "bbl": "4158040014"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10466",
     "count": 1,
-    "coords": "-73.830695,40.887658",
+    "coords": -73.830695,
+    "latitude": 40.887658,
     "bbl": "2049500041"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.800898,40.707321",
+    "coords": -73.800898,
+    "latitude": 40.707321,
     "bbl": "4097640075"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.799132,40.70787",
+    "coords": -73.799132,
+    "latitude": 40.70787,
     "bbl": "4097680044"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10021",
     "count": 1,
-    "coords": "-73.964457,40.772658",
+    "coords": -73.964457,
+    "latitude": 40.772658,
     "bbl": "1013880021"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10029",
     "count": 1,
-    "coords": "-73.946507,40.790831",
+    "coords": -73.946507,
+    "latitude": 40.790831,
     "bbl": "1016320026"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11435",
     "count": 1,
-    "coords": "-73.787518,40.703437",
+    "coords": -73.787518,
+    "latitude": 40.703437,
     "bbl": "4102240019"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10314",
     "count": 1,
-    "coords": "-74.126481,40.594832",
+    "coords": -74.126481,
+    "latitude": 40.594832,
     "bbl": "5009550100"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11239",
     "count": 1,
-    "coords": "-73.885804,40.651464",
+    "coords": -73.885804,
+    "latitude": 40.651464,
     "bbl": "3044340060"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10462",
     "count": 1,
-    "coords": "-73.865992,40.855338",
+    "coords": -73.865992,
+    "latitude": 40.855338,
     "bbl": "2043190045"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 1,
-    "coords": "-73.751553,40.605256",
+    "coords": -73.751553,
+    "latitude": 40.605256,
     "bbl": "4155450023"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10033",
     "count": 1,
-    "coords": "-73.934527,40.854105",
+    "coords": -73.934527,
+    "latitude": 40.854105,
     "bbl": "1021800150"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11373",
     "count": 1,
-    "coords": "-73.870998,40.73113",
+    "coords": -73.870998,
+    "latitude": 40.73113,
     "bbl": "4030880001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11367",
     "count": 1,
-    "coords": "-73.811548,40.721038",
+    "coords": -73.811548,
+    "latitude": 40.721038,
     "bbl": "4067110084"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.928904,40.681062",
+    "coords": -73.928904,
+    "latitude": 40.681062,
     "bbl": "3016860040"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11234",
     "count": 1,
-    "coords": "-73.917699,40.620301",
+    "coords": -73.917699,
+    "latitude": 40.620301,
     "bbl": "3078840071"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11229",
     "count": 1,
-    "coords": "-73.941226,40.598856",
+    "coords": -73.941226,
+    "latitude": 40.598856,
     "bbl": "3073630036"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11235",
     "count": 1,
-    "coords": "-73.934968,40.578152",
+    "coords": -73.934968,
+    "latitude": 40.578152,
     "bbl": "3087600060"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11354",
     "count": 2,
-    "coords": "-73.831236,40.760321",
+    "coords": -73.831236,
+    "latitude": 40.760321,
     "bbl": "4049750001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 1,
-    "coords": "-73.884169,40.675809",
+    "coords": -73.884169,
+    "latitude": 40.675809,
     "bbl": "3039850020"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11420",
     "count": 1,
-    "num": null,
-    "street": null,
-    "coords": "-73.806276,40.682327",
+    "coords": -73.806276,
+    "latitude": 40.682327,
     "bbl": "4116610011"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.925221,40.664148",
+    "coords": -73.925221,
+    "latitude": 40.664148,
     "bbl": "3045980041"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10009",
     "count": 1,
-    "coords": "-74.00805,40.74884",
+    "coords": -74.00805,
+    "latitude": 40.74884,
     "bbl": "1006680030"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11413",
     "count": 1,
-    "coords": "-73.743741,40.672946",
+    "coords": -73.743741,
+    "latitude": 40.672946,
     "bbl": "4131690026"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.912562,40.658956",
+    "coords": -73.912562,
+    "latitude": 40.658956,
     "bbl": "3035980005"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.910379,40.661918",
+    "coords": -73.910379,
+    "latitude": 40.661918,
     "bbl": "3035880023"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10029",
     "count": 1,
-    "coords": "-73.936638,40.795879",
+    "coords": -73.936638,
+    "latitude": 40.795879,
     "bbl": "1016870017"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10457",
     "count": 1,
-    "coords": "-73.889498,40.852145",
+    "coords": -73.889498,
+    "latitude": 40.852145,
     "bbl": "2030710001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10472",
     "count": 1,
-    "coords": "-73.878362,40.826467",
+    "coords": -73.878362,
+    "latitude": 40.826467,
     "bbl": "2037400005"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 1,
-    "coords": "-73.896227,40.826203",
+    "coords": -73.896227,
+    "latitude": 40.826203,
     "bbl": "2027060028"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11433",
     "count": 2,
-    "coords": "-73.793632,40.699237",
+    "coords": -73.793632,
+    "latitude": 40.699237,
     "bbl": "4101290013"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10029",
     "count": 1,
-    "coords": "-73.94096,40.78969",
+    "coords": -73.94096,
+    "latitude": 40.78969,
     "bbl": "1016770033"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11237",
     "count": 1,
-    "coords": "-73.915886,40.698462",
+    "coords": -73.915886,
+    "latitude": 40.698462,
     "bbl": "3033170041"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11372",
     "count": 1,
-    "coords": "-73.874015,40.748419",
+    "coords": -73.874015,
+    "latitude": 40.748419,
     "bbl": "4015500020"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11234",
     "count": 1,
-    "coords": "-73.927983,40.632636",
+    "coords": -73.927983,
+    "latitude": 40.632636,
     "bbl": "3077540041"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 2,
-    "coords": "-73.904936,40.827546",
+    "coords": -73.904936,
+    "latitude": 40.827546,
     "bbl": "2026130040"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11219",
     "count": 2,
-    "coords": "-73.995515,40.632367",
+    "coords": -73.995515,
+    "latitude": 40.632367,
     "bbl": "3056760033"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11230",
     "count": 2,
-    "coords": "-73.965393,40.624045",
+    "coords": -73.965393,
+    "latitude": 40.624045,
     "bbl": "3065310016"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11375",
     "count": 2,
-    "coords": "-73.849783,40.732344",
+    "coords": -73.849783,
+    "latitude": 40.732344,
     "bbl": "4021490001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10461",
     "count": 1,
-    "coords": "-73.83712,40.852462",
+    "coords": -73.83712,
+    "latitude": 40.852462,
     "bbl": "2042260070"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10018",
     "count": 1,
-    "coords": "-73.997519,40.755334",
+    "coords": -73.997519,
+    "latitude": 40.755334,
     "bbl": "1007330062"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11225",
     "count": 1,
-    "coords": "-73.956105,40.667019",
+    "coords": -73.956105,
+    "latitude": 40.667019,
     "bbl": "3012880001"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10309",
     "count": 1,
-    "coords": "-74.214477,40.527495",
+    "coords": -74.214477,
+    "latitude": 40.527495,
     "bbl": "5069980024"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11234",
     "count": 1,
-    "coords": "-73.923521,40.639461",
+    "coords": -73.923521,
+    "latitude": 40.639461,
     "bbl": "3079490204"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11434",
     "count": 1,
-    "coords": "-73.769337,40.670876",
+    "coords": -73.769337,
+    "latitude": 40.670876,
     "bbl": "4125880044"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10455",
     "count": 1,
-    "coords": "-73.90281,40.817636",
+    "coords": -73.90281,
+    "latitude": 40.817636,
     "bbl": "2026760079"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10474",
     "count": 1,
-    "coords": "-73.880518,40.808197",
+    "coords": -73.880518,
+    "latitude": 40.808197,
     "bbl": "2027750208"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10452",
     "count": 1,
-    "coords": "-73.922135,40.831746",
+    "coords": -73.922135,
+    "latitude": 40.831746,
     "bbl": "2024780001"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10003",
     "count": 1,
-    "coords": "-73.987657,40.727566",
+    "coords": -73.987657,
+    "latitude": 40.727566,
     "bbl": "1004480009"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10022",
     "count": 1,
-    "coords": "-73.969943,40.758407",
+    "coords": -73.969943,
+    "latitude": 40.758407,
     "bbl": "1013087501"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.954578,40.650138",
+    "coords": -73.954578,
+    "latitude": 40.650138,
     "bbl": "3051040110"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11434",
     "count": 1,
-    "coords": "-73.782553,40.669141",
+    "coords": -73.782553,
+    "latitude": 40.669141,
     "bbl": "4121360022"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11436",
     "count": 1,
-    "coords": "-73.793447,40.673859",
+    "coords": -73.793447,
+    "latitude": 40.673859,
     "bbl": "4120480085"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11436",
     "count": 1,
-    "coords": "-73.793447,40.673859",
+    "coords": -73.793447,
+    "latitude": 40.673859,
     "bbl": "4120480085"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.904093,40.832638",
+    "coords": -73.904093,
+    "latitude": 40.832638,
     "bbl": "2029250092"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.907004,40.825528",
+    "coords": -73.907004,
+    "latitude": 40.825528,
     "bbl": "2026220005"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10467",
     "count": 1,
-    "coords": "-73.880729,40.88151",
+    "coords": -73.880729,
+    "latitude": 40.88151,
     "bbl": "2033270001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.933405,40.64212",
+    "coords": -73.933405,
+    "latitude": 40.64212,
     "bbl": "3049620041"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10466",
     "count": 1,
-    "coords": "-73.858897,40.890041",
+    "coords": -73.858897,
+    "latitude": 40.890041,
     "bbl": "2048420038"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11428",
     "count": 1,
-    "coords": "-73.739813,40.721047",
+    "coords": -73.739813,
+    "latitude": 40.721047,
     "bbl": "4106230001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11231",
     "count": 1,
-    "coords": "-74.003612,40.682054",
+    "coords": -74.003612,
+    "latitude": 40.682054,
     "bbl": "3003580012"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.910929,40.66771",
+    "coords": -73.910929,
+    "latitude": 40.66771,
     "bbl": "3035210009"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.94807,40.804945",
+    "coords": -73.94807,
+    "latitude": 40.804945,
     "bbl": "1019050029"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11368",
     "count": 1,
-    "coords": "-73.870855,40.756141",
+    "coords": -73.870855,
+    "latitude": 40.756141,
     "bbl": "4017120019"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10034",
     "count": 1,
-    "coords": "-73.922708,40.864404",
+    "coords": -73.922708,
+    "latitude": 40.864404,
     "bbl": "1022210009"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10023",
     "count": 2,
-    "coords": "-73.982994,40.779504",
+    "coords": -73.982994,
+    "latitude": 40.779504,
     "bbl": "1011640015"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11434",
     "count": 1,
-    "coords": "-73.774776,40.686631",
+    "coords": -73.774776,
+    "latitude": 40.686631,
     "bbl": "4123670234"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
     "count": 1,
-    "coords": "-73.941032,40.668863",
+    "coords": -73.941032,
+    "latitude": 40.668863,
     "bbl": "3012720020"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10009",
     "count": 1,
-    "coords": "-73.984244,40.7237",
+    "coords": -73.984244,
+    "latitude": 40.7237,
     "bbl": "1003990011"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.913837,40.678134",
+    "coords": -73.913837,
+    "latitude": 40.678134,
     "bbl": "3015500031"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10010",
     "count": 1,
-    "coords": "-73.990417,40.744616",
+    "coords": -73.990417,
+    "latitude": 40.744616,
     "bbl": "1008280009"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.903414,40.829033",
+    "coords": -73.903414,
+    "latitude": 40.829033,
     "bbl": "2026140043"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11373",
     "count": 1,
-    "coords": "-73.881123,40.736909",
+    "coords": -73.881123,
+    "latitude": 40.736909,
     "bbl": "4024750012"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.910505,40.658697",
+    "coords": -73.910505,
+    "latitude": 40.658697,
     "bbl": "3036120024"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10458",
     "count": 1,
-    "coords": "-73.889201,40.856682",
+    "coords": -73.889201,
+    "latitude": 40.856682,
     "bbl": "2030560051"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10034",
     "count": 2,
-    "coords": "-73.91852,40.862198",
+    "coords": -73.91852,
+    "latitude": 40.862198,
     "bbl": "1022010021"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10013",
     "count": 1,
-    "coords": "-74.001614,40.717546",
+    "coords": -74.001614,
+    "latitude": 40.717546,
     "bbl": "1001950021"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10013",
     "count": 1,
-    "coords": "-74.001614,40.717546",
+    "coords": -74.001614,
+    "latitude": 40.717546,
     "bbl": "1001950021"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10029",
     "count": 2,
-    "coords": "-73.949227,40.795787",
+    "coords": -73.949227,
+    "latitude": 40.795787,
     "bbl": "1016140066"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 1,
-    "coords": "-73.890278,40.830817",
+    "coords": -73.890278,
+    "latitude": 40.830817,
     "bbl": "2029870010"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11103",
     "count": 1,
-    "coords": "-73.913341,40.757377",
+    "coords": -73.913341,
+    "latitude": 40.757377,
     "bbl": "4007240014"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 2,
-    "coords": "-73.941105,40.682298",
+    "coords": -73.941105,
+    "latitude": 40.682298,
     "bbl": "3018460047"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 1,
-    "coords": "-73.9429,40.691324",
+    "coords": -73.9429,
+    "latitude": 40.691324,
     "bbl": "3017860038"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11368",
     "count": 1,
-    "coords": "-73.868977,40.757558",
+    "coords": -73.868977,
+    "latitude": 40.757558,
     "bbl": "4014290038"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10451",
     "count": 1,
-    "coords": "-73.9211,40.825809",
+    "coords": -73.9211,
+    "latitude": 40.825809,
     "bbl": "2024430094"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11201",
     "count": 1,
-    "coords": "-73.987989,40.693844",
+    "coords": -73.987989,
+    "latitude": 40.693844,
     "bbl": "3001407501"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10013",
     "count": 1,
-    "coords": "-74.001235,40.715142",
+    "coords": -74.001235,
+    "latitude": 40.715142,
     "bbl": "1001660027"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11415",
     "count": 1,
-    "coords": "-73.825879,40.71324",
+    "coords": -73.825879,
+    "latitude": 40.71324,
     "bbl": "4096530001"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10301",
     "count": 1,
-    "coords": "-74.077166,40.642924",
+    "coords": -74.077166,
+    "latitude": 40.642924,
     "bbl": "5000080070"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11413",
     "count": 1,
-    "coords": "-73.75228,40.680234",
+    "coords": -73.75228,
+    "latitude": 40.680234,
     "bbl": "4129560012"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11218",
     "count": 1,
-    "coords": "-73.980571,40.635559",
+    "coords": -73.980571,
+    "latitude": 40.635559,
     "bbl": "3053820001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 1,
-    "coords": "-73.880587,40.672635",
+    "coords": -73.880587,
+    "latitude": 40.672635,
     "bbl": "3040360022"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.918501,40.669607",
+    "coords": -73.918501,
+    "latitude": 40.669607,
     "bbl": "3014740019"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11209",
     "count": 1,
-    "coords": "-74.026181,40.63236",
+    "coords": -74.026181,
+    "latitude": 40.63236,
     "bbl": "3059180021"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 1,
-    "coords": "-74.086229,40.631214",
+    "coords": -74.086229,
+    "latitude": 40.631214,
     "bbl": "5005800034"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11414",
     "count": 1,
-    "coords": "-73.833084,40.66134",
+    "coords": -73.833084,
+    "latitude": 40.66134,
     "bbl": "4141700001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11223",
     "count": 2,
-    "coords": "-73.967474,40.593446",
+    "coords": -73.967474,
+    "latitude": 40.593446,
     "bbl": "3071550040"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11412",
     "count": 1,
-    "coords": "-73.763299,40.689841",
+    "coords": -73.763299,
+    "latitude": 40.689841,
     "bbl": "4124490004"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11428",
     "count": 1,
-    "coords": "-73.736434,40.722964",
+    "coords": -73.736434,
+    "latitude": 40.722964,
     "bbl": "4107040030"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.905214,40.662007",
+    "coords": -73.905214,
+    "latitude": 40.662007,
     "bbl": "3035930035"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11236",
     "count": 1,
-    "coords": "-73.909135,40.638838",
+    "coords": -73.909135,
+    "latitude": 40.638838,
     "bbl": "3080070012"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10458",
     "count": 1,
-    "coords": "-73.890668,40.866548",
+    "coords": -73.890668,
+    "latitude": 40.866548,
     "bbl": "2032940047"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11210",
     "count": 1,
-    "coords": "-73.957616,40.636443",
+    "coords": -73.957616,
+    "latitude": 40.636443,
     "bbl": "3052200023"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10002",
     "count": 1,
-    "coords": "-73.982422,40.719424",
+    "coords": -73.982422,
+    "latitude": 40.719424,
     "bbl": "1003440056"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11207",
     "count": 1,
-    "coords": "-73.900019,40.673992",
+    "coords": -73.900019,
+    "latitude": 40.673992,
     "bbl": "3036830001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11217",
     "count": 1,
-    "coords": "-73.982847,40.678335",
+    "coords": -73.982847,
+    "latitude": 40.678335,
     "bbl": "3004270046"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10458",
     "count": 2,
-    "coords": "-73.886668,40.865845",
+    "coords": -73.886668,
+    "latitude": 40.865845,
     "bbl": "2032780084"
   },
   {
@@ -2308,84 +2629,96 @@
     "count": 1,
     "num": null,
     "street": null,
-    "coords": "-73.89534,40.829614",
+    "coords": -73.89534,
+    "latitude": 40.829614,
     "bbl": "2029730016"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.950636,40.648322",
+    "coords": -73.950636,
+    "latitude": 40.648322,
     "bbl": "3051110055"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.929869,40.643039",
+    "coords": -73.929869,
+    "latitude": 40.643039,
     "bbl": "3047700027"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11367",
     "count": 1,
-    "coords": "-73.814119,40.735113",
+    "coords": -73.814119,
+    "latitude": 40.735113,
     "bbl": "4067920030"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10468",
     "count": 1,
-    "coords": "-73.900472,40.859425",
+    "coords": -73.900472,
+    "latitude": 40.859425,
     "bbl": "2031720046"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 1,
-    "coords": "-73.884547,40.680504",
+    "coords": -73.884547,
+    "latitude": 40.680504,
     "bbl": "3039410001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10474",
     "count": 1,
-    "coords": "-73.891427,40.814201",
+    "coords": -73.891427,
+    "latitude": 40.814201,
     "bbl": "2027370130"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10026",
     "count": 1,
-    "coords": "-73.951116,40.800671",
+    "coords": -73.951116,
+    "latitude": 40.800671,
     "bbl": "1018230034"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 3,
-    "coords": "-74.076895,40.629403",
+    "coords": -74.076895,
+    "latitude": 40.629403,
     "bbl": "5005110003"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11415",
     "count": 1,
-    "coords": "-73.825621,40.703975",
+    "coords": -73.825621,
+    "latitude": 40.703975,
     "bbl": "4092710012"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11429",
     "count": 1,
-    "coords": "-73.731973,40.718027",
+    "coords": -73.731973,
+    "latitude": 40.718027,
     "bbl": "4107890114"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10018",
     "count": 1,
-    "coords": "-73.994329,40.757219",
+    "coords": -73.994329,
+    "latitude": 40.757219,
     "bbl": "1007370043"
   },
   -73.994329,
@@ -2393,1043 +2726,1192 @@
     "BORO": "BROOKLYN",
     "ZIP CODE": "11214",
     "count": 1,
-    "coords": "-74.000715,40.614009",
+    "coords": -74.000715,
+    "latitude": 40.614009,
     "bbl": "3062470030"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.916908,40.829041",
+    "coords": -73.916908,
+    "latitude": 40.829041,
     "bbl": "2024470053"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11236",
     "count": 1,
-    "coords": "-73.911838,40.649268",
+    "coords": -73.911838,
+    "latitude": 40.649268,
     "bbl": "3081190047"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10302",
     "count": 1,
-    "coords": "-74.132426,40.640587",
+    "coords": -74.132426,
+    "latitude": 40.640587,
     "bbl": "5010680060"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 1,
-    "coords": "-73.899293,40.821502",
+    "coords": -73.899293,
+    "latitude": 40.821502,
     "bbl": "2026900080"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11217",
     "count": 2,
-    "coords": "-73.980333,40.686526",
+    "coords": -73.980333,
+    "latitude": 40.686526,
     "bbl": "3001730023"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11385",
     "count": 1,
-    "coords": "-73.899665,40.701029",
+    "coords": -73.899665,
+    "latitude": 40.701029,
     "bbl": "4035080009"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11418",
     "count": 1,
-    "coords": "-73.829137,40.69699",
+    "coords": -73.829137,
+    "latitude": 40.69699,
     "bbl": "4093460047"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11418",
     "count": 1,
-    "coords": "-73.829137,40.69699",
+    "coords": -73.829137,
+    "latitude": 40.69699,
     "bbl": "4093460047"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 1,
-    "coords": "-73.868134,40.669099",
+    "coords": -73.868134,
+    "latitude": 40.669099,
     "bbl": "3044630039"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.962564,40.811979",
+    "coords": -73.962564,
+    "latitude": 40.811979,
     "bbl": "1019910031"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11434",
     "count": 2,
-    "coords": "-73.791668,40.677902",
+    "coords": -73.791668,
+    "latitude": 40.677902,
     "bbl": "4120280053"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11377",
     "count": 1,
-    "coords": "-73.921162,40.737008",
+    "coords": -73.921162,
+    "latitude": 40.737008,
     "bbl": "4022940050"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.946577,40.811945",
+    "coords": -73.946577,
+    "latitude": 40.811945,
     "bbl": "1019330032"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.946577,40.811945",
+    "coords": -73.946577,
+    "latitude": 40.811945,
     "bbl": "1019330032"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11223",
     "count": 1,
-    "coords": "-73.983426,40.588552",
+    "coords": -73.983426,
+    "latitude": 40.588552,
     "bbl": "3071850072"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11225",
     "count": 1,
-    "coords": "-73.948089,40.662295",
+    "coords": -73.948089,
+    "latitude": 40.662295,
     "bbl": "3013300034"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11412",
     "count": 1,
-    "coords": "-73.757132,40.705944",
+    "coords": -73.757132,
+    "latitude": 40.705944,
     "bbl": "4109400102"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11208",
     "count": 1,
-    "coords": "-73.879993,40.671457",
+    "coords": -73.879993,
+    "latitude": 40.671457,
     "bbl": "3040530020"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11223",
     "count": 1,
-    "coords": "-73.97453,40.60471",
+    "coords": -73.97453,
+    "latitude": 40.60471,
     "bbl": "3066550034"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.93967,40.663381",
+    "coords": -73.93967,
+    "latitude": 40.663381,
     "bbl": "3014267501"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.953456,40.670523",
+    "coords": -73.953456,
+    "latitude": 40.670523,
     "bbl": "3012600027"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10466",
     "count": 2,
-    "coords": "-73.860429,40.886323",
+    "coords": -73.860429,
+    "latitude": 40.886323,
     "bbl": "2048370036"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11235",
     "count": 1,
-    "coords": "-73.967113,40.576102",
+    "coords": -73.967113,
+    "latitude": 40.576102,
     "bbl": "3086800027"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11235",
     "count": 1,
-    "coords": "-73.962338,40.579139",
+    "coords": -73.962338,
+    "latitude": 40.579139,
     "bbl": "3086750078"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.947187,40.683366",
+    "coords": -73.947187,
+    "latitude": 40.683366,
     "bbl": "3018330038"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11239",
     "count": 1,
-    "coords": "-73.877987,40.647509",
+    "coords": -73.877987,
+    "latitude": 40.647509,
     "bbl": "3044520200"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10301",
     "count": 1,
-    "coords": "-74.078137,40.64254",
+    "coords": -74.078137,
+    "latitude": 40.64254,
     "bbl": "5000080016"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.939739,40.652984",
+    "coords": -73.939739,
+    "latitude": 40.652984,
     "bbl": "3048770005"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11206",
     "count": 1,
-    "coords": "-73.946621,40.695093",
+    "coords": -73.946621,
+    "latitude": 40.695093,
     "bbl": "3017550046"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 1,
-    "coords": "-73.782704,40.592695",
+    "coords": -73.782704,
+    "latitude": 40.592695,
     "bbl": "4158910021"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10473",
     "count": 1,
-    "coords": "-73.865045,40.82087",
+    "coords": -73.865045,
+    "latitude": 40.82087,
     "bbl": "2035960001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11355",
     "count": 1,
-    "coords": "-73.818019,40.753843",
+    "coords": -73.818019,
+    "latitude": 40.753843,
     "bbl": "4052030003"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11217",
     "count": 1,
-    "coords": "-73.976617,40.679583",
+    "coords": -73.976617,
+    "latitude": 40.679583,
     "bbl": "3009380026"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11436",
     "count": 1,
-    "coords": "-73.801148,40.675614",
+    "coords": -73.801148,
+    "latitude": 40.675614,
     "bbl": "4120290071"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 1,
-    "coords": "-73.960123,40.799545",
+    "coords": -73.960123,
+    "latitude": 40.799545,
     "bbl": "1018430041"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11211",
     "count": 1,
-    "coords": "-73.961618,40.712409",
+    "coords": -73.961618,
+    "latitude": 40.712409,
     "bbl": "3024180040"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 1,
-    "coords": "-73.899214,40.824661",
+    "coords": -73.899214,
+    "latitude": 40.824661,
     "bbl": "2026910012"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10473",
     "count": 1,
-    "coords": "-73.861207,40.814804",
+    "coords": -73.861207,
+    "latitude": 40.814804,
     "bbl": "2034960037"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10454",
     "count": 2,
-    "coords": "-73.916807,40.808486",
+    "coords": -73.916807,
+    "latitude": 40.808486,
     "bbl": "2022670044"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
     "count": 1,
-    "coords": "-73.931139,40.663825",
+    "coords": -73.931139,
+    "latitude": 40.663825,
     "bbl": "3014250001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10460",
     "count": 1,
-    "coords": "-73.869432,40.837838",
+    "coords": -73.869432,
+    "latitude": 40.837838,
     "bbl": "2039140022"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.904373,40.829146",
+    "coords": -73.904373,
+    "latitude": 40.829146,
     "bbl": "2026140001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
     "count": 1,
-    "coords": "-73.934194,40.668263",
+    "coords": -73.934194,
+    "latitude": 40.668263,
     "bbl": "3013950044"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11217",
     "count": 1,
-    "coords": "-73.976096,40.678672",
+    "coords": -73.976096,
+    "latitude": 40.678672,
     "bbl": "3009410030"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10467",
     "count": 1,
-    "coords": "-73.877965,40.875418",
+    "coords": -73.877965,
+    "latitude": 40.875418,
     "bbl": "2033420029"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11222",
     "count": 1,
-    "coords": "-73.941885,40.720155",
+    "coords": -73.941885,
+    "latitude": 40.720155,
     "bbl": "3028320008"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10029",
     "count": 1,
-    "coords": "-73.947351,40.792029",
+    "coords": -73.947351,
+    "latitude": 40.792029,
     "bbl": "1016330010"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10030",
     "count": 1,
-    "coords": "-73.941643,40.819611",
+    "coords": -73.941643,
+    "latitude": 40.819611,
     "bbl": "1020270024"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11436",
     "count": 1,
-    "coords": "-73.799415,40.675021",
+    "coords": -73.799415,
+    "latitude": 40.675021,
     "bbl": "4120330046"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10036",
     "count": 1,
-    "coords": "-73.991571,40.761565",
+    "coords": -73.991571,
+    "latitude": 40.761565,
     "bbl": "1010560022"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10453",
     "count": 1,
-    "coords": "-73.908231,40.849929",
+    "coords": -73.908231,
+    "latitude": 40.849929,
     "bbl": "2028280037"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10309",
     "count": 1,
-    "coords": "-74.222414,40.512036",
+    "coords": -74.222414,
+    "latitude": 40.512036,
     "bbl": "5076640001"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10024",
     "count": 1,
-    "coords": "-73.97715,40.789277",
+    "coords": -73.97715,
+    "latitude": 40.789277,
     "bbl": "1012340061"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 2,
-    "coords": "-73.928909,40.690443",
+    "coords": -73.928909,
+    "latitude": 40.690443,
     "bbl": "3016220060"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10001",
     "count": 1,
-    "coords": "-73.993092,40.748949",
+    "coords": -73.993092,
+    "latitude": 40.748949,
     "bbl": "1007800026"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.954213,40.811822",
+    "coords": -73.954213,
+    "latitude": 40.811822,
     "bbl": "1019660070"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10014",
     "count": 1,
-    "coords": "-74.000646,40.732768",
+    "coords": -74.000646,
+    "latitude": 40.732768,
     "bbl": "1005920069"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11413",
     "count": 1,
-    "coords": "-73.737725,40.675869",
+    "coords": -73.737725,
+    "latitude": 40.675869,
     "bbl": "4129710052"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10454",
     "count": 1,
-    "coords": "-73.915527,40.806254",
+    "coords": -73.915527,
+    "latitude": 40.806254,
     "bbl": "2025510058"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10467",
     "count": 2,
-    "coords": "-73.85901,40.8851",
+    "coords": -73.85901,
+    "latitude": 40.8851,
     "bbl": "2048360007"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11102",
     "count": 1,
-    "coords": "-73.930653,40.773481",
+    "coords": -73.930653,
+    "latitude": 40.773481,
     "bbl": "4005100006"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11372",
     "count": 1,
-    "coords": "-73.87242,40.756599",
+    "coords": -73.87242,
+    "latitude": 40.756599,
     "bbl": "4017100010"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10037",
     "count": 1,
-    "coords": "-73.938684,40.815875",
+    "coords": -73.938684,
+    "latitude": 40.815875,
     "bbl": "1017360007"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.921818,40.674112",
+    "coords": -73.921818,
+    "latitude": 40.674112,
     "bbl": "3014510006"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 1,
-    "coords": "-73.752715,40.60076",
+    "coords": -73.752715,
+    "latitude": 40.60076,
     "bbl": "4155640079"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10027",
     "count": 1,
-    "coords": "-73.956074,40.814886",
+    "coords": -73.956074,
+    "latitude": 40.814886,
     "bbl": "1019830011"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
     "count": 1,
-    "coords": "-73.932131,40.669651",
+    "coords": -73.932131,
+    "latitude": 40.669651,
     "bbl": "3013900129"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10025",
     "count": 1,
-    "coords": "-73.969285,40.79654",
+    "coords": -73.969285,
+    "latitude": 40.79654,
     "bbl": "1018710029"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.809815,40.718757",
+    "coords": -73.809815,
+    "latitude": 40.718757,
     "bbl": "4067130041"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11101",
     "count": 1,
-    "coords": "-73.935598,40.752739",
+    "coords": -73.935598,
+    "latitude": 40.752739,
     "bbl": "4003980039"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.913659,40.680344",
+    "coords": -73.913659,
+    "latitude": 40.680344,
     "bbl": "3015270004"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10019",
     "count": 2,
-    "coords": "-73.98706,40.763707",
+    "coords": -73.98706,
+    "latitude": 40.763707,
     "bbl": "1010420015"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10462",
     "count": 1,
-    "coords": "-73.862319,40.834681",
+    "coords": -73.862319,
+    "latitude": 40.834681,
     "bbl": "2039360032"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10022",
     "count": 1,
-    "coords": "-73.969943,40.758407",
+    "coords": -73.969943,
+    "latitude": 40.758407,
     "bbl": "1013087501"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10011",
     "count": 1,
-    "coords": "-74.001958,40.744087",
+    "coords": -74.001958,
+    "latitude": 40.744087,
     "bbl": "1007430072"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10461",
     "count": 1,
-    "coords": "-73.843804,40.838537",
+    "coords": -73.843804,
+    "latitude": 40.838537,
     "bbl": "2038480018"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 1,
-    "coords": "-73.942201,40.691173",
+    "coords": -73.942201,
+    "latitude": 40.691173,
     "bbl": "3017870001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.933244,40.681674",
+    "coords": -73.933244,
+    "latitude": 40.681674,
     "bbl": "3016750019"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11101",
     "count": 1,
-    "coords": "-73.929982,40.737123",
+    "coords": -73.929982,
+    "latitude": 40.737123,
     "bbl": "4002330001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11206",
     "count": 2,
-    "coords": "-73.947118,40.695373",
+    "coords": -73.947118,
+    "latitude": 40.695373,
     "bbl": "3017550032"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11238",
     "count": 1,
-    "coords": "-73.959907,40.673686",
+    "coords": -73.959907,
+    "latitude": 40.673686,
     "bbl": "3011750001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11420",
     "count": 1,
-    "coords": "-73.813808,40.684812",
+    "coords": -73.813808,
+    "latitude": 40.684812,
     "bbl": "4096090114"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.933679,40.632307",
+    "coords": -73.933679,
+    "latitude": 40.632307,
     "bbl": "3077480044"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 1,
-    "coords": "-74.078684,40.623378",
+    "coords": -74.078684,
+    "latitude": 40.623378,
     "bbl": "5005330036"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 1,
-    "coords": "-74.078684,40.623378",
+    "coords": -74.078684,
+    "latitude": 40.623378,
     "bbl": "5005330036"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10303",
     "count": 1,
-    "coords": "-74.158371,40.63476",
+    "coords": -74.158371,
+    "latitude": 40.63476,
     "bbl": "5012250043"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.943851,40.681237",
+    "coords": -73.943851,
+    "latitude": 40.681237,
     "bbl": "3018510039"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 1,
-    "coords": "-73.794362,40.706884",
+    "coords": -73.794362,
+    "latitude": 40.706884,
     "bbl": "4097960053"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11422",
     "count": 1,
-    "coords": "-73.73437,40.671926",
+    "coords": -73.73437,
+    "latitude": 40.671926,
     "bbl": "4132210027"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10075",
     "count": 1,
-    "coords": "-73.955555,40.773232",
+    "coords": -73.955555,
+    "latitude": 40.773232,
     "bbl": "1014330127"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.918127,40.678428",
+    "coords": -73.918127,
+    "latitude": 40.678428,
     "bbl": "3015490012"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11213",
     "count": 1,
-    "coords": "-73.944547,40.668783",
+    "coords": -73.944547,
+    "latitude": 40.668783,
     "bbl": "3012710001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10452",
     "count": 1,
-    "coords": "-73.924921,40.841835",
+    "coords": -73.924921,
+    "latitude": 40.841835,
     "bbl": "2025350026"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10009",
     "count": 2,
-    "coords": "-73.979868,40.727884",
+    "coords": -73.979868,
+    "latitude": 40.727884,
     "bbl": "1004050041"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10469",
     "count": 1,
-    "coords": "-73.884395,40.842373",
+    "coords": -73.884395,
+    "latitude": 40.842373,
     "bbl": "2031210033"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11226",
     "count": 1,
-    "coords": "-73.955119,40.648472",
+    "coords": -73.955119,
+    "latitude": 40.648472,
     "bbl": "3051100012"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10466",
     "count": 1,
-    "coords": "-73.849365,40.891073",
+    "coords": -73.849365,
+    "latitude": 40.891073,
     "bbl": "2049750001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11433",
     "count": 2,
-    "coords": "-73.797056,40.698152",
+    "coords": -73.797056,
+    "latitude": 40.698152,
     "bbl": "4101250010"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11385",
     "count": 1,
-    "coords": "-73.892335,40.701554",
+    "coords": -73.892335,
+    "latitude": 40.701554,
     "bbl": "4036390001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 1,
-    "coords": "-73.898525,40.820731",
+    "coords": -73.898525,
+    "latitude": 40.820731,
     "bbl": "2026960095"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11103",
     "count": 1,
-    "coords": "-73.914553,40.756619",
+    "coords": -73.914553,
+    "latitude": 40.756619,
     "bbl": "4007080040"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11216",
     "count": 1,
-    "coords": "-73.950613,40.690524",
+    "coords": -73.950613,
+    "latitude": 40.690524,
     "bbl": "3017840011"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10451",
     "count": 2,
-    "coords": "-73.913389,40.822757",
+    "coords": -73.913389,
+    "latitude": 40.822757,
     "bbl": "2023810029"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.906176,40.66117",
+    "coords": -73.906176,
+    "latitude": 40.66117,
     "bbl": "3036050010"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 2,
-    "coords": "-73.917276,40.689296",
+    "coords": -73.917276,
+    "latitude": 40.689296,
     "bbl": "3033740001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11432",
     "count": 2,
-    "coords": "-73.798707,40.704857",
+    "coords": -73.798707,
+    "latitude": 40.704857,
     "bbl": "4097600013"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10011",
     "count": 1,
-    "coords": "-73.998636,40.737799",
+    "coords": -73.998636,
+    "latitude": 40.737799,
     "bbl": "1006090020"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11372",
     "count": 2,
-    "coords": "-73.880669,40.752436",
+    "coords": -73.880669,
+    "latitude": 40.752436,
     "bbl": "4014470035"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 2,
-    "coords": "-74.075695,40.625817",
+    "coords": -74.075695,
+    "latitude": 40.625817,
     "bbl": "5005250021"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11220",
     "count": 2,
-    "coords": "-74.009906,40.644618",
+    "coords": -74.009906,
+    "latitude": 40.644618,
     "bbl": "3007920012"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10457",
     "count": 1,
-    "coords": "-73.89559,40.85224",
+    "coords": -73.89559,
+    "latitude": 40.85224,
     "bbl": "2030370015"
   },
   {
     "BORO": "MN",
     "ZIP CODE": "11220",
     "count": 1,
-    "coords": "-74.014162,40.637551",
+    "coords": -74.014162,
+    "latitude": 40.637551,
     "bbl": "3057840001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 1,
-    "coords": "-73.899242,40.822306",
+    "coords": -73.899242,
+    "latitude": 40.822306,
     "bbl": "2026900155"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10458",
     "count": 1,
-    "coords": "-73.894721,40.856389",
+    "coords": -73.894721,
+    "latitude": 40.856389,
     "bbl": "2030310007"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 1,
-    "coords": "-73.914605,40.687837",
+    "coords": -73.914605,
+    "latitude": 40.687837,
     "bbl": "3033950001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11221",
     "count": 1,
-    "coords": "-73.914605,40.687837",
+    "coords": -73.914605,
+    "latitude": 40.687837,
     "bbl": "3033950001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10468",
     "count": 1,
-    "coords": "-73.905735,40.862209",
+    "coords": -73.905735,
+    "latitude": 40.862209,
     "bbl": "2032180035"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11219",
     "count": 1,
-    "coords": "-73.996924,40.625286",
+    "coords": -73.996924,
+    "latitude": 40.625286,
     "bbl": "3057340024"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11211",
     "count": 1,
-    "coords": "-73.955765,40.705316",
+    "coords": -73.955765,
+    "latitude": 40.705316,
     "bbl": "3022070001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11206",
     "count": 1,
-    "coords": "-73.94392,40.706646",
+    "coords": -73.94392,
+    "latitude": 40.706646,
     "bbl": "3030610031"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10009",
     "count": 2,
-    "coords": "-73.980125,40.726017",
+    "coords": -73.980125,
+    "latitude": 40.726017,
     "bbl": "1003910007"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.929907,40.660813",
+    "coords": -73.929907,
+    "latitude": 40.660813,
     "bbl": "3045920024"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.906751,40.675896",
+    "coords": -73.906751,
+    "latitude": 40.675896,
     "bbl": "3014360023"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10002",
     "count": 1,
-    "coords": "-73.983277,40.715825",
+    "coords": -73.983277,
+    "latitude": 40.715825,
     "bbl": "1003360005"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11233",
     "count": 1,
-    "coords": "-73.924725,40.682681",
+    "coords": -73.924725,
+    "latitude": 40.682681,
     "bbl": "3016780084"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10460",
     "count": 1,
-    "coords": "-73.889016,40.832894",
+    "coords": -73.889016,
+    "latitude": 40.832894,
     "bbl": "2029880014"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10455",
     "count": 2,
-    "coords": "-73.904198,40.813979",
+    "coords": -73.904198,
+    "latitude": 40.813979,
     "bbl": "2026740038"
   },
   {
     "BORO": "STATEN ISLAND",
     "ZIP CODE": "10304",
     "count": 1,
-    "coords": "-74.076085,40.628913",
+    "coords": -74.076085,
+    "latitude": 40.628913,
     "bbl": "5004900004"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11203",
     "count": 1,
-    "coords": "-73.930929,40.660151",
+    "coords": -73.930929,
+    "latitude": 40.660151,
     "bbl": "3046040075"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11691",
     "count": 2,
-    "coords": "-73.751729,40.603101",
+    "coords": -73.751729,
+    "latitude": 40.603101,
     "bbl": "4155600012"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10009",
     "count": 1,
-    "coords": "-73.986344,40.723005",
+    "coords": -73.986344,
+    "latitude": 40.723005,
     "bbl": "1004290029"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10031",
     "count": 1,
-    "coords": "-73.946909,40.825205",
+    "coords": -73.946909,
+    "latitude": 40.825205,
     "bbl": "1020600001"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11212",
     "count": 1,
-    "coords": "-73.914444,40.660321",
+    "coords": -73.914444,
+    "latitude": 40.660321,
     "bbl": "3035830001"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11433",
     "count": 1,
-    "coords": "-73.779458,40.694786",
+    "coords": -73.779458,
+    "latitude": 40.694786,
     "bbl": "4102820125"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11429",
     "count": 1,
-    "coords": "-73.754974,40.706233",
+    "coords": -73.754974,
+    "latitude": 40.706233,
     "bbl": "4109420104"
   },
   {
     "BORO": "QUEENS",
     "ZIP CODE": "11413",
     "count": 1,
-    "coords": "-73.742313,40.698652",
+    "coords": -73.742313,
+    "latitude": 40.698652,
     "bbl": "4112980008"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10456",
     "count": 1,
-    "coords": "-73.912232,40.830689",
+    "coords": -73.912232,
+    "latitude": 40.830689,
     "bbl": "2024290015"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10002",
     "count": 1,
-    "coords": "-73.98828,40.717364",
+    "coords": -73.98828,
+    "latitude": 40.717364,
     "bbl": "1003510001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10455",
     "count": 1,
-    "coords": "-73.914716,40.813889",
+    "coords": -73.914716,
+    "latitude": 40.813889,
     "bbl": "2022740012"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10031",
     "count": 1,
-    "coords": "-73.938257,40.818261",
+    "coords": -73.938257,
+    "latitude": 40.818261,
     "bbl": "1020100030"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10024",
     "count": 1,
-    "coords": "-73.977291,40.788938",
+    "coords": -73.977291,
+    "latitude": 40.788938,
     "bbl": "1012347502"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10452",
     "count": 1,
-    "coords": "-73.918813,40.836317",
+    "coords": -73.918813,
+    "latitude": 40.836317,
     "bbl": "2024800001"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10453",
     "count": 1,
-    "coords": "-73.921012,40.849316",
+    "coords": -73.921012,
+    "latitude": 40.849316,
     "bbl": "2028770276"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10452",
     "count": 1,
-    "coords": "-73.926513,40.83537",
+    "coords": -73.926513,
+    "latitude": 40.83537,
     "bbl": "2025130038"
   },
   {
     "BORO": "BRONX",
     "ZIP CODE": "10459",
     "count": 1,
-    "coords": "-73.902843,40.819572",
+    "coords": -73.902843,
+    "latitude": 40.819572,
     "bbl": "2026660066"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10034",
     "count": 1,
-    "coords": "-73.919011,40.865305",
+    "coords": -73.919011,
+    "latitude": 40.865305,
     "bbl": "1022230024"
   },
   {
     "BORO": "MANHATTAN",
     "ZIP CODE": "10011",
     "count": 2,
-    "coords": "-73.995582,40.73786",
+    "coords": -73.995582,
+    "latitude": 40.73786,
     "bbl": "1008170072"
   },
   {
     "BORO": "BROOKLYN",
     "ZIP CODE": "11219",
     "count": 1,
-    "coords": "-73.997396,40.642481",
+    "coords": -73.997396,
+    "latitude": 40.642481,
     "bbl": "3056070019"
   }
 ]
