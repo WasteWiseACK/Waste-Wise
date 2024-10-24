@@ -5,6 +5,7 @@ import America from "../components/America"
 const AboutUs = () => {
   return (
     <div className='container'>
+
       <div className="title_description_about">
         <div className="about_title">
           <h1 className="title">Welcome to WasteWise!</h1>
@@ -16,8 +17,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-
-      <div>
+      <div className="the_team">
         <America></America>
         <Cindy></Cindy>
         <Kevin></Kevin>

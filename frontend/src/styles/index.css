@@ -264,13 +264,85 @@ form {
 }
 
 .form_container {
+  position: relative;
   flex: 1;
-  padding-right: 7rem;
+  padding-right: 6rem;
+}
+
+.community_forum {
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 1rem;
 }
 
 .post_container {
   flex: 2;
 }
+
+.post_list {
+  list-style-type: none;
+}
+
+.post {
+  border-radius: 0.3rem;
+  background-color: #f5f0d4;
+  width: 85%;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+#post_title {
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+.like_delete_buttons {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+.user_date {
+  padding-top: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.username_post caption {
+  padding-left: 1rem;
+  width: 100%;
+}
+
+.user_date p {
+  margin: 0;
+}
+
+.comment_button {
+  padding-bottom: 1.5rem;
+}
+
+.form_popup {
+  padding-top: 1rem;
+}
+
+.comment {
+  width: 90%;
+}
+
+.text_area {
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.create_comment_button {
+  padding-top: 1rem;
+}
+
+
+
+
 
 #input {
   padding-top: 0.56rem;
@@ -426,6 +498,7 @@ form {
 .food_bank_title_container {
   position: relative;
   flex: 1;
+  /* padding-left: 5rem; */
   padding-right: 7rem;
 }
 
@@ -509,18 +582,93 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 1rem;
+}
+
+.signup_header {
+  display: flex;
+  justify-content: center;
+}
+
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #f5f0d4;
+  border: 0;
+  border-radius: 0.3rem;
 }
 
 
-.title_description_about {
+.signup_form h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.signup_button {
   padding-top: 2rem;
   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.title_description_about {
+  /* padding-top: 0.5rem; */
+  display: flex;
+  /* justify-content: flex-start; */
   flex-direction: row;
   align-items: center;
   position: relative;
+  height: 100vh;
   gap: 8rem;
-  padding-bottom: 10rem;
+  margin-bottom: 15rem;
+  /* padding-bottom: 10rem; */
 }
+
+.the_team {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.its_us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 100vh;
+}
+
+.description_about {
+  display: flex;
+  flex-direction: column;
+}
+
+#role {
+  padding-top: 5.5rem;
+}
+
+.description_about h1 {
+  margin: 0;
+}
+
+#pronouns {
+  width: 10rem;
+}
+
+.img_container_about {
+  display: flex;
+
+}
+
+
+.img_container_about h1 {
+  margin: 0;
+}
+
+
 
 /* desktop -> mobile resizing */
 

@@ -28,7 +28,7 @@ const Solutions = () => {
           </div>
 
         </div>
-        <div className="scroll_for_more">
+        <div className="">
           <p>scroll</p>
         </div>
 

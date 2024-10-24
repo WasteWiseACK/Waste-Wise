@@ -64,14 +64,56 @@ function ForumPost({ selectedTags }) {
 
     return (
         <div>
-            <h2>Community Forum</h2>
-            <ul>
-                {posts.map((post) => (
-                    <li key={post.id}>
-                        <div>
-                            <h3>{post.title}</h3>
-                            {currentUser && post.user_id === currentUser.id && (
-                                <button onClick={() => handleDelete(post.id)}>Delete Post</button>
+            <div className="community_forum">
+                <h1 className="header2" id="community_forum">Community Forum</h1>
+                <span className="underline"></span>
+            </div>
+
+            <div className="post_list_container">
+                <ul className="post_list">
+                    {posts.map((post) => (
+                        <li key={post.id} className="post">
+                            <div className="title_user">
+                                <h3 className="special_home_problem" id="post_title">{post.title}</h3>
+                                <div className="underline"></div>
+                                <div className="user_date">
+                                    <div className="username_post">
+                                        <caption className="body">{post.username}</caption>
+                                    </div>
+                                    <div className="date_post">
+                                        <p> {post.created_at.substring(0, 10)}</p>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div className="postInfo">
+
+                                <p>{post.body}</p>
+
+                            </div>
+                            <div className="like_delete_buttons">
+                                <div className="like_button">
+                                    <button onClick={() => handleLike(post.id, post.likedByCurrentUser)}>
+                                        {post.likedByCurrentUser ? "Unlike" : "Like"}
+                                    </button>
+                                </div>
+                                <div className="delete_button">
+                                    {currentUser && post.user_id === currentUser.id && (
+                                        <button onClick={() => handleDelete(post.id)}>Delete Post</button>
+                                    )}
+                                </div>
+                            </div>
+
+                            <div className="comment_button">
+                                <button onClick={() => toggleCurrentPost(post.id)}>Comment</button>
+                            </div>
+                            {currentActivePost === post.id && (
+                                <>
+
+                                    <Comments postId={post.id} />
+                                    <MakeAComment postId={post.id} />
+                                </>
                             )}
                         </div>
                         <div className="postInfo">
