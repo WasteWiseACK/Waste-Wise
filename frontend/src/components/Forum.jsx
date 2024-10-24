@@ -9,25 +9,25 @@ function ForumPost({ selectedTags }) {
     const { currentUser } = useContext(CurrentUserContext);
     console.log(`selectedTags: ${selectedTags}`)
     // Fetch posts
-    const fetchPosts = async () => {
-        const [data, error] = await fetchHandler('/api/posts');
-        if (data) { setPosts(data) };
-        if (error) console.error(error);
-    };
     // const fetchPosts = async () => {
-    //     let query = '/api/posts';
-    //     if (selectedTags.length > 0) {
-    //         query += `?tags=${selectedTags.join(',')}`;
-    //     }
-
-    //     const [data, error] = await fetchHandler(query);
-    //     if (data) {
-    //         setPosts(data);
-    //     }
-    //     if (error) {
-    //         console.error(error);
-    //     }
+    //     const [data, error] = await fetchHandler('/api/posts');
+    //     if (data) { setPosts(data) };
+    //     if (error) console.error(error);
     // };
+    const fetchPosts = async () => {
+        let query = '/api/posts';
+        if (selectedTags.length > 0) {
+            query += `/tags?tags=${selectedTags.join(',')}`;
+        }
+
+        const [data, error] = await fetchHandler(query);
+        if (data) {
+            setPosts(data);
+        }
+        if (error) {
+            console.error(error);
+        }
+    };
 
 
 
@@ -58,7 +58,7 @@ function ForumPost({ selectedTags }) {
 
     useEffect(() => {
         fetchPosts();
-    }, []);
+    }, [selectedTags]);
     console.log(posts)
     console.log(`currentactivepostid: ${currentActivePost}`)
 
