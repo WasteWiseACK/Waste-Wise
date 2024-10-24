@@ -90,7 +90,7 @@ function ForumPost({ selectedTags }) {
                             <div className="postInfo">
 
                                 <p>{post.body}</p>
-
+                                {post.tags.length > 0 ? (<p>Tags: {post.tags.map(tag => tag.name).join(', ')}</p>) : (<p>No tags</p>)}
                             </div>
                             <div className="like_delete_buttons">
                                 <div className="like_button">
@@ -115,31 +115,11 @@ function ForumPost({ selectedTags }) {
                                     <MakeAComment postId={post.id} />
                                 </>
                             )}
-                        </div>
-                        <div className="postInfo">
-                            <p> {post.created_at.substring(0, 10)}</p>
-                            <p>{post.body}</p>
-                            <p>Posted by: {post.username}</p>
-                        </div>
-                        <div>
-                            {post.tags.length > 0 ? (<p>Tags: {post.tags.map(tag => tag.name).join(', ')}</p>) : (<p>No tags</p>)}
-                        </div>
-                        <div>
-                            <button onClick={() => toggleCurrentPost(post.id)}>Comment</button>
-                            <button onClick={() => handleLike(post.id, post.likedByCurrentUser)}>
-                                {post.likedByCurrentUser ? "Unlike" : "Like"}
-                            </button>
-                        </div>
-                        { currentActivePost === post.id && (
-                            <>
-                                <MakeAComment postId={post.id} />
-                                <Comments postId={post.id} />
-                            </>
-                        )}
-                </li>
-                ))}
-            </ul>
-        </div >
+                        </li>
+                    ))}
+                </ul>
+            </div >
+        </div>
     );
 }
 
