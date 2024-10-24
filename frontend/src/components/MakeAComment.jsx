@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { fetchHandler, getPostOptions } from "../utils/fetchingUtils";
-
+import { X } from "lucide-react";
 
 function MakeAComment({ postId }) {
-
+    const [isVisible, setIsVisible] = useState(true)
     const [createContent, setCreateContent] = useState('');
 
     const handleSubmit = async (e) => {
@@ -23,9 +23,15 @@ function MakeAComment({ postId }) {
         }
     };
 
+    const toggleVisible = () => {
+        setIsVisible(!isVisible)
+    }
+
     return (
         <>
-            <div className="form_popup">
+            <div className="form_comment_popup">
+
+
                 <form className="comment" onSubmit={handleSubmit} >
                     <div id="input">
                         <textarea className="text_area" value={createContent} onChange={(e) => setCreateContent(e.target.value)} placeholder="Comment.."></textarea>
