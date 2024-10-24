@@ -20,6 +20,12 @@ const FilterPost = ({ onFilter }) => {
     console.log(selectedTags)
   };
 
+  const handleClick = (event) => {
+    event.preventDefault();
+    setSelectedTags([]);
+    onFilter([]);
+  }
+
   return (
     <div className="form_container">
       <div className="custom_container_sticky">
@@ -30,7 +36,7 @@ const FilterPost = ({ onFilter }) => {
             <legend className="body">Filter by tag</legend>
             <div className="row">
               <div id="input">
-                <input type="checkbox" name="Food Waste" id="foodWaste" value="1" onChange={handleCheckboxChange} />
+                <input type="checkbox" name="Food Waste" id="foodWaste" value="1" onChange={handleCheckboxChange} checked={selectedTags.includes("1")} />
               </div>
               <div id="label">
                 <label htmlFor="foodWaste">Food Waste</label>
@@ -38,7 +44,7 @@ const FilterPost = ({ onFilter }) => {
             </div>
             <div className="row">
               <div id="input">
-                <input type="checkbox" name="Sustainability" id="" value="2" onChange={handleCheckboxChange} />
+                <input type="checkbox" name="Sustainability" id="" value="2" onChange={handleCheckboxChange} checked={selectedTags.includes("2")} />
               </div>
               <div id="label">
                 <label htmlFor="sustainability">Sustainability</label>
@@ -46,7 +52,7 @@ const FilterPost = ({ onFilter }) => {
             </div>
             <div className="row">
               <div id="input">
-                <input type="checkbox" name="Community" id="" value="3" onChange={handleCheckboxChange} />
+                <input type="checkbox" name="Community" id="" value="3" onChange={handleCheckboxChange} checked={selectedTags.includes("3")} />
               </div>
               <div id="label">
                 <label htmlFor="community">Community</label>
@@ -54,7 +60,7 @@ const FilterPost = ({ onFilter }) => {
             </div>
             <div className="row">
               <div id="input">
-                <input type="checkbox" name="Recycling" id="" value="4" onChange={handleCheckboxChange} />
+                <input type="checkbox" name="Recycling" id="" value="4" onChange={handleCheckboxChange} checked={selectedTags.includes("4")} />
               </div>
               <div id="label">
                 <label htmlFor="recycling">Recycling</label>
@@ -62,7 +68,7 @@ const FilterPost = ({ onFilter }) => {
             </div>
             <div className="row">
               <div id="input">
-                <input type="checkbox" name="Charity" id="" value="5" onChange={handleCheckboxChange} />
+                <input type="checkbox" name="Charity" id="" value="5" onChange={handleCheckboxChange} checked={selectedTags.includes("5")} />
               </div>
               <div id="label">
                 <label htmlFor="charity">Charity</label>
@@ -70,7 +76,7 @@ const FilterPost = ({ onFilter }) => {
             </div>
             <div className="row">
               <div id="input">
-                <input type="checkbox" name="Questions" id="" value="6" onChange={handleCheckboxChange} />
+                <input type="checkbox" name="Questions" id="" value="6" onChange={handleCheckboxChange} checked={selectedTags.includes("6")} />
               </div>
               <div id="label">
                 <label htmlFor="questions">Questions</label>
@@ -79,10 +85,11 @@ const FilterPost = ({ onFilter }) => {
           </fieldset>
           <div className="button_filter">
             <button type="submit">Filter</button>
+            <button onClick={handleClick}> Reset</button>
           </div>
         </form>
-      </div>
-    </div>
+      </div >
+    </div >
   )
 }
 

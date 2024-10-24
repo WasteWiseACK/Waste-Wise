@@ -43,6 +43,7 @@ class Post {
     LEFT JOIN post_tags ON post_tags.post_id = posts.id
     LEFT JOIN tags ON post_tags.tag_id = tags.id
     GROUP BY posts.id, users.username, liked_posts.user_id
+    ORDER BY posts.created_at DESC
   `;
     //     const query = `
     //     SELECT DISTINCT 
@@ -145,15 +146,6 @@ class Post {
   }
   static async findByTags(tagArray) {
     const tagPlaceholders = tagArray.map(() => '?').join(', '); // Creates placeholders for the tag array
-
-    // Raw SQL query to fetch posts based on tags
-    // const query = `
-    //   SELECT DISTINCT posts.*
-    //   FROM posts
-    //   JOIN post_tags ON posts.id = post_tags.post_id
-    //   JOIN tags ON post_tags.tag_id = tags.id
-    //   WHERE tags.id IN (${tagPlaceholders});
-    // `;
     const query = `
       SELECT 
           posts.*, 
@@ -164,7 +156,8 @@ class Post {
       JOIN tags ON post_tags.tag_id = tags.id
       JOIN users ON posts.user_id = users.id
       WHERE tags.id IN (${tagPlaceholders})
-      GROUP BY posts.id, users.username; -- Group by post ID and username
+      GROUP BY posts.id, users.username
+      ORDER BY posts.id DESC
     `;
 
     const posts = await knex.raw(query, tagArray); // Passing the tag array as values for the placeholders
