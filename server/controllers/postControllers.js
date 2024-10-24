@@ -1,15 +1,21 @@
 const Post = require('../models/Post')
+const Tag = require('../models/Tag');
 const { isAuthorized } = require('../utils/auth-utils')
 
 exports.createPost = async (req, res) => {
-  const { title, body } = req.body;
+  const { title, body, tags } = req.body;
 
   // Create a new post using the user ID from the session
   const newPost = await Post.create({
     title,
     body,
-    user_id: req.session.userId, // Associate the post with the logged-in user
+    user_id: req.session.userId,
   });
+  if (tags && tags.length > 0) {
+    await Promise.all(
+      tags.map(tagId => Tag.addTag(post.id, tagId))
+    );
+  }
 
   res.send(newPost)
 }

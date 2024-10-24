@@ -3,7 +3,6 @@ import { fetchHandler, getPostOptions } from "../utils/fetchingUtils"
 
 
 const baseUrl = '/api/posts';
-
 const MakePost = () => {
   const [isVisible, setIsVisible] = useState(false)
   const [selectedTags, setSelectedTags] = useState([])
@@ -22,10 +21,21 @@ const MakePost = () => {
     }
 
     const [post, error] = await fetchHandler(baseUrl, getPostOptions(postData));
-    return post;
+    if (post) {
+      const tagData = {
+        tags: selectedTags
+      }
+      const tagUrl = `/api/posts/${post.id}/tag`
+      const [response, error] = fetchHandler(tagUrl, getPostOptions(tagData));
+      if (tagError) {
+        console.error('Error adding tags to post:', tagError);
+      }
+    }
 
-  }
-
+    if (error) {
+      console.error('Error creating post:', error);
+    }
+  };
 
   const handleSelectTags = (event) => {
     const selectedOptions = Array.from(event.target.selectedOptions, option => option.value);
