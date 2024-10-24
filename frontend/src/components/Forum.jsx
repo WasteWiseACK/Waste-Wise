@@ -3,6 +3,8 @@ import { fetchHandler, deleteOptions, getPostOptions } from "../utils/fetchingUt
 import CurrentUserContext from "../contexts/current-user-context";
 import MakeAComment from "./MakeAComment";
 import Comments from "./Comment";
+import { Trash } from "lucide-react";
+
 function ForumPost({ selectedTags }) {
     const [posts, setPosts] = useState([]);
     const [currentActivePost, setCurrentActivePost] = useState(null);
@@ -80,7 +82,7 @@ function ForumPost({ selectedTags }) {
                                     <div className="username_post">
                                         <caption className="body">{post.username}</caption>
                                     </div>
-                                    <div className="date_post">
+                                    <div className="body">
                                         <p> {post.created_at.substring(0, 10)}</p>
                                     </div>
                                 </div>
@@ -100,7 +102,7 @@ function ForumPost({ selectedTags }) {
                                 </div>
                                 <div className="delete_button">
                                     {currentUser && post.user_id === currentUser.id && (
-                                        <button onClick={() => handleDelete(post.id)}>Delete Post</button>
+                                        <button onClick={() => handleDelete(post.id)}><Trash /></button>
                                     )}
                                 </div>
                             </div>
