@@ -1,15 +1,16 @@
 const Tag = require('../models/Tag');
-
+const knex = require('../db/knex');
 exports.addTag = async (req, res) => {
   const { post_id } = req.params;
-  const { tag_id } = req.body; // Ensure you're getting the tag_id from the request body
+  const { tags } = req.body; // Ensure you're getting the tag_id from the request body
 
   try {
     const existingTags = await Tag.listByPostId(post_id);
     if (!existingTags) return res.status(404).send(`Post with Id: ${post_id} does not exist.`);
-
-    const newTag = await Tag.addTag(post_id, tag_id);
-    return res.status(201).send(newTag);
+    for (const tagId of tags) {
+      await knex('post_tags').insert({ post_id, tag_id: tagId });
+    }
+    return res.status(201).send({ message: "Tags added successfully." });
   } catch (error) {
     console.error("Error in addTag:", error); // Log the error for debugging
     return res.status(500).send({ error: error.message });

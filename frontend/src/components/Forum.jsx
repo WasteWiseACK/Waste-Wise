@@ -3,17 +3,32 @@ import { fetchHandler, deleteOptions, getPostOptions } from "../utils/fetchingUt
 import CurrentUserContext from "../contexts/current-user-context";
 import MakeAComment from "./MakeAComment";
 import Comments from "./Comment";
-function ForumPost() {
+function ForumPost({ selectedTags }) {
     const [posts, setPosts] = useState([]);
     const [currentActivePost, setCurrentActivePost] = useState(null);
     const { currentUser } = useContext(CurrentUserContext);
-
+    console.log(`selectedTags: ${selectedTags}`)
     // Fetch posts
     const fetchPosts = async () => {
         const [data, error] = await fetchHandler('/api/posts');
         if (data) { setPosts(data) };
         if (error) console.error(error);
     };
+    // const fetchPosts = async () => {
+    //     let query = '/api/posts';
+    //     if (selectedTags.length > 0) {
+    //         query += `?tags=${selectedTags.join(',')}`;
+    //     }
+
+    //     const [data, error] = await fetchHandler(query);
+    //     if (data) {
+    //         setPosts(data);
+    //     }
+    //     if (error) {
+    //         console.error(error);
+    //     }
+    // };
+
 
 
     // Delete post
@@ -43,7 +58,7 @@ function ForumPost() {
 
     useEffect(() => {
         fetchPosts();
-    }, [posts]);
+    }, []);
     console.log(posts)
     console.log(`currentactivepostid: ${currentActivePost}`)
 
@@ -65,6 +80,9 @@ function ForumPost() {
                             <p>Posted by: {post.username}</p>
                         </div>
                         <div>
+                            {post.tags.length > 0 ? (<p>Tags: {post.tags.map(tag => tag.name).join(', ')}</p>) : (<p>No tags</p>)}
+                        </div>
+                        <div>
                             <button onClick={() => toggleCurrentPost(post.id)}>Comment</button>
                             <button onClick={() => handleLike(post.id, post.likedByCurrentUser)}>
                                 {post.likedByCurrentUser ? "Unlike" : "Like"}
@@ -79,7 +97,7 @@ function ForumPost() {
                     </li>
                 ))}
             </ul>
-        </div>
+        </div >
     );
 }
 
