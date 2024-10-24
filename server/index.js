@@ -18,6 +18,7 @@ const postControllers = require('./controllers/postControllers');
 const commentControllers = require('./controllers/commentsControllers');
 const likeControllers = require('./controllers/likeControllers');
 const tagControllers = require('./controllers/tagControllers');
+const foodInsecurityControllers = require('./controllers/foodDataControllers')
 const app = express();
 
 // middleware
@@ -88,6 +89,12 @@ app.post('/api/posts/:post_id/likes/toggle', checkAuthentication, likeController
 
 app.post('/api/posts/:post_id/tag', checkAuthentication, tagControllers.addTag);
 app.delete('/api/tag/:id', checkAuthentication, tagControllers.removeTag);
+
+///////////////////////////////
+// FoodData Route
+///////////////////////////////
+
+app.get('/api/foodData', foodInsecurityControllers.listAllFoodData);
 
 ///////////////////////////////
 // Fallback Route
