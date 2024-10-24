@@ -49,6 +49,7 @@ const FoodInsecurityMap = () => { // responsible for fetching foodInsecurity dat
 
   return (
     <div className='FoodInsecurityMap'>
+      <h1>Food Insecurity Map</h1>
       <MapContainer center={[40.730610, -73.935242]} zoom={11.6}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
