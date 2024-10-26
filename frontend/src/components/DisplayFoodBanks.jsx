@@ -51,7 +51,7 @@ function DisplayFoodBanks() {
                             : null; // Set to null if no website
 
                     return (
-                        <li key={bank.object_id}>
+                        <li key={bank.object_id} className="foodbank_list">
                             {websiteUrl ? (
                                 <a href={websiteUrl} target='_blank'>
                                     <MotionConfig
@@ -62,9 +62,9 @@ function DisplayFoodBanks() {
                                     >
                                         <motion.div
                                             className="bank_container"
-                                            whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336" }}
+                                            whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336", color: "#6b8a7a" }}
                                         >
-                                            <h3>{bank.food_scrap_drop_off_site}</h3>
+                                            <h3 className="header3">{bank.food_scrap_drop_off_site}</h3>
                                             <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
                                             <p>{bank.open_months}</p>
                                             <p>Hours of operation: {bank.operation_day_hours}</p>
@@ -92,17 +92,47 @@ function DisplayFoodBanks() {
                                 </MotionConfig>
                             )}
                         </li>
-                    );
-                })};
+                    )
+                })}
             </ul>
             <div className="pagination">
-                <button onClick={handlePrevPage} disabled={currentPage === 1}>
-                    Previous
-                </button>
-                <span>Page {currentPage} of {totalPages}</span>
-                <button onClick={handleNextPage} disabled={currentPage === totalPages}>
-                    Next
-                </button>
+                <MotionConfig
+                    transition={{
+                        duration: "0.25",
+                        ease: "easeInOut"
+                    }}
+                >
+                    <motion.button
+                        className="body"
+                        onClick={handlePrevPage}
+                        disabled={currentPage === 1}
+                        whileHover={{ scale: 1.05, backgroundColor: "#254336", color: "#f5f0d4", cursor: "pointer" }}
+                        whileTap={{ scale: 0.95, rotate: '3deg' }}
+                        id="page_change"
+                    >
+                        Previous
+                    </motion.button>
+                </MotionConfig>
+
+                <span className="body">Page {currentPage} of {totalPages}</span>
+                <MotionConfig
+                    transition={{
+                        duration: "0.25",
+                        ease: "easeInOut"
+                    }}
+                >
+                    <motion.button
+                        className="body"
+                        onClick={handleNextPage}
+                        disabled={currentPage === totalPages}
+                        whileHover={{ scale: 1.05, backgroundColor: "#254336", color: "#f5f0d4", cursor: "pointer" }}
+                        whileTap={{ scale: 0.95, rotate: '3deg' }}
+                        id="page_change"
+                    >
+                        Next
+                    </motion.button>
+                </MotionConfig>
+
             </div>
         </div >
     )

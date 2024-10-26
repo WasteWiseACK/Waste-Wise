@@ -79,7 +79,7 @@ function ForumPost({ selectedTags }) {
                             <div className="title_user">
                                 <div className="title_delete_button">
                                     <div className="post_title">
-                                        <h3 className="special_home_problem" id="post_title">{post.title}</h3>
+                                        <h3 className="mission_statement" id="post_title">{post.title}</h3>
                                     </div>
 
                                     <div className="delete_button">
@@ -92,7 +92,7 @@ function ForumPost({ selectedTags }) {
                                 <div className="underline"></div>
                                 <div className="user_date">
                                     <div className="username_post">
-                                        <caption className="body">{post.username}</caption>
+                                        <p className="body">{post.username}</p>
                                     </div>
                                     <div className="body">
                                         <p> {post.created_at.substring(0, 10)}</p>

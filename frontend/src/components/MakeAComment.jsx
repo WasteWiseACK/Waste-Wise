@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { fetchHandler, getPostOptions } from "../utils/fetchingUtils";
-import { X } from "lucide-react";
+import { MotionConfig, motion } from "framer-motion";
+
 
 function MakeAComment({ postId }) {
-    const [isVisible, setIsVisible] = useState(true)
+
     const [createContent, setCreateContent] = useState('');
 
     const handleSubmit = async (e) => {
@@ -23,9 +24,6 @@ function MakeAComment({ postId }) {
         }
     };
 
-    const toggleVisible = () => {
-        setIsVisible(!isVisible)
-    }
 
     return (
         <>
@@ -34,11 +32,26 @@ function MakeAComment({ postId }) {
 
                 <form className="comment" onSubmit={handleSubmit} >
                     <div id="input">
-                        <textarea className="text_area" value={createContent} onChange={(e) => setCreateContent(e.target.value)} placeholder="Comment.." required></textarea>
+                        <textarea className="text_area" value={createContent} onChange={(e) => setCreateContent(e.target.value)} placeholder="Comment..." required></textarea>
                         {/* <input type="text" placeholder="Comment.." value={createContent} onChange={(e) => setCreateContent(e.target.value)} /> */}
                     </div>
                     <div className="create_comment_button">
-                        <button>Reply</button>
+                        <MotionConfig
+                            transition={{
+                                duration: "0.25",
+                                ease: "easeInOut"
+                            }}
+                        >
+                            <motion.button
+                                className="body"
+                            // id="reply_button"
+                            // whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
+                            // whileTap={{ scale: 0.95, rotate: '3deg' }}
+                            >
+                                Reply
+                            </motion.button>
+                        </MotionConfig>
+
                     </div>
 
                 </form>
