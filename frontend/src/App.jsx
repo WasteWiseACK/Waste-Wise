@@ -1,5 +1,6 @@
 import { useContext, useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import SignUpPage from './pages/SignUp';
 import LoginPage from './pages/Login';
@@ -24,6 +25,7 @@ export default function App() {
 
   return <>
     <SiteHeadingAndNav />
+    <ScrollToTop />
     <Routes>
       <Route path='/' element={<Home />} />
       <Route path='/login' element={<LoginPage />} />

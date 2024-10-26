@@ -5,6 +5,7 @@ const Solutions = () => {
     <div className="container">
       <main className="solution_main">
         <div className="solution_container">
+
           <div className="solution_title">
             <h1 className="title" id="solutions">
               SO-
@@ -12,25 +13,24 @@ const Solutions = () => {
               IONS
             </h1>
           </div>
+          <div className="solution_body">
+            <p className="body">
+              <span className="header2">Composting</span> converts food scraps, yard waste, and other biodegradable materials into nutrient-rich compost that enriches soil. It reduces landfill waste and greenhouse gas emissions, and can be implemented in communities, workplaces, and schools.
+              The resulting compost supports sustainable agriculture and healthier plants.
+              <span id="solution_underline" className="underline" />
+              <span className="header2">Campaigns</span> education campaigns are crucial for changing behaviors around food waste. These initiatives, including seminars, social media campaigns, and educational materials, teach meal planning, food storage, and creative leftover use.
+              By encouraging recycling, understanding expiration dates, and mindful purchasing, these programs promote sustainable consumption and help reduce food waste in communities.
+            </p>
+          </div>
 
-          <p className="body">
-            <span className="header2">Composting</span> converts food scraps, yard waste, and other biodegradable materials into nutrient-rich compost that enriches soil. It reduces landfill waste and greenhouse gas emissions, and can be implemented in communities, workplaces, and schools.
-            The resulting compost supports sustainable agriculture and healthier plants.
-            <span id="solution_underline" className="underline" />
-            <span className="header2">Campaigns</span> education campaigns are crucial for changing behaviors around food waste. These initiatives, including seminars, social media campaigns, and educational materials, teach meal planning, food storage, and creative leftover use.
-            By encouraging recycling, understanding expiration dates, and mindful purchasing, these programs promote sustainable consumption and help reduce food waste in communities.
-          </p>
           <div className="solution_items">
             <p className="body">
               <span className="header2">Food recovery</span> initiatives prevent excess food from grocery stores, restaurants, and farms from going to landfills by redirecting it to food banks, shelters, and nonprofits.
               This approach addresses hunger, reduces food waste, and requires coordination, planning, and legal protections for donors, offering significant social and environmental benefits.
             </p>
           </div>
+        </div>
 
-        </div>
-        <div className="">
-          <p>scroll</p>
-        </div>
 
 
 

@@ -1,10 +1,20 @@
 import { useState } from "react";
 import { fetchHandler, getPostOptions } from "../utils/fetchingUtils";
 import { ToastContainer, toast } from "react-toastify";
+import { MotionConfig, motion } from "framer-motion";
 import { X } from "lucide-react";
 import "react-toastify/dist/ReactToastify.css";
 
 const baseUrl = "/api/posts";
+
+const options = [
+  { value: "1", label: "Food Waste" },
+  { value: "2", label: "Sustainability" },
+  { value: "3", label: "Community" },
+  { value: "4", label: "Recycling" },
+  { value: "5", label: "Charity" },
+  { value: "6", label: "Questions" }
+];
 
 const MakePost = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,6 +24,11 @@ const MakePost = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (selectedTags.length === 0) {
+      toast.error('Please select at least one tag.')
+      return
+    }
 
     const postData = {
       title: createTitle,
@@ -41,9 +56,12 @@ const MakePost = () => {
     }
   };
 
-  const handleSelectTags = (event) => {
-    const selectedOptions = Array.from(event.target.selectedOptions, (option) => option.value);
-    setSelectedTags(selectedOptions);
+  const handleCheckBox = (value) => {
+    setSelectedTags((prevSelected) =>
+      prevSelected.includes(value)
+        ? prevSelected.filter((option) => option != value)
+        : [...prevSelected, value]
+    )
   };
 
   const toggleVisible = () => {
@@ -53,9 +71,23 @@ const MakePost = () => {
   return (
     <section>
       <div className="button_post">
-        <button className="body" id="button" onClick={toggleVisible}>
-          Make a post!
-        </button>
+        <MotionConfig
+          transition={{
+            duration: "0.25",
+            ease: "easeInOut"
+          }}
+        >
+          <motion.button
+            className="body"
+            id="reply_button"
+            onClick={toggleVisible}
+            whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
+            whileTap={{ scale: 0.95, rotate: '3deg' }}
+          >
+            Make a post!
+          </motion.button>
+        </MotionConfig>
+
       </div>
 
       {isVisible && (
@@ -63,47 +95,66 @@ const MakePost = () => {
           <button id="close_button" onClick={toggleVisible}>
             <X />
           </button>
-          <form className="post" onSubmit={handleSubmit}>
-            <legend className="body">Create Your Post</legend>
-            <div id="input">
-              <input
-                type="text"
-                placeholder="Title..."
-                value={createTitle}
-                onChange={(e) => setCreateTitle(e.target.value)}
-                required
-              />
-            </div>
-            <div id="input">
-              <input
-                type="text"
-                placeholder="Type here..."
-                value={createBody}
-                onChange={(e) => setCreateBody(e.target.value)}
-                required
-              />
+          <form className="creating_post_popup" onSubmit={handleSubmit}>
+
+            <div className="input_container">
+              <legend className="body" id="legend_popup_createPost">Create Your Post</legend>
+              <div id="input">
+                <textarea
+                  id="text_area_title_popup"
+                  className="text_area"
+                  placeholder="Title..."
+                  value={createTitle}
+                  onChange={(e) => setCreateTitle(e.target.value)}
+                  required
+                />
+              </div>
+              <div id="input">
+                <textarea
+                  className="text_area"
+                  placeholder="Type here..."
+                  value={createBody}
+                  onChange={(e) => setCreateBody(e.target.value)}
+                  required
+                />
+              </div>
             </div>
 
-            <label className="body">Tags</label>
-            <div className="tag_selections">
-              <select
-                name="tags"
-                multiple
-                value={selectedTags}
-                onChange={handleSelectTags}
-                required
-              >
-                <option value="1">Food Waste</option>
-                <option value="2">Sustainability</option>
-                <option value="3">Community</option>
-                <option value="4">Recycling</option>
-                <option value="5">Charity</option>
-                <option value="6">Questions</option>
-              </select>
-            </div>
+            <div className="tag_container_popup">
+              <label className="body">Tags</label>
+              <div className="tag_selections">
+                {options.map((option) => (
+                  <label key={option.value} className="body" id="tag_label">
+                    <input
+                      className="input_tags"
+                      type="checkbox"
+                      value={option.value}
+                      checked={selectedTags.includes(option.value)}
+                      onChange={() => handleCheckBox(option.value)}
+                    />
+                    {option.label}
+                  </label>
+                ))}
+              </div>
 
-            <div>
-              <button type="submit">Post</button>
+              <div>
+                <MotionConfig
+                  transition={{
+                    duration: "0.25",
+                    ease: "easeInOut"
+                  }}
+                >
+                  <motion.button
+                    type="submit"
+                    className="body"
+                    id="post_button"
+                    whileHover={{ scale: 1.05, backgroundColor: "#fefea0", color: "#254336", cursor: "pointer" }}
+                    whileTap={{ scale: 0.95, rotate: '3deg' }}
+                  >
+                    Post
+                  </motion.button>
+                </MotionConfig>
+              </div>
             </div>
           </form>
         </div>

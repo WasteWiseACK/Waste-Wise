@@ -15,27 +15,22 @@ function FoodBank() {
                         <div className="food_bank_title_container">
                             <div className="custom_container_sticky">
                                 <TEST>
-                                    <h1 className="header2">
+                                    <h1 className="header1">
                                         FOOD BANKS
                                     </h1>
                                 </TEST>
                                 <TEST>
-                                    <h1 className="header2">
+                                    <h1 className="header1">
                                         FOOD BANKS
                                     </h1>
                                 </TEST>
                                 <TEST>
-                                    <h1 className="header2">
+                                    <h1 className="header1">
                                         FOOD BANKS
                                     </h1>
                                 </TEST>
                                 <TEST>
-                                    <h1 className="header2">
-                                        FOOD BANKS
-                                    </h1>
-                                </TEST>
-                                <TEST>
-                                    <h1 className="header2">
+                                    <h1 className="header1">
                                         FOOD BANKS
                                     </h1>
                                 </TEST>

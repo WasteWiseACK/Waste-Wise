@@ -43,7 +43,7 @@ varying sizes*/
   font-size: 4.5rem;
 }
 
-.mission-statement {
+.mission_statement {
   font-size: 1.5rem;
 }
 
@@ -51,6 +51,7 @@ varying sizes*/
   /* for h2 tag */
   font-size: 2.5rem;
 }
+
 
 .body_post {
   font-family: light_hel;
@@ -111,6 +112,7 @@ header {
 }
 
 .footer_container {
+  height: 100vh;
   /* display: ; */
   position: sticky;
   bottom: 0;
@@ -395,6 +397,67 @@ form {
   backdrop-filter: blur(4px);
 }
 
+.creating_post_popup {
+  border: 1px solid #254336;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #6b8a7a;
+  width: 40rem;
+  gap: 2rem;
+}
+
+.input_container {
+  display: flex;
+  flex: 2;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tag_container_popup {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tag_selections {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input_tags {
+
+  cursor: pointer;
+  margin: 0;
+}
+
+#tag_label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+  cursor: pointer;
+}
+
+#post_button {
+  border: none;
+  background-color: #254336;
+  color: #fefae0;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+
+#text_area_title_popup {
+  height: 20%;
+}
+
+#legend_popup_createPost {}
+
 #button {
   cursor: pointer;
 }
@@ -404,8 +467,8 @@ form {
   background: none;
   border: 0;
   cursor: pointer;
-  top: 10px;
-  right: 10px;
+  top: 1rem;
+  right: 1rem;
 }
 
 .comments_list {
@@ -443,10 +506,14 @@ form {
 
 
 .comment {
+  border: none;
   width: 90%;
 }
 
 .text_area {
+  border: solid 1px #254336;
+  border-radius: 0.3rem;
+  resize: none;
   padding-bottom: 1rem;
   width: 100%;
 }
@@ -455,7 +522,13 @@ form {
   padding-top: 1rem;
 }
 
-
+#reply_button {
+  border: none;
+  background-color: #254336;
+  color: #fefae0;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+}
 
 
 
@@ -464,6 +537,7 @@ form {
 }
 
 #label {
+  color: #254336;
   padding-left: 0.8rem;
 }
 
@@ -481,23 +555,40 @@ form {
   justify-content: center;
 }
 
-/* .form_popup {
-  display: none;
-} */
-
-.solution_main {
-  margin-top: 2rem;
-  min-height: 150vh;
+.button_filter {
+  justify-content: space-around;
 }
 
+#filtering_button {
+  border: none;
+  background-color: #254336;
+  color: #fefae0;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+
+.form_popup {
+  color: #fefae0;
+}
+
+.solution_main {
+  /* margin-top: 2rem; */
+  /* min-height: 150vh; */
+
+}
+
+
+
 .solution_container {
-  padding-top: 3rem;
+  /* border: 1px solid black; */
+  /* padding-top: 3rem; */
   display: flex;
   flex-direction: row;
   align-items: center;
   position: relative;
   gap: 3rem;
-  padding-bottom: 7rem;
+  /* padding-bottom: 7rem; */
+  min-height: 100vh;
   /* border: #432542 solid 1px; */
 }
 
@@ -508,6 +599,12 @@ form {
   margin-right: 1rem;
   width: 20rem;
   height: 100%;
+}
+
+.solution_title,
+.solution_body,
+.solution_items {
+  transform: translateY(-6rem);
 }
 
 #solution_underline {
@@ -608,13 +705,16 @@ form {
   margin-top: 6rem;
   display: flex;
   flex-direction: row;
+  padding-bottom: 20rem;
 }
 
 .food_bank_title_container {
   position: relative;
   flex: 1;
   /* padding-left: 5rem; */
-  padding-right: 7rem;
+  padding-right: 6rem;
+  white-space: nowrap;
+
 }
 
 .food_bank_title_container p {
@@ -649,6 +749,28 @@ form {
   background-color: #fefae0;
   color: #432542;
   width: 8rem;
+}
+
+.foodbank_list a {
+  color: #432542;
+  text-decoration: none;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.pagination button {}
+
+#page_change {
+  width: 8rem;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  background-color: #6b8a7a;
+  color: #fefae0;
 }
 
 #filtering {
@@ -687,6 +809,19 @@ form {
   top: 0;
   flex-direction: column;
 }
+
+.custom_container_sticky form {
+  border-radius: 0.3rem;
+  border: 0;
+  background-color: #f5f0d4;
+}
+
+.custom_container_sticky fieldset {
+  border: 1px solid #254336;
+  border-radius: 0.3rem;
+  background-color: #fefae0;
+}
+
 
 .custom_container_sticky h1 {
   margin-bottom: 0;
