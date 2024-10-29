@@ -65,9 +65,17 @@ function DisplayFoodBanks() {
                                             whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336", color: "#6b8a7a" }}
                                         >
                                             <h3 className="header3">{bank.food_scrap_drop_off_site}</h3>
-                                            <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
+                                            <div className="foodbank_location">
+                                                <p id="location">Location</p>
+                                                <p>{bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
+                                            </div>
+
                                             <p>{bank.open_months}</p>
-                                            <p>Hours of operation: {bank.operation_day_hours}</p>
+                                            <div className="foodbank_hoursOperation">
+                                                <p id="hours_operation">Hours of Operation</p>
+                                                <p>{bank.operation_day_hours}</p>
+                                            </div>
+
                                             <p> {bank.website ? `Website: ${bank.website}` : 'No website available'}</p>
                                         </motion.div>
                                     </MotionConfig>

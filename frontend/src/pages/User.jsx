@@ -1,6 +1,8 @@
 import DisplayUser from "../components/DisplayUserInfo";
 import UserPosts from "../components/UserPosts";
 import LikedPosts from "../components/UsersLikedPosts";
+import TEST from "../components/1FramerTest";
+import DELAY from "../components/2FramerTest";
 
 function UserPage() {
   // const navigate = useNavigate();
@@ -34,13 +36,23 @@ function UserPage() {
   // // But we also have to consider that we may NOT be on the current users page
   // const profileUsername = isCurrentUserProfile ? currentUser.username : userProfile.username;
 
-  return <>
-    <DisplayUser />
-    {/* <button>Your Posts</button>
+  return <div className="container">
+    <main className="main_user_container">
+      {/* <button>Your Posts</button>
     <button>Liked Posts</button> */}
-    {/* <LikedPosts /> */}
-    <UserPosts />
-  </>;
+      {/* <LikedPosts /> */}
+
+      <DisplayUser />
+
+
+      <UserPosts />
+
+
+
+    </main>
+
+
+  </div>;
 }
 
 export default UserPage;

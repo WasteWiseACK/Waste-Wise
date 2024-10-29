@@ -105,7 +105,7 @@ function ForumPost({ selectedTags }) {
 
 
                                 <div className="text_body">
-                                    <p className="body_post">{post.body}</p>
+                                    <p className="body_post" id="body_post_configuration">{post.body}</p>
                                 </div>
 
                                 <div className="tag_container">

@@ -1,4 +1,5 @@
 import LinkPreview from "../components/LinkPreview"
+import { ArrowDown } from "lucide-react"
 
 const Solutions = () => {
   return (
@@ -31,17 +32,10 @@ const Solutions = () => {
           </div>
         </div>
 
-
+        <div className="scroll_for_more"><ArrowDown /><ArrowDown /><ArrowDown /></div>
 
 
         <div className="opportunities_container">
-          <div className="heading_oppor">
-            <h1 className="header1">OPPORTUNITIES</h1>
-            <caption className="body">ways to join the cause</caption>
-          </div>
-
-
-
           <div className="preview_links_container">
             <LinkPreview>
               https://www.volunteermatch.org/
@@ -50,24 +44,31 @@ const Solutions = () => {
               https://www.boulderfoodrescue.org/food-rescue-alliance/
             </LinkPreview>
           </div>
+
+          <div className="heading_oppor">
+            <h1 className="header1">OPPORTUNITIES</h1>
+            <p className="body" style={{ margin: "0.5rem 0 0 1rem" }}>Take action now</p>
+          </div>
         </div>
 
+        <div className="moreInfo">
+          <h2 className="header2" style={{ margin: "0 0 0 0" }}>More Info.</h2>
+          <p className="body" style={{ margin: "0.5rem 1rem 2rem 0" }}>For a more in-depth research</p>
 
-        <h2 className="header2">More Info.</h2>
+          <LinkPreview>
+            https://www.foodwastealliance.org/
+          </LinkPreview>
+          <LinkPreview>
+            https://www.feedingamerica.org/
+          </LinkPreview>
+          <LinkPreview>
+            https://www.lovefoodhatewaste.com/
+          </LinkPreview>
+          <LinkPreview>
+            https://www.epa.gov/sustainable-management-food/food-too-good-waste-implementation-guide-and-toolkit
+          </LinkPreview>
+        </div>
 
-
-        <LinkPreview>
-          https://www.foodwastealliance.org/
-        </LinkPreview>
-        <LinkPreview>
-          https://www.feedingamerica.org/
-        </LinkPreview>
-        <LinkPreview>
-          https://www.lovefoodhatewaste.com/
-        </LinkPreview>
-        <LinkPreview>
-          https://www.epa.gov/sustainable-management-food/food-too-good-waste-implementation-guide-and-toolkit
-        </LinkPreview>
 
       </main>
 
