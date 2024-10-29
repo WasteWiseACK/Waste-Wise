@@ -1,6 +1,8 @@
 import { useContext, useEffect, useState } from "react";
 import CurrentUserContext from "../contexts/current-user-context";
 import { fetchHandler, deleteOptions } from "../utils/fetchingUtils";
+import { MotionConfig, motion } from "framer-motion";
+import { Trash } from "lucide-react";
 
 function UserPosts() {
     const [posts, setPosts] = useState([]);
@@ -60,32 +62,87 @@ function UserPosts() {
     // console.log("Posts Type:", typeof posts);
 
     return (
-        <div>
+        <motion.div
+            className="user_activity_container"
+            variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{ duration: 0.5, delay: 0.25 }}
+        >
             {error && <p>{error}</p>}
-            <button onClick={() => setShowLikedPosts(false)}>My Posts</button>
-            <button onClick={() => setShowLikedPosts(true)}>Liked Posts</button>
-            <ul>
-                {posts.length === 0 ? (
-                    <p>{showLikedPosts ? "You haven't liked any posts yet." : "You haven't created any posts yet."}</p>
-                ) : (
-                    posts.map((post) => (
-                        <li key={post.id}>
-                            <div>
-                                <h3>{post.title}</h3>
-                                <p>{post.created_at.substring(0, 10)}</p>
-                                {post.user_id === currentUser.id && (
-                                    <button onClick={() => handleDelete(post.id)}>Delete Post</button>
-                                )}
-                            </div>
-                            <div className="postInfo">
-                                <p>{post.body}</p>
-                                <p>Posted by: {post.username}</p>
-                            </div>
-                        </li>
-                    ))
-                )}
-            </ul>
-        </div>
+            <div className="user_buttons">
+                <MotionConfig
+                    transition={{
+                        duration: "0.25",
+                        ease: "easeInOut"
+                    }}
+                >
+                    <motion.button
+                        onClick={() => setShowLikedPosts(false)}
+                        className="body"
+                        id="reply_button"
+                        whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
+                        whileTap={{ scale: 0.95, rotate: '3deg' }}
+                    >
+                        My Posts
+                    </motion.button>
+                    <motion.button
+                        onClick={() => setShowLikedPosts(true)}
+                        className="body"
+                        id="reply_button"
+                        whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
+                        whileTap={{ scale: 0.95, rotate: '3deg' }}
+                    >
+                        Liked Posts
+                    </motion.button>
+                </MotionConfig>
+
+            </div>
+            <div className="user_post_container">
+                <ul className="user_post_list">
+                    {posts.length === 0 ? (
+                        <p>{showLikedPosts ? "You haven't liked any posts yet." : "You haven't created any posts yet."}</p>
+                    ) : (
+                        posts.map((post) => (
+                            <li className="user_post_likes" key={post.id}>
+                                <div className="title_user">
+                                    <div className="title_delete_button">
+                                        <div className="post_title">
+                                            <h3 id="post_title" className="mission_statement">{post.title}</h3>
+                                        </div>
+
+                                        <div className="delete_button">
+                                            {post.user_id === currentUser.id && (
+                                                <button onClick={() => handleDelete(post.id)}><Trash /></button>
+                                            )}
+                                        </div>
+                                    </div>
+                                    <div className="underline"></div>
+
+                                    <div className="user_date">
+                                        <div className="username_post">
+                                            <p className="body">{post.username}</p>
+                                        </div>
+                                        <p className="body">{post.created_at.substring(0, 10)}</p>
+                                    </div>
+
+
+                                </div>
+                                <div className="postInfo">
+                                    <div className="text_body">
+                                        <p className="body_post" id="body_post_configuration">{post.body}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        ))
+                    )}
+                </ul>
+            </div>
+
+        </motion.div>
 
         // <div>
         //     {error && <p>{error}</p>}

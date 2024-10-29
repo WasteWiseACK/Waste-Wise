@@ -11,7 +11,7 @@ const DELAY = ({ children }) => {
       // display: "flex",
       // flexDirection: "column",
       // alignItems: "center",
-      position: "relative",
+      // position: "relative",
       overflow: "hidden",
       // width: "fit-content" || "100%"
     }}>

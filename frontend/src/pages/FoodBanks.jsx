@@ -11,44 +11,50 @@ function FoodBank() {
 
             <main>
                 <div className="container">
-                    <section className="title_and_display">
-                        <div className="food_bank_title_container">
-                            <div className="custom_container_sticky">
-                                <TEST>
-                                    <h1 className="header1">
-                                        FOOD BANKS
-                                    </h1>
-                                </TEST>
-                                <TEST>
-                                    <h1 className="header1">
-                                        FOOD BANKS
-                                    </h1>
-                                </TEST>
-                                <TEST>
-                                    <h1 className="header1">
-                                        FOOD BANKS
-                                    </h1>
-                                </TEST>
-                                <TEST>
-                                    <h1 className="header1">
-                                        FOOD BANKS
-                                    </h1>
-                                </TEST>
-                                <TEST>
-                                    <p>waste wise</p>
-                                </TEST>
+                    <div className="section_container">
+                        <section className="about_foodbanks">
+                            <h1 className="header1">PLACEHOLDER</h1>
+                        </section>
+                        <section className="title_and_display">
+                            <div className="food_bank_title_container">
+                                <div className="custom_container_sticky">
+                                    <TEST>
+                                        <h1 className="header1">
+                                            FOOD BANKS
+                                        </h1>
+                                    </TEST>
+                                    <TEST>
+                                        <h1 className="header1">
+                                            FOOD BANKS
+                                        </h1>
+                                    </TEST>
+                                    <TEST>
+                                        <h1 className="header1">
+                                            FOOD BANKS
+                                        </h1>
+                                    </TEST>
+                                    <TEST>
+                                        <h1 className="header1">
+                                            FOOD BANKS
+                                        </h1>
+                                    </TEST>
+                                    <TEST>
+                                        <p>waste wise</p>
+                                    </TEST>
+                                </div>
+                                <div className="fade-out-gradient"></div>
+
                             </div>
-                            <div className="fade-out-gradient"></div>
+                            <div className="food_bank_container">
+                                <FilterFoodBanks />
+                                <DELAY>
+                                    <DisplayFoodBanks />
+                                </DELAY>
 
-                        </div>
-                        <div className="food_bank_container">
-                            <FilterFoodBanks />
-                            <DELAY>
-                                <DisplayFoodBanks />
-                            </DELAY>
+                            </div>
+                        </section>
+                    </div>
 
-                        </div>
-                    </section>
                 </div>
             </main>
             <Footer />

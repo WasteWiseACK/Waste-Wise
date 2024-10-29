@@ -31,7 +31,7 @@ const FilterPost = ({ onFilter }) => {
     <div className="form_container">
       <div className="custom_container_sticky">
         <MakePost />
-        <form onSubmit={handleSubmit}>
+        <form className="form_filtering" onSubmit={handleSubmit}>
           <h2 className="header2">Filtering Post</h2>
           <fieldset>
             <legend className="body">Filter by tag</legend>
