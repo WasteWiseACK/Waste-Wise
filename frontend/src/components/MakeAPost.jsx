@@ -78,8 +78,7 @@ const MakePost = () => {
           }}
         >
           <motion.button
-            className="body"
-            id="reply_button"
+            className="reply_button body"
             onClick={toggleVisible}
             whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
             whileTap={{ scale: 0.95, rotate: '3deg' }}

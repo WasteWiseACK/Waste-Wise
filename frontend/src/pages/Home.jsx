@@ -1,34 +1,35 @@
 import TEST from "../components/1FramerTest"
-import DELAY from "../components/2FramerTest"
+import DELAY from "../components/2FramerDelay"
 import Boxes from "../components/HomePageBoxes"
 import Footer from "../components/Footer"
 import { NavLink } from "react-router-dom"
+import { MotionConfig, motion } from "framer-motion"
 
 
 export default function HomePage() {
   return <div>
     <main>
       <div className="container">
-        <TEST>
-          <div className="our_mission_container">
-            <h1 className="header1">OUR MISSION</h1>
-          </div>
-        </TEST>
-        <TEST>
-          <div className="underline"></div>
-        </TEST>
+        <div className="mission_underline">
+          <TEST>
+            <div className="our_mission_container">
+              <h1 className="header1">OUR MISSION</h1>
+            </div>
+          </TEST>
+          <TEST>
+            <div className="underline"></div>
+          </TEST>
+        </div>
+
 
         <div>
           <section className="container">
             <div className="home_container">
               <div className="prompt_container">
-                <Boxes>
-                  <p>Waste Wise</p>
-                </Boxes>
+                <Boxes />
                 <TEST>
-                  <p className="mission-statement">
-                    Our mission is to bridge the gap between food insecurity and food waste by redistributing food that is still perfectly edible but would otherwise be thrown away. Through our platform, we connect New Yorkers facing hunger with local food banks and meal programs, offering resource locators and nutritional guidance. We also promote sustainability by educating the public and showcasing volunteer opportunities, while providing restaurants and companies a simplified food donation network to ensure surplus food reaches people in need. All in all, we aim to build a more sustainable and fair food system for our city.
-
+                  <p className="header2">
+                    <strong>BRIDGE</strong>   the gap between food insecurity and food waste by redirecting surplus food to New Yorkers in need. Through our platform, we connect people with local food banks, offer nutritional guidance, and provide a simplified donation network for businesses, fostering a more sustainable and equitable food system.
 
                   </p>
                 </TEST>
@@ -37,10 +38,26 @@ export default function HomePage() {
               <div className="problem_container">
                 <DELAY>
                   <p className="special_home_problem">
-                    Food waste in America is a massive player to the issue, contributing 133 billion pounds of food yearly, and amounting to 161 billion dollars that could be saved. All of that food could be used to feed upwards of 42 million Americans. Adding to the problem, according to the UDoA, food waste is the third-largest source of human-related methane emissions, approximating 14.1% in 2017, and is the third-largest emitter of greenhouse gasses overall. Closing in on New York State, it is estimated that about 18% of all waste, which is 3.9 million tons of waste, ends up in landfills; food that can be used to feed food-insecure families is instead being thrown out, wasted.
+
+
+                    America wastes 133 billion pounds of food annually, costing $161 billion and enough to feed 42 million people. Food waste is also the third-largest source of methane emissions, contributing 14.1% in 2017, and a major greenhouse gas emitter. In New York State, 18% of waste (3.9 million tons) goes to landfills, with much of it still edible and capable of feeding food-insecure families.
 
                   </p>
-                  {/* <NavLink id="join_link" className="body" to='/sign-up'> Join the cause</NavLink> */}
+                  <MotionConfig
+                    transition={{
+                      duration: "0.25",
+                      ease: "easeInOut"
+                    }}
+                  >
+                    <motion.button
+                      className="reply_button"
+                      whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
+                      whileTap={{ scale: 0.95, rotate: '3deg' }}
+                    >
+                      <NavLink id="join_link" className="body" to='/sign-up'> Join the cause</NavLink>
+                    </motion.button>
+                  </MotionConfig>
+
                 </DELAY>
               </div>
             </div>

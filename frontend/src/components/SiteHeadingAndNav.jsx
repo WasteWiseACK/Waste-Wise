@@ -25,6 +25,9 @@ export default function SiteHeadingAndNav() {
         <li className='nav_link'>
           <NavLink to='/FORUM'>FORUM</NavLink>
         </li>
+        <li className="nav_link">
+          <NavLink to='/About_Us'>ABOUT US</NavLink>
+        </li>
       </ul>
     </nav>
     <div className="nav-container">

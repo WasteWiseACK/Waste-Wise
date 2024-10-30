@@ -82,8 +82,7 @@ function UserPosts() {
                 >
                     <motion.button
                         onClick={() => setShowLikedPosts(false)}
-                        className="body"
-                        id="reply_button"
+                        className="reply_button body"
                         whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
                         whileTap={{ scale: 0.95, rotate: '3deg' }}
                     >
@@ -91,8 +90,7 @@ function UserPosts() {
                     </motion.button>
                     <motion.button
                         onClick={() => setShowLikedPosts(true)}
-                        className="body"
-                        id="reply_button"
+                        className="reply_button body"
                         whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
                         whileTap={{ scale: 0.95, rotate: '3deg' }}
                     >
@@ -104,7 +102,10 @@ function UserPosts() {
             <div className="user_post_container">
                 <ul className="user_post_list">
                     {posts.length === 0 ? (
-                        <p>{showLikedPosts ? "You haven't liked any posts yet." : "You haven't created any posts yet."}</p>
+                        <li className="user_post_likes">
+                            <p>{showLikedPosts ? "You haven't liked any posts yet." : "You haven't created any posts yet."}</p>
+                        </li>
+
                     ) : (
                         posts.map((post) => (
                             <li className="user_post_likes" key={post.id}>
