@@ -17,6 +17,7 @@ export default function SiteHeadingAndNav() {
           <ul className="drop_down">
             <li><NavLink to='/IMPACT'>IMPACT</NavLink></li>
             <li><NavLink to='/SOLUTIONS'>SOLUTIONS</NavLink></li>
+            <li><NavLink to='/About_Us'>ABOUT US</NavLink></li>
           </ul>
         </li>
         <li>
@@ -24,9 +25,6 @@ export default function SiteHeadingAndNav() {
         </li>
         <li className='nav_link'>
           <NavLink to='/FORUM'>FORUM</NavLink>
-        </li>
-        <li className="nav_link">
-          <NavLink to='/About_Us'>ABOUT US</NavLink>
         </li>
       </ul>
     </nav>

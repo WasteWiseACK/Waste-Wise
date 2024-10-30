@@ -19,7 +19,7 @@
 }
 
 .FoodInsecurityMap {
-  padding-top: 5rem;
+  padding-top: 1rem;
 }
 
 
@@ -28,6 +28,17 @@
   width: 100vh;
 
 }
+
+.Maps {
+  padding-left: 5rem;
+}
+
+.title_impact {
+  margin: 1rem 0 1rem 0
+}
+
+
+
 
 
 /* .title, .header1 and .header2 use regular Helvetica font, all split in
@@ -617,6 +628,7 @@ form {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin-top: 2.5rem;
   position: relative;
   gap: 3rem;
   /* padding-bottom: 7rem; */
