@@ -30,7 +30,7 @@ export default function App() {
       <Route path='/' element={<Home />} />
       <Route path='/login' element={<LoginPage />} />
       <Route path='/sign-up' element={<SignUpPage />} />
-      <Route path='/users' element={<UsersPage />} />
+      {/* <Route path='/users' element={<UsersPage />} /> */}
       <Route path='/users/:id' element={<UserPage />} />
       <Route path='/users/:id/edit' element={<UserEditPage />} />
       <Route path='/SOLUTIONS' element={<Solutions />} />

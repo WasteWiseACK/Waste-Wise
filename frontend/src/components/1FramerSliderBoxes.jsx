@@ -10,7 +10,7 @@ const SliderBox = ({ children, duration }) => {
       // display: "flex",
       // flexDirection: "column",
       // alignItems: "center",
-      // position: "relative",
+      position: "relative",
       // overflow: "hidden",
       width: "100%"
     }}>
@@ -27,7 +27,7 @@ const SliderBox = ({ children, duration }) => {
       </motion.div>
       <motion.div
         variants={{
-          hidden: { left: 0 },
+          // hidden: { left: 0 },
           visible: { left: "100%" },
         }}
         initial="hidden"

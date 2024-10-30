@@ -4,7 +4,7 @@ import BlockInTextFoodBank from "../components/BlockInText";
 import Footer from "../components/Footer";
 import { ArrowDown } from "lucide-react";
 import TEST from "../components/1FramerTest";
-import DELAY from "../components/2FramerDelay";
+import DELAY from "../components/2FramerTest";
 import InView from "../components/1FramerInView";
 
 function FoodBank() {
