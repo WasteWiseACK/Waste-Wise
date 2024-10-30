@@ -2,6 +2,12 @@ import { useNavigate } from "react-router-dom";
 import { updateUsername } from "../adapters/user-adapter";
 import { useState, useEffect } from "react";
 import { MotionConfig, motion } from "framer-motion";
+import laptop from "../assets/laptop.png";
+import cheer from "../assets/cheer.png";
+import twosmiski from "../assets/2smiski.png";
+import duck from "../assets/duck.png";
+import daydream from "../assets/daydream.png";
+import yoga from "../assets/yoga.png";
 
 export default function UpdateUsernameForm({ currentUser, setCurrentUser }) {
   const boroughs = [
@@ -13,11 +19,21 @@ export default function UpdateUsernameForm({ currentUser, setCurrentUser }) {
     { value: 'staten_island', label: 'Staten Island' },
   ];
 
+  const profileImages = [
+    { src: laptop, label: 'laptop.png' },
+    { src: cheer, label: 'cheer.png' },
+    { src: yoga, label: 'yoga.png' },
+    { src: twosmiski, label: 'twosmiski.png' },
+    { src: duck, label: 'duck.png' },
+    { src: daydream, label: 'daydream.png' }
+  ];
+
   const navigate = useNavigate();
   const [userBio, setUserBio] = useState('');
   const [username, setUsername] = useState('');
   const [userBorough, setUserBorough] = useState('');
   const [userContacts, setUserContacts] = useState('');
+  const [selectImg, setSelectImg] = useState(null);
 
 
   useEffect(() => {
@@ -26,6 +42,7 @@ export default function UpdateUsernameForm({ currentUser, setCurrentUser }) {
       setUserBio(currentUser.bio || '');
       setUserBorough(currentUser.borough || '');
       setUserContacts(currentUser.other_form_of_contact || '');
+      setSelectImg(currentUser.profile_pic || '');
     }
   }, [currentUser])
 
@@ -36,9 +53,11 @@ export default function UpdateUsernameForm({ currentUser, setCurrentUser }) {
       username: username || currentUser.username,
       bio: userBio || currentUser.bio,
       borough: userBorough || currentUser.borough,
-      other_form_of_contact: userContacts || currentUser.other_form_of_contact
+      other_form_of_contact: userContacts || currentUser.other_form_of_contact,
+      profile_pic: selectImg || currentUser.profile_pic
     };
     console.log('Updating user:', updateData);
+    console.log('this is the img', selectImg)
     const [user, error] = await updateUsername(updateData);
     // If our user isn't who they say they are
     // (an auth error on update) log them out
@@ -72,7 +91,26 @@ export default function UpdateUsernameForm({ currentUser, setCurrentUser }) {
             className="text_area"
           />
         </div>
-
+        <div className="profile-image-selection">
+          <p className="body">Choose a Profile Picture</p>
+          <div className="image-options">
+            {profileImages.map((img, index) => (
+              <img
+                key={index}
+                src={img.src}
+                alt={`Option ${index + 1}`}
+                onClick={() => { setSelectImg(img.src); console.log(img.src) }}
+                style={{
+                  border: selectImg === img.src ? "3px solid green" : "2px solid gray",
+                  borderRadius: "50%",
+                  cursor: "pointer",
+                  width: 60,
+                  margin: "5px"
+                }}
+              />
+            ))}
+          </div>
+        </div>
 
 
         <br />

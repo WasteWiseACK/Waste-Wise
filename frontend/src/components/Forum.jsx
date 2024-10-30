@@ -4,6 +4,8 @@ import CurrentUserContext from "../contexts/current-user-context";
 import MakeAComment from "./MakeAComment";
 import Comments from "./Comment";
 import { Trash, MessageSquare, Heart, HeartOff } from "lucide-react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 
 function ForumPost({ selectedTags }) {
@@ -25,7 +27,11 @@ function ForumPost({ selectedTags }) {
 
         const [data, error] = await fetchHandler(query);
         if (data) {
-            setPosts(data);
+            console.log(data);
+            setPosts(data.map(post => ({
+                ...post,
+                likedByCurrentUser: post.likedByCurrentUser || false // Ensure the default is false if not provided
+            })));
         }
         if (error) {
             console.error(error);
@@ -38,7 +44,11 @@ function ForumPost({ selectedTags }) {
     const handleDelete = async (postId) => {
         const deleteUrl = `/api/posts/${postId}`;
         const [erase, error] = await fetchHandler(deleteUrl, deleteOptions);
-        if (erase) fetchPosts();
+        if (erase) {
+            fetchPosts();
+            toast.success("Post has been deleted!")
+
+        }
         if (error) console.error(error);
     };
 
@@ -48,8 +58,9 @@ function ForumPost({ selectedTags }) {
         if (data) {
             console.log(data);
             setPosts(posts.map(post =>
-                post.id === postId ? { ...post, likedByCurrentUser: !likedByCurrentUser } : post
+                post.id === postId ? { ...post, likedByCurrentUser: data.likedByCurrentUser } : post
             ));
+            // fetchPosts()
         }
         if (error) console.error(error);
     }
@@ -136,6 +147,14 @@ function ForumPost({ selectedTags }) {
                     ))}
                 </ul>
             </div >
+            <ToastContainer
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                closeOnClick={false}
+                pauseOnHover={false}
+                draggable={false}
+            />
         </div>
     );
 }

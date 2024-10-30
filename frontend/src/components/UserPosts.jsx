@@ -3,6 +3,8 @@ import CurrentUserContext from "../contexts/current-user-context";
 import { fetchHandler, deleteOptions } from "../utils/fetchingUtils";
 import { MotionConfig, motion } from "framer-motion";
 import { Trash } from "lucide-react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function UserPosts() {
     const [posts, setPosts] = useState([]);
@@ -45,7 +47,10 @@ function UserPosts() {
     const handleDelete = async (postId) => {
         const deleteUrl = `/api/posts/${postId}`;
         const [erase, error] = await fetchHandler(deleteUrl, deleteOptions);
-        if (erase) fetchUserPost();
+        if (erase) {
+            fetchUserPost();
+            toast.success('Your post has been deleted.')
+        }
         if (error) console.error(error);
     };
 
@@ -141,7 +146,14 @@ function UserPosts() {
                     )}
                 </ul>
             </div>
-
+            <ToastContainer
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                closeOnClick={false}
+                pauseOnHover={false}
+                draggable={false}
+            />
         </motion.div>
 
         // <div>

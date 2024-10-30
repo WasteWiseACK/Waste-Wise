@@ -29,22 +29,23 @@ class Post {
   static async list(user_id = null) {
     const query = `
     SELECT
-      posts.id AS id, 
-      posts.title, 
-      posts.body, 
-      posts.created_at,
-      posts.user_id, 
-      users.username,
-      COALESCE(liked_posts.user_id IS NOT NULL, false) AS likedByCurrentUser,
-      json_agg(json_build_object('id', tags.id, 'name', tags.name)) AS tags
+        posts.id AS id, 
+        posts.title, 
+        posts.body, 
+        posts.created_at,
+        posts.user_id, 
+        users.username,
+        COUNT(liked_posts.user_id) > 0 AS "likedByCurrentUser",
+        json_agg(json_build_object('id', tags.id, 'name', tags.name)) AS tags
     FROM posts
     JOIN users ON posts.user_id = users.id
     LEFT JOIN liked_posts ON liked_posts.post_id = posts.id AND liked_posts.user_id = ?
     LEFT JOIN post_tags ON post_tags.post_id = posts.id
     LEFT JOIN tags ON post_tags.tag_id = tags.id
-    GROUP BY posts.id, users.username, liked_posts.user_id
-    ORDER BY posts.created_at DESC
-  `;
+    GROUP BY posts.id, users.username
+    ORDER BY posts.created_at DESC;
+`;
+
     //     const query = `
     //     SELECT DISTINCT 
     //     posts.id AS id, 
@@ -60,8 +61,14 @@ class Post {
     //   `;
 
     const result = await knex.raw(query, [user_id]);
-    return result.rows.map((rawPostData) => new Post(rawPostData));
-  }
+    console.log("User ID:", user_id);
+    console.log("Query Result:", result.rows);
+    return result.rows.map((rawPostData) => {
+      console.log("Mapped Post Data:", rawPostData);
+      console.log(rawPostData.likedByCurrentUser)
+      return new Post(rawPostData);
+    });
+  };
 
 
   // Fetches a single post from posts table that matches the given id.
