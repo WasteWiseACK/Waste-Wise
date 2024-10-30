@@ -19,18 +19,51 @@
 }
 
 .FoodInsecurityMap {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 
+.impact_link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .leaflet-container {
-  height: 70vh;
-  width: 100vh;
+  height: 50vh;
+  width: 70vh;
 
 }
 
 .Maps {
+  margin-top: 5rem;
   padding-left: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 150vh;
+  gap: 3rem;
+  width: 100%;
+}
+
+.description_impact {
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  flex: 1;
+  width: 30rem;
+}
+
+.description_impact p {
+  /* width: 70%; */
+}
+
+.map_container {
+  flex: 1;
+}
+
+.impact_title_container {
+  flex: 1;
 }
 
 .title_impact {

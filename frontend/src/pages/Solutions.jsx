@@ -4,7 +4,7 @@ import SliderBox from "../components/1FramerSliderBoxes"
 import FlexibleBoxes from "../components/1FramerSolutionBoxes"
 import TEST from "../components/1FramerTest"
 import InView from "../components/1FramerInView"
-import DELAY from "../components/2FramerDelay"
+import DELAY from "../components/2FramerTest"
 
 const Solutions = () => {
   return (
@@ -14,6 +14,7 @@ const Solutions = () => {
 
         <FlexibleBoxes x={-300} y={100} x2={-1000} y2={100} />
         <FlexibleBoxes x={-900} y={500} x2={-400} y2={500} />
+
         <div className="solution_container">
 
 

@@ -3,7 +3,7 @@ import { useNavigate, Navigate, Link } from "react-router-dom";
 import CurrentUserContext from "../contexts/current-user-context";
 import { createUser } from "../adapters/user-adapter";
 import TEST from '../components/1FramerTest'
-import DELAY from '../components/2FramerDelay'
+import DELAY from '../components/2FramerTest'
 import { motion, MotionConfig } from 'framer-motion'
 
 
@@ -30,7 +30,7 @@ export default function SignUpPage() {
     if (error) return setErrorText(error.message);
 
     setCurrentUser(user);
-    navigate('/');
+    navigate(`/users/${id}`);
   };
 
   const handleChange = (event) => {

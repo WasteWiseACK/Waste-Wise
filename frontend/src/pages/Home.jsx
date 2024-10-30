@@ -1,5 +1,5 @@
 import TEST from "../components/1FramerTest"
-import DELAY from "../components/2FramerDelay"
+import DELAY from "../components/2FramerTest"
 import Boxes from "../components/HomePageBoxes"
 import Footer from "../components/Footer"
 import { NavLink } from "react-router-dom"
