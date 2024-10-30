@@ -10,7 +10,11 @@ const Impact = () => {
         Methane, one of the most potent greenhouse gasses, is released when food waste decomposes anaerobically in landfills.
         Furthermore, when food is thrown away, the resources utilized to produce it—such as energy, land, and water—are wasted, which causes needless CO2 emissions from transportation and agriculture.
         Additionally, by decreasing carbon sequestration, the conversion of forests into agricultural land for excessive food production exacerbates climate change.
-        Overall, as food waste minimizes the environmental effect of the food supply chain and reduces resource inefficiencies, it is essential for reducing CO2 emissions and building more sustainable food systems.</p>
+        Overall, as food waste minimizes the environmental effect of the food supply chain and reduces resource inefficiencies, it is essential for reducing CO2 emissions and building more sustainable food systems.
+
+        If you would like to learn more, here are a few sites:
+        State of the Planet - Columbia University : https://news.climate.columbia.edu/2021/01/15/global-food-systems-challenges/
+      </p>
     </div>
   )
 }
