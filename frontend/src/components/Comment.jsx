@@ -17,7 +17,7 @@ function Comments({ postId }) {
 
     useEffect(() => {
         fetchComments();
-    }, [postId]);
+    }, [postId, comments]);
 
     if (error) return <p>Error loading comments: {error}</p>;
 

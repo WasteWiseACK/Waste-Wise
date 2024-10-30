@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { fetchHandler, getPostOptions } from "../utils/fetchingUtils";
 import { MotionConfig, motion } from "framer-motion";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 
 
 function MakeAComment({ postId }) {
@@ -18,6 +21,8 @@ function MakeAComment({ postId }) {
         if (comment) {
             console.log("comment created:", commentData);
             setCreateContent('');  // Clear the input field after successful submission
+            toast.success("Your comment has been posted!")
+
         }
         if (error) {
             console.error("Error submitting comment:", error);
@@ -55,6 +60,14 @@ function MakeAComment({ postId }) {
 
                 </form>
             </div>
+            <ToastContainer
+                position="top-right"
+                autoClose={1000}
+                hideProgressBar={false}
+                closeOnClick={false}
+                pauseOnHover={false}
+                draggable={false}
+            />
         </>
     )
 }

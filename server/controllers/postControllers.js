@@ -21,7 +21,10 @@ exports.createPost = async (req, res) => {
 }
 
 exports.listPosts = async (req, res) => {
-  const posts = await Post.list();
+  console.log("User from request:", req.session.userId); // Log the user object
+  const user_id = req.session.userId || null;
+  const posts = await Post.list(user_id);
+  console.log("Posts to return:", posts); // Check the output here
   res.send(posts);
 };
 
