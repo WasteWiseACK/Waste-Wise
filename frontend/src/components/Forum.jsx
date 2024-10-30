@@ -14,11 +14,6 @@ function ForumPost({ selectedTags }) {
     const { currentUser } = useContext(CurrentUserContext);
     console.log(`selectedTags: ${selectedTags}`)
     // Fetch posts
-    // const fetchPosts = async () => {
-    //     const [data, error] = await fetchHandler('/api/posts');
-    //     if (data) { setPosts(data) };
-    //     if (error) console.error(error);
-    // };
     const fetchPosts = async () => {
         let query = '/api/posts';
         if (selectedTags.length > 0) {
@@ -60,7 +55,8 @@ function ForumPost({ selectedTags }) {
             setPosts(posts.map(post =>
                 post.id === postId ? { ...post, likedByCurrentUser: data.likedByCurrentUser } : post
             ));
-            // fetchPosts()
+            toast.success("You've liked the post.")
+
         }
         if (error) console.error(error);
     }
