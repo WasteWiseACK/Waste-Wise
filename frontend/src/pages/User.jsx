@@ -2,7 +2,7 @@ import DisplayUser from "../components/DisplayUserInfo";
 import UserPosts from "../components/UserPosts";
 import LikedPosts from "../components/UsersLikedPosts";
 import TEST from "../components/1FramerTest";
-import DELAY from "../components/2FramerTest";
+import DELAY from "../components/2FramerDelay";
 
 function UserPage() {
   // const navigate = useNavigate();

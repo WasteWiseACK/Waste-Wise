@@ -7,11 +7,14 @@ const Boxes = ({ children }) => {
   const isInView = useInView(ref, { once: true })
 
   return (
-    <div style={{
-      position: "absolute",
-      zIndex: -1
-    }}>
+    <div
+
+      style={{
+        position: "absolute",
+        zIndex: -1
+      }}>
       <motion.div
+        className="box"
         initial={{
           scale: 2,
           x: -750,
@@ -29,7 +32,7 @@ const Boxes = ({ children }) => {
         }}
         style={{
           width: 424,
-          height: 150,
+          height: "2.5rem",
           background: '#6b8a7a'
         }}
       >{children}</motion.div>

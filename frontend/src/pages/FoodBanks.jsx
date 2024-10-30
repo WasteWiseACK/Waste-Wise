@@ -1,8 +1,11 @@
 import DisplayFoodBanks from "../components/DisplayFoodBanks";
 import FilterFoodBanks from "../components/FilterFoodBanks";
+import BlockInTextFoodBank from "../components/BlockInText";
 import Footer from "../components/Footer";
+import { ArrowDown } from "lucide-react";
 import TEST from "../components/1FramerTest";
-import DELAY from "../components/2FramerTest";
+import DELAY from "../components/2FramerDelay";
+import InView from "../components/1FramerInView";
 
 function FoodBank() {
     return (
@@ -12,47 +15,63 @@ function FoodBank() {
             <main>
                 <div className="container">
                     <div className="section_container">
-                        <section className="about_foodbanks">
-                            <h1 className="header1">PLACEHOLDER</h1>
-                        </section>
+                        <TEST>
+                            <section className="about_foodbanks">
+                                <BlockInTextFoodBank />
+                            </section>
+                            <div className="scroll_for_more_FB"><ArrowDown /><ArrowDown /><ArrowDown /></div>
+                        </TEST>
+
+
                         <section className="title_and_display">
+
                             <div className="food_bank_title_container">
                                 <div className="custom_container_sticky">
-                                    <TEST>
+                                    <InView>
+
                                         <h1 className="header1">
                                             FOOD BANKS
                                         </h1>
-                                    </TEST>
-                                    <TEST>
+
+                                    </InView>
+                                    <InView>
                                         <h1 className="header1">
                                             FOOD BANKS
                                         </h1>
-                                    </TEST>
-                                    <TEST>
+                                    </InView>
+                                    <InView>
                                         <h1 className="header1">
                                             FOOD BANKS
                                         </h1>
-                                    </TEST>
-                                    <TEST>
+                                    </InView>
+                                    <InView>
                                         <h1 className="header1">
                                             FOOD BANKS
                                         </h1>
-                                    </TEST>
-                                    <TEST>
+                                    </InView>
+                                    <InView>
                                         <p>waste wise</p>
-                                    </TEST>
+                                    </InView>
                                 </div>
+
                                 <div className="fade-out-gradient"></div>
 
                             </div>
-                            <div className="food_bank_container">
-                                <FilterFoodBanks />
-                                <DELAY>
-                                    <DisplayFoodBanks />
-                                </DELAY>
 
-                            </div>
+
+                            <InView>
+                                <div className="food_bank_container">
+                                    <FilterFoodBanks />
+                                    <DELAY>
+                                        <DisplayFoodBanks />
+                                    </DELAY>
+
+                                </div>
+                            </InView>
+
                         </section>
+
+
                     </div>
 
                 </div>

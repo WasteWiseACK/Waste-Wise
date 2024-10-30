@@ -2,6 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import { fetchHandler } from "../utils/fetchingUtils";
 import FilteredFoodBanksContext from "../contexts/filtered-foodbanks-context";
 import { MotionConfig, motion } from "framer-motion";
+import InView from "./1FramerInView";
 
 function DisplayFoodBanks() {
     const [initialFoodBanks, setInitialFoodBanks] = useState([]);
@@ -51,9 +52,37 @@ function DisplayFoodBanks() {
                             : null; // Set to null if no website
 
                     return (
-                        <li key={bank.object_id} className="foodbank_list">
-                            {websiteUrl ? (
-                                <a href={websiteUrl} target='_blank'>
+                        <InView>
+                            <li key={bank.object_id} className="foodbank_list">
+                                {websiteUrl ? (
+                                    <a href={websiteUrl} target='_blank'>
+                                        <MotionConfig
+                                            transition={{
+                                                duration: "0.25",
+                                                ease: "easeInOut"
+                                            }}
+                                        >
+                                            <motion.div
+                                                className="bank_container"
+                                                whileHover={{ scale: 1.02, border: "0.1rem solid #254336", color: "#6b8a7a" }}
+                                            >
+                                                <h3 className="header3">{bank.food_scrap_drop_off_site}</h3>
+                                                <div className="foodbank_location">
+                                                    <p id="location">Location</p>
+                                                    <p>{bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
+                                                </div>
+
+                                                <p>{bank.open_months}</p>
+                                                <div className="foodbank_hoursOperation">
+                                                    <p id="hours_operation">Hours of Operation</p>
+                                                    <p>{bank.operation_day_hours}</p>
+                                                </div>
+
+                                                <p> {bank.website ? `Website: ${bank.website}` : 'No website available'}</p>
+                                            </motion.div>
+                                        </MotionConfig>
+                                    </a>
+                                ) : (
                                     <MotionConfig
                                         transition={{
                                             duration: "0.25",
@@ -62,44 +91,19 @@ function DisplayFoodBanks() {
                                     >
                                         <motion.div
                                             className="bank_container"
-                                            whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336", color: "#6b8a7a" }}
+                                            whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336" }}
                                         >
-                                            <h3 className="header3">{bank.food_scrap_drop_off_site}</h3>
-                                            <div className="foodbank_location">
-                                                <p id="location">Location</p>
-                                                <p>{bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
-                                            </div>
-
+                                            <h3>{bank.food_scrap_drop_off_site}</h3>
+                                            <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
                                             <p>{bank.open_months}</p>
-                                            <div className="foodbank_hoursOperation">
-                                                <p id="hours_operation">Hours of Operation</p>
-                                                <p>{bank.operation_day_hours}</p>
-                                            </div>
-
-                                            <p> {bank.website ? `Website: ${bank.website}` : 'No website available'}</p>
+                                            <p>Hours of operation: {bank.operation_day_hours}</p>
+                                            <p>No website available</p> {/* Alternative message */}
                                         </motion.div>
                                     </MotionConfig>
-                                </a>
-                            ) : (
-                                <MotionConfig
-                                    transition={{
-                                        duration: "0.25",
-                                        ease: "easeInOut"
-                                    }}
-                                >
-                                    <motion.div
-                                        className="bank_container"
-                                        whileHover={{ scale: 1.02, boxShadow: "2rem 2rem 0px #254336" }}
-                                    >
-                                        <h3>{bank.food_scrap_drop_off_site}</h3>
-                                        <p>Location: {bank.location ? bank.location : bank.food_scrap_drop_off_site}</p>
-                                        <p>{bank.open_months}</p>
-                                        <p>Hours of operation: {bank.operation_day_hours}</p>
-                                        <p>No website available</p> {/* Alternative message */}
-                                    </motion.div>
-                                </MotionConfig>
-                            )}
-                        </li>
+                                )}
+                            </li>
+                        </InView>
+
                     )
                 })}
             </ul>
