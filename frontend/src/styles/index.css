@@ -1380,11 +1380,20 @@ form {
   }
 
   .home_container {
+    margin-top: 2rem;
     flex-direction: column;
+    gap: 1rem;
+  }
+
+  .prompt_container p {
+    font-size: 2rem;
   }
 
   .problem_container {
     padding-bottom: 4rem;
+    gap: 1rem;
   }
+
+
 
 }
