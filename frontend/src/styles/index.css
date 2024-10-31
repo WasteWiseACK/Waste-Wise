@@ -52,14 +52,27 @@
   /* align-items: center; */
   flex: 1;
   width: 30rem;
+  margin-bottom: 5rem;
 }
 
 .description_impact p {
   /* width: 70%; */
 }
 
+
 .map_container {
   flex: 1;
+}
+
+.map_container h1 {
+  margin: 0;
+}
+
+.map_container p {
+  left: 0;
+  margin: 1rem 0 0 0;
+  font-size: 1.5rem;
+  font-style: italic;
 }
 
 .impact_title_container {
@@ -650,7 +663,7 @@ form {
 .solution_main {
   /* margin-top: 2rem; */
   /* min-height: 150vh; */
-
+  margin-bottom: 5rem;
 }
 
 
@@ -661,7 +674,7 @@ form {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   position: relative;
   gap: 3rem;
   /* padding-bottom: 7rem; */
