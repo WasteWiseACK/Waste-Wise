@@ -25,7 +25,7 @@ export default function HomePage() {
 
         <div>
           <section className="container">
-            <div className="home_container">
+            <div className="home_container" style={{ marginBottom: "4rem" }}>
               <div className="prompt_container">
                 <Boxes />
                 <TEST>
@@ -38,7 +38,7 @@ export default function HomePage() {
               </div>
               <div className="problem_container">
                 <DELAY>
-                  <p className="special_home_problem">
+                  <p className="special_home_problem" style={{ fontSize: "1.35rem" }}>
 
 
                     America wastes 133 billion pounds of food annually, costing $161 billion and enough to feed 42 million people. Food waste is also the third-largest source of methane emissions, contributing 14.1% in 2017, and a major greenhouse gas emitter. In New York State, 18% of waste (3.9 million tons) goes to landfills, with much of it still edible and capable of feeding food-insecure families.
@@ -51,7 +51,7 @@ export default function HomePage() {
                     }}
                   >
                     <motion.button
-                      className="reply_button"
+                      className="home_button"
                       whileHover={{ scale: 1.05, backgroundColor: "#6b8a7a", color: "#fefae0", cursor: "pointer" }}
                       whileTap={{ scale: 0.95, rotate: '3deg' }}
                     >
