@@ -160,8 +160,8 @@ const HeatmapLayer = ({ C02Data }) => {
 const C02Map = () => {
   return (
     <div className='C02Map'>
-      <h1>C02 Emissions</h1>
-      <p> New York City map based on Food Insecurity</p>
+      <h1>New York City C02 Emissions</h1>
+      <p> CO2 Emissions map based on Food Insecurity</p>
       <MapContainer center={[40.730610, -73.935242]} zoom={11.6}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
