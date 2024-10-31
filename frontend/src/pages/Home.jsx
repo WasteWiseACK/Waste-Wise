@@ -14,6 +14,7 @@ export default function HomePage() {
           <TEST>
             <div className="our_mission_container">
               <h1 className="header1">OUR MISSION</h1>
+              <h1 className="header2">WASTE WISE</h1>
             </div>
           </TEST>
           <TEST>
