@@ -303,7 +303,7 @@ form {
 
 .our_mission_container {
   width: 100%;
-  padding-top: 4rem;
+  /* padding-top: 4rem; */
 }
 
 .our_mission_container h1 {
@@ -337,6 +337,7 @@ form {
   color: #fefae0;
   text-decoration: none;
   font-style: italic;
+  font-size: 1.5rem;
 }
 
 .forum_container {
@@ -616,7 +617,15 @@ form {
   background-color: #254336;
   color: #fefae0;
   border-radius: 0.3rem;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
+}
+
+.home_button {
+  border: none;
+  background-color: #254336;
+  color: #fefae0;
+  border-radius: 0.3rem;
+  padding: 0 0.5rem 0.5rem 0.5rem;
 }
 
 

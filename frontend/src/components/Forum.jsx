@@ -68,7 +68,7 @@ function ForumPost({ selectedTags }) {
 
     useEffect(() => {
         fetchPosts();
-    }, [selectedTags]);
+    }, [selectedTags, posts]);
     console.log(posts)
     console.log(`currentactivepostid: ${currentActivePost}`)
 
