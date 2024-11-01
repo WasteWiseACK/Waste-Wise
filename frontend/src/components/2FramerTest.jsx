@@ -12,8 +12,8 @@ const DELAY = ({ children }) => {
       // flexDirection: "column",
       // alignItems: "center",
       // position: "relative",
-      overflow: "hidden",
-      // width: "fit-content" || "100%"
+      // overflow: "hidden",
+      width: "100%"
     }}>
       <motion.div
         variants={{
