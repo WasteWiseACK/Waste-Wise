@@ -101,7 +101,10 @@ export default function SignUpPage() {
         </TEST>
 
         <DELAY>
-          <p className="body">Already have an account with us? <Link className="body" to="/login">Log in!</Link></p>
+          <div className="already_container">
+            <p className="body">Already have an account with us? <Link className="body" to="/login">Log in!</Link></p>
+          </div>
+
         </DELAY>
 
       </section>
