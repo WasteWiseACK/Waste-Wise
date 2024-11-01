@@ -302,6 +302,10 @@ form {
 }
 
 .our_mission_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 4rem;
   width: 100%;
   /* padding-top: 4rem; */
 }
@@ -337,7 +341,7 @@ form {
   color: #fefae0;
   text-decoration: none;
   font-style: italic;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .forum_container {
@@ -625,7 +629,7 @@ form {
   background-color: #254336;
   color: #fefae0;
   border-radius: 0.3rem;
-  padding: 0 0.5rem 0.5rem 0.5rem;
+  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
 }
 
 
@@ -675,6 +679,12 @@ form {
   margin-bottom: 5rem;
 }
 
+.order_container {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+
 
 
 .solution_container {
@@ -689,6 +699,7 @@ form {
   /* padding-bottom: 7rem; */
   min-height: 85vh;
   /* border: #432542 solid 1px; */
+  transform: translateY(2.5rem);
 }
 
 .solution_title {
