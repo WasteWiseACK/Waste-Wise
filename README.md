@@ -1,8 +1,13 @@
 # WasteWise
 
 Our mission is to bridge the gap between food insecurity and food waste by redistributing food that is still perfectly edible but would otherwise be thrown away. Through our platform, we connect New Yorkers facing hunger with local food banks and meal programs, offering resource locators and nutritional guidance. We also promote sustainability by educating the public and showcasing volunteer opportunities, while providing restaurants and companies a simplified food donation network to ensure surplus food reaches people in need. All in all, we aim to build a more sustainable and fair food system for our city.
+Check out our [video demo](https://www.instagram.com/reel/DDLKpEUR-ZK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== )!
 
-Here is a link to a video demo: https://www.instagram.com/reel/DDLKpEUR-ZK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA== 
+![home](https://github.com/user-attachments/assets/8fa35381-d9bb-4276-a0c0-915913524f5c)
+![foobanks](https://github.com/user-attachments/assets/6e600343-786c-4150-b5ce-8cbd61e147fb)
+![forum](https://github.com/user-attachments/assets/d242ff11-1684-46e2-b3f6-cbcb24cf3895)
+<img width="1440" alt="impact_page" src="https://github.com/user-attachments/assets/513b780a-1a16-4b49-aa69-f157b339202e" />
+
 
 ## Team
 
